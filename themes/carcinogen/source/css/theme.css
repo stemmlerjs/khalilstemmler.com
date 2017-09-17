@@ -25,6 +25,7 @@ body {
     font-family: 'Libre Baskerville', serif;
     font-style: italic;
     font-size: 24px;
+    text-decoration: underline;
 }
 
 .barba-side {
@@ -81,6 +82,11 @@ body {
 .front-container {
       position: relative;
     top: -300px;
+}
+
+.upwards {
+  position: relative;
+    top: -325px;
 }
 
 ul {

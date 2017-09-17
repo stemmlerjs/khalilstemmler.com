@@ -9,4 +9,7 @@ I am currently accepting requests for web and app development work. My specialty
 
 If you'd like to collaborate on software or music (even better- both), feel free to shoot me an email at **khalilstemmler@gmail.com** or give me a call 519 429 9674.
 
+[LinkedIn](https://www.linkedin.com/in/khalilstemmler/)
+[Facebook](https://www.facebook.com/khalilstemmler)
+
 :)

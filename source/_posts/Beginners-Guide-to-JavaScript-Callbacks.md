@@ -100,7 +100,7 @@ person.wakeup(function() {
 });
 ```
 
-Now, I know what you’re thinking. “That last block of code looks disgusting.” Hey, trust me- when I first started, I was guilty of doing stuff like this all the time. In the JS world, we call this **“Callback Hell”**. If it doesn’t quite make sense how this works, we’ll get into that in a second.
+Now, I know what you’re thinking. “That last block of code looks disgusting.” Hey, trust me- when I first started, I was guilty of doing stuff like this all the time. In the JS world, we call this [__“Callback Hell”__](http://callbackhell.com/). If it doesn’t quite make sense how this works, we’ll get into that in a second.
 
 The reason we need to use callbacks in JavaScript is because of the concept of **asynchronicity** and JavaScript’s non-blocking behavior.
 
@@ -128,7 +128,7 @@ We deal with a lot of asynchronous behaviour in JavaScript. Here are a few examp
 
 They can happen at any point in time (asynchronous). So we need some sort of mechanism for ‘handling an event’, so to speak; ie: we need some way to do one thing after the next.
 
-**This is why we use callbacks.** In JavaScript, functions can be passed as **first-class objects** which is a fancy way to say that “they can be passed as regular variables” and these functions don’t always need to be declared ahead of time.
+**This is why we use callbacks.** In JavaScript, functions can be passed as [__first-class objects__](http://ryanchristiani.com/functions-as-first-class-citizens-in-javascript/) which is a fancy way to say that “they can be passed as regular variables” and these functions don’t always need to be declared ahead of time.
 
 If you take a look at the example below, hopefully this simplifies what’s actually happening.
 

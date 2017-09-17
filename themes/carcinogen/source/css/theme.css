@@ -448,19 +448,19 @@ header .nav-list-item a {
 
 .paginator .prev,
 .paginator .next {
-  position: relative;
-  box-shadow: 0 .3em #801501;
-  display: inline-block;
-  margin: 0 .2em;
-  padding: .3em 1.5em;
-  border-radius: 5px;
-  color: #fff;
-  background-color: #1ca8ff;
-  font-weight: 600;
+    position: relative;
+    box-shadow: 0 0.3em #4b4b4b;
+    display: inline-block;
+    margin: 0 .2em;
+    padding: .3em 1.5em;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #1ca8ff;
+    font-weight: 600;
 }
 .paginator .prev:hover,
 .paginator .next:hover {
-  box-shadow: 0 .2em #801501;
+  box-shadow: 0 .2em #4b4b4b;
   top: .1em;
 }
 

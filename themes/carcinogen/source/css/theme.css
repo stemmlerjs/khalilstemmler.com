@@ -4,6 +4,7 @@ body {
   line-height: 1.6;
   background-color: #fff;
   font-family: "Helvetica Neue", sans-serif;
+  border-top: solid 4px #d6a110;
 }
 
 /*
@@ -87,6 +88,10 @@ body {
 .upwards {
   position: relative;
     top: -325px;
+}
+
+.post .post-title {
+  font-size: 4em !important;
 }
 
 ul {
@@ -338,7 +343,7 @@ header .nav-list-item a {
 
 .post-content h1,
 .post-block .post-title {
-  margin-top: 2em;
+  margin-top: 9px;
   font-size: 2em;
 }
 

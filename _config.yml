@@ -74,6 +74,7 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: carcinogen
 theme_config:
+  favicon: /source/favicon.ico
   logo:
   copyright:
     since: 2017
@@ -89,3 +90,8 @@ theme_config:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+# Search
+search:
+  path: search.xml
+  field: all

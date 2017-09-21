@@ -94,7 +94,7 @@ body {
   font-size: 4em !important;
 }
 
-.tagname {
+/*.tagname {
       background-color: #00c4ff;
     border-radius: 2px;
     padding: 4px;
@@ -105,7 +105,24 @@ body {
 .tagname:hover {
       outline-width: 0;
     background: #d6a110;
+}*/
+
+
+.tagname {
+    border-radius: 2px;
+    padding: 4px;
+    margin-right: 9px;
+    color: #369cd3;
+    background-color: aliceblue;
+    font-size: 19px;
+    transition: 0.2s;
 }
+
+.tagname:hover {
+  outline-width: 0;
+    background: #ddeeff;
+}
+
 
 ul {
   margin: 1rem 0;

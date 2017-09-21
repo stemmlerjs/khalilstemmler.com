@@ -22,6 +22,12 @@ mixin tags(tags)
             != tag.name
     - })
 
+mixin categories(categories)
+    - categories.each(function(category) {
+        a(href=url_for(category.path))
+            != category.name
+    - })
+
 //- Index Page
 mixin posts()
     ul.home.post-list
@@ -35,6 +41,7 @@ mixin posts()
                     // pre #{ JSON.stringify(Object.keys(item))}
                     // Render tags on the post
 
+                    // +categories(item.categories)
                     +tags(item.tags)
                     +postInfo(item)
                     .post-content
@@ -43,7 +50,7 @@ mixin posts()
                         != __('read_more')
         - })
 
-//- Archive Page
+//- Archive Page (tags, categories, etc)
 mixin postList()
     .archive
         - var year = 0;
@@ -69,6 +76,7 @@ mixin post(item)
         article.post-block
             h1.post-title
                 +postTitle(item.title)
+            // +categories(item.categories)
             +tags(item.tags)
             +postInfo(item)
             .post-content

@@ -2,6 +2,8 @@
 title: Asterisk PBX Text Notifications Using Node.JS and Twilio
 date: 2017-09-21 13:07:04
 tags: [asterisk, cisco, experiment, javascript, tutorial, nodejs, networking]
+categories:
+- [Networking]
 ---
 
 Asterisk is an open source framework for building communications applications. Run on Linux, it can be used to set up a PBX (Private Branch Exchange), VoIP conference calls or even to connect to the PSTN– the legacy telephony system we all know and use today! That doesn’t even scratch the tip of the iceberg with things you can do with Asterisk. I was recently exposed to Asterisk in my Public Carrier Systems class. As a final project for the class, I decided it would be cool to set up a system that works with Asterisk to notify a VoIP user of a missed call via SMS. To do this, we’ll use Node.js to detect a missed call to our VoIP phone through the Asterisk Server and use Twilio to send an SMS to our mobile phone notifying us of the missed call and the calling extension address.

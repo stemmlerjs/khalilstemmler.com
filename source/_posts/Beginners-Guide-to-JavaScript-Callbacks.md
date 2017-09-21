@@ -1,7 +1,9 @@
 ---
 title: Beginners Guide to JavaScript Callbacks
 date: 2016-05-30 23:19:59
-tags: javascript, software
+tags: [javascript, tutorial, guide, software]
+categories:
+- [Programming, JavaScript]
 ---
 
 ![Alternative Text](/images/blogcontent/callback1.png "Callbacks")

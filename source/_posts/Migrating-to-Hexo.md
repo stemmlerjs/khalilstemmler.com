@@ -1,7 +1,7 @@
 ---
 title: Migrating to Hexo
 date: 2017-09-16 19:28:53
-tags: journal, hexo, nodejs
+tags: [journal, nodejs, javascript]
 type: post
 ---
 

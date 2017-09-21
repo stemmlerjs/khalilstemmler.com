@@ -3,12 +3,12 @@ title: About
 date: 2017-09-16 22:31:55
 ---
 
-I'm a post-graduate student living in Oakville, Ontario.
+I'm an almost post-graduate student living in Oakville, Ontario.
 
 - JavaScript / NodeJS is my favourite language to program with
-- I love to create [music](/music) 
-- Sometimes, I play in [bands](https://debutante-band.bandcamp.com/releases)
-- I'm the CTO of [Univjobs](https://univjobs.ca)
+- I'm currently CTO of [Univjobs](https://univjobs.ca)
+- My favourite areas of engineering include AWS, Cloud Networking and Architecture Design, building [robots](https://www.instagram.com/p/BRmUie3DbSL/?taken-by=stemmlerjs), synths, and User Interaction design.
+- I create [music](/music) and sometimes, I play in [bands](https://debutante-band.bandcamp.com/releases)
 
 ### Programming Skills
 ------------------------------

@@ -1,9 +1,10 @@
+
+//- Post Info
+//-     Just contains the date and if it was from
 mixin postInfo(item)
     .post-info
         a
         != full_date(item.date, config.date_format)
-        // div 
-        // != page.tags
         if item.from && (is_home() || is_post())
             a.post-from(href=item.from, target='_blank', title=item.from)
                 != __('translate_original')
@@ -14,6 +15,13 @@ mixin postTitle(title)
     else
         != __('untitled')
 
+//- Tags
+mixin tags(tags)
+    - tags.each(function(tag) {
+        a(href=url_for(tag.path)).tagname
+            != tag.name
+    - })
+
 //- Index Page
 mixin posts()
     ul.home.post-list
@@ -23,6 +31,11 @@ mixin posts()
                     h2.post-title
                         a.post-title-link(href=url_for(item.path) class="no-barba")
                             +postTitle(item.title)
+
+                    // pre #{ JSON.stringify(Object.keys(item))}
+                    // Render tags on the post
+
+                    +tags(item.tags)
                     +postInfo(item)
                     .post-content
                         != item.excerpt
@@ -56,6 +69,7 @@ mixin post(item)
         article.post-block
             h1.post-title
                 +postTitle(item.title)
+            +tags(item.tags)
             +postInfo(item)
             .post-content
                 != item.content

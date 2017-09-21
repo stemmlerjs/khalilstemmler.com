@@ -94,6 +94,19 @@ body {
   font-size: 4em !important;
 }
 
+.tagname {
+      background-color: #00c4ff;
+    border-radius: 2px;
+    padding: 4px;
+    margin-right: 9px;
+    color: white;
+}
+
+.tagname:hover {
+      outline-width: 0;
+    background: #d6a110;
+}
+
 ul {
   margin: 1rem 0;
 }

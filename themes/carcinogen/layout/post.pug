@@ -1,4 +1,4 @@
-extends partial/postLayout.pug
+extends partial/layout.pug
 
 block site_title
     != page.title + ' • ' + config.title
@@ -18,3 +18,12 @@ block pagination
 
 block copyright
     include partial/copyright.pug
+
+block intro
+    include partial/intro.pug
+
+block front
+    include partial/front.pug
+
+block sidenav
+    include partial/sidenav.pug

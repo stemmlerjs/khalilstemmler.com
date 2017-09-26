@@ -7,7 +7,12 @@
   },
   "scripts": {
     "server": "hexo server",
-    "watch": "hexo generate --watch"
+    "watch": "hexo generate --watch",
+    "start": "nodemon "
+  },
+  "nodemonConfig": {
+    "ignore": ["public/*"],
+    "delay": "2500"
   },
   "dependencies": {
     "hexo": "^3.2.0",
@@ -24,5 +29,14 @@
     "hexo-renderer-pug": "0.0.5",
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-nodeunit": "^1.0.0",
+    "grunt-contrib-uglify": "^3.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-run": "^0.8.0",
+    "grunt-shell": "^2.1.0"
   }
 }

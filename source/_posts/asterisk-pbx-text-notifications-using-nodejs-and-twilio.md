@@ -1,6 +1,6 @@
 ---
 title: Asterisk PBX Text Notifications Using Node.JS and Twilio
-date: 2017-09-21 13:07:04
+date: 2016-08-04 13:07:04
 tags: [asterisk, cisco, experiment, javascript, tutorial, nodejs, networking]
 categories:
 - [Networking]
@@ -10,29 +10,31 @@ Asterisk is an open source framework for building communications applications. R
 
 You can visit the code on Github here at https://github.com/stemmlerjs/Asterisk-Twilio
 
-How we’ll do it
+#### Topology Setup
 
-Topology Setup
-Asterisk Manager Interface configuration to allow our Node.js script to listen for events over TCP.
-Configure Demo User Agents in sip.conf.
-Configure Dial Plan in extensions.conf.
-Setup Twilio Account.
-Setup Node.js HTTP Server and Notifications Server
-Run and Test
-Topology
+1. Asterisk Manager Interface configuration to allow our Node.js script to listen for events over TCP.
+2. Configure Demo User Agents in sip.conf.
+3. Configure Dial Plan in extensions.conf.
+4. Setup Twilio Account.
+5. Setup Node.js HTTP Server and Notifications Server
+6. Run and Test
+7. Topology
+
 
 The topology shown in Figure 1 is comprised of 2 VoIP clients (a Windows 8 machine and an Ubuntu Machine) each configured with their own respective softphone software, one Cisco c7200 Router  allowing internet access through NATed interface and a CentOS machine running the Asterisk PBX and our Node Notification Server code.
 
 We will see later in our configuration that the VoIP client khalil is registered on the Windows 8 machine and the VoIP client asia is registered on the Ubuntu Desktop machine.
 
-topology
+![Alternative Text](/images/asterisk/2.png "Callbacks")
 Figure 1 – Asterisk-Twilio topology. The CentOS machine is our PBX and Node Notification Server.
+
 Asterisk Management Interface Configuration
 
 The Asterisk Management Interface allows a client program to connect to an Asterisk instance and issue commands or read events over a TCP stream. To get setup will need to configure a user, enable the AMI and bind it to a port on our local machine. Figure 2 shows our configuration in the manager.conf file found in /etc/asterisk .
 
+![Alternative Text](/images/asterisk/3.png "Callbacks")
 Figure 2 – manager.conf configuration. Bind the management interface to a port on the local machine and declare a user “hello” with password “world”.
-Figure 2 – manager.conf configuration. Bind the management interface to a port on the local machine and declare a user “hello” with password “world”.
+
 If we reload our Asterisk Server and enter the CLI, running the command manager show users shows us all of the users registered as management on the AMI. Notice that in Figure 3, the username=hello shows up (I have 2 other users configured as well but it is expected you will only have one).
 
 show-manager

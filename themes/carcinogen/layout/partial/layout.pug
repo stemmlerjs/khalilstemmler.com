@@ -6,21 +6,15 @@ html(lang=config.language)
         .wrap#barba-wrapper
             header
                 h1.branding
-                    a(href=url_for(), title=config.title)
+                    a(href="/", title=config.title, onclick="javascript:window.location.reload()")
                         if theme.logo
                             img.logo-image(src=url_for(theme.logo), alt='logo')
                         else
                             = config.title
                 include nav.pug
+                pre #{ JSON.stringify(Object.keys(page)) }
+                pre #{ JSON.stringify(page.canonical_path) }
             .barba-flex
-                block sidenav
-                .barba-container
-                    block intro
-                    block front
-                    main.container.upwards
-                        div Recent Posts
-                        block container
-                    footer
-                        block pagination
-                        block copyright
+                // Sidebar + Page Content
+                block pagecontent
         include scripts.pug

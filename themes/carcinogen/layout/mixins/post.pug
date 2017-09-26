@@ -51,6 +51,7 @@ mixin posts()
         - })
 
 //- Archive Page (tags, categories, etc)
+
 mixin postList()
     .archive
         - var year = 0;
@@ -67,7 +68,6 @@ mixin postList()
                 a.post-title-link(href=url_for(item.path))
                     +postTitle(item.title)
         - })
-
 
 
 //- Post Page

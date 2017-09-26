@@ -1,4 +1,4 @@
-extends partial/pageLayout.pug
+extends partial/layout.pug
 
 block site_title
     != page.title + ' • ' + config.title
@@ -16,5 +16,18 @@ block container
             .post-content
                 != page.content
 
-block copyright
-    include partial/copyright.pug
+
+
+block pagecontent
+    // include partial/sidenav.pug
+    .barba-container
+        include mixins/post.pug
+        .post
+            article.post-block
+                h1.post-title
+                    +postTitle(page.title)
+                .post-content
+                    != page.content
+        footer
+            include partial/copyright.pug
+    

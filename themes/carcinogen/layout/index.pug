@@ -11,11 +11,17 @@ block pagination
 block copyright
     include partial/copyright.pug
 
-block intro
-    include partial/intro.pug
-
 block front
-    include partial/front.pug
+    include partial/front.pug    
 
-block sidenav
+block pagecontent
     include partial/sidenav.pug
+    .barba-container
+        include mixins/home.pug
+        include mixins/post.pug
+        +home()
+        footer
+            include partial/copyright.pug
+    
+
+

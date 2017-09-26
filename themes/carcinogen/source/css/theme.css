@@ -11,6 +11,14 @@ body {
  * Custom CSS
  */
 
+.link-style {
+      display: block;
+    font-weight: 600;
+    font-size: 57px;
+    line-height: 1.2em;
+    cursor: pointer;
+}
+
 .barba-flex {
     display: flex;
     flex-direction: row;

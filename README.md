@@ -38,3 +38,5 @@ script.
   console.log(!{JSON.stringify(item)})
 ```
 
+# Tricks in Hexo
+http://www.tricksofthetrades.net/tags/Hexo/

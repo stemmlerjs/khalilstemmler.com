@@ -1,7 +1,15 @@
 extends partial/layout.pug
 
+//- 
+  This container serves many pages:
+  - archive
+  - tags
+  - categories
+
+  We should Render the titles on these pages accordingly
 block container
     include mixins/post.pug
+    +collectionPageTitle()
     +postList()
 
 block pagination

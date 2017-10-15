@@ -12,13 +12,26 @@ html(lang=config.language)
                         else
                             = config.title
                 include nav.pug
-            .barba-flex
+
+            //- On the Blog Page, we don't want this backwards flex thing
+            div(class=page.title !== "Blog" ? ".barba-flex" : "")
                 block sidenav
-                .barba-container
-                    block intro
-                    main.container
-                        block container
-                    footer
-                        block pagination
-                        block copyright
+
+                //-
+                    Renders --> 
+                    (About, Projects, Music, Contact)
+                if page.title !== "Blog"
+                    .barba-container
+                        block intro
+                        main.container
+                            block container
+                        footer
+                            block pagination
+                            block copyright
+
+                //-
+                    Renders --> 
+                    (Blog)
+                else
+                    block blog
         include scripts.pug

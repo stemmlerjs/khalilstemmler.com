@@ -12,15 +12,21 @@ html(lang=config.language)
                         else
                             = config.title
                 include nav.pug
+                //- pre #{ JSON.stringify(page.path) }
             .barba-flex
                 block sidenav
                 .barba-container
                     block intro
                     block front
-                    main.container.upwards
-                        div Recent Posts
-                        block container
-                    footer
-                        block pagination
-                        block copyright
+
+                    //- Don't show all the blog posts on the Index page, but show it on the archives/index.html page
+                    if page.path !== "index.html"
+                        main.container
+                            block container
+                        footer
+                            block pagination
+                            block copyright
+                    else 
+                        footer
+                            block copyright
         include scripts.pug

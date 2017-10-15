@@ -1,4 +1,9 @@
-ul.nav.nav-list
+//-
+    div
+        
+div.mobile-menu-container
+    img#mobile-menu(src="/svg/menu-button.svg" onclick="toggleOpen()")
+ul.nav.nav-list#nav-list.closed(data-open="false")
     each value, key in theme.menu
         li.nav-list-item
             - var re = /^(http|https):\/\/*/gi;

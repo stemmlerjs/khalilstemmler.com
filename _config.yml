@@ -95,3 +95,7 @@ deploy:
 search:
   path: search.xml
   field: all
+
+# Categories
+category_generator:
+  per_page: 10

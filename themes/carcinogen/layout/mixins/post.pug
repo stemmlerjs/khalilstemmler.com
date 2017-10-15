@@ -18,7 +18,7 @@ mixin postTitle(title)
 //- Tags
 mixin tags(tags)
     - tags.each(function(tag) {
-        a(href=url_for(tag.path)).tagname
+        span.cursor.tagname(onclick="javascript:window.location.pathname = '" + tag.path + "'")
             != tag.name
     - })
 
@@ -35,7 +35,7 @@ mixin posts()
             li.post-list-item
                 article.post-block
                     h2.post-title
-                        a.post-title-link(href=url_for(item.path) class="no-barba")
+                        div.post-title-link.cursor(onclick="javascript:window.location.pathname = '" + item.path + "'")
                             +postTitle(item.title)
 
                     // pre #{ JSON.stringify(Object.keys(item))}
@@ -64,7 +64,7 @@ mixin postList()
                     != year
             .post-item
                 +postInfo(item)
-                a.post-title-link(href=url_for(item.path))
+                div.post-title-link.cursor(onclick="javascript:window.location.pathname = '" + item.path + "'")
                     +postTitle(item.title)
         - })
 
@@ -81,3 +81,22 @@ mixin post(item)
             +postInfo(item)
             .post-content
                 != item.content
+
+//- Page Title for archive, tags, categories, etc --> used with postList()
+mixin collectionPageTitle()
+    - var pageType = page.path.substring(0, page.path.indexOf("/"));
+    - var title = "";
+    - var subTitle = "";
+    - if (pageType === "archives") {
+        - title = "Posts"
+    - }
+    - if (pageType === "tags") {
+        - subTitle = page.path.substring(pageType.length + 1);
+        - subTitle = subTitle.substring(0, subTitle.indexOf("/"));
+        - title = "#" + subTitle;
+    - }
+    
+
+    h1.collection-title #{title}
+    if pageType !== "archives"
+        div.cursor.alt-color(onclick="javascript:window.location.pathname = '/archives';") Back to all posts

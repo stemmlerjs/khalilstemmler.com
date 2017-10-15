@@ -19,6 +19,44 @@ body {
     cursor: pointer;
 }
 
+.cursor {
+  cursor:pointer;
+}
+
+.archive-year {
+    margin-bottom: 12px;
+    margin-top: 47px;
+}
+
+.collection-title {
+  font-size: 56px;
+}
+
+.alt-color {
+      color: #9090bb;
+}
+
+/*
+ * ==================================
+ * CATEGORIES 
+ * ==================================
+ */
+
+.categories {
+      font-size: 50px;
+    font-weight: 600;
+}
+
+.categories-container {
+
+}
+
+/*
+ * ==================================
+ * END OF CATEGORIES 
+ * ==================================
+ */
+
 .barba-flex {
     display: flex;
     flex-direction: row;
@@ -323,9 +361,9 @@ header .nav-list-item a {
   color: #801501;
 }
 .archive .post-info {
-  width: 6em;
-  font-size: .9em;
-  color: #393e46;
+    width: 10em;
+    font-size: .9em;
+    color: #393e46;
 }
 
 .post {
@@ -774,3 +812,99 @@ pre .emphasis {
 pre .strong {
   font-weight: 600;
 }
+
+/*
+ * =============================
+ * ======= MEDIA QUERIES =======
+ * =============================
+ */
+
+.closed {
+  height: 0px !important;
+}
+    
+
+.mobile-menu-container {
+  display: none;
+}
+
+@media (max-width: 387px) {
+
+  .barba-flex {
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+
+  .barba-container {
+    width:100%;
+  }
+
+  .title-name {
+    line-height: 0.9em;
+    font-size: 2.5em;
+  }
+
+  .nav-list {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* height: 0px; */
+    overflow: hidden;
+    background-color: #f9f9f5;
+    border-radius: 3px;
+    transition: 0.2s all;
+    height: 260px;
+  }
+
+  .mobile-menu-container {
+    width: 100%;
+  }
+  #mobile-menu {
+    width: 25px;
+    cursor:pointer;
+  }
+
+  header .branding {
+    display: inline-block;
+    margin: .6em 0 0 0;
+    position: relative;
+    visibility: hidden;
+    margin-top: 6px;
+  }
+
+  header .nav-list-item {
+      display: inline-block;
+      padding: 1em .8em;
+      width: 100%;
+      border-bottom: solid 1px #bebebe;
+  }
+
+  .aesthetic-box {
+      margin-top: 27px;
+      background-color: aliceblue;
+      padding-top: 47px;
+      margin-right: 34px;
+      margin-left: 14px;
+      /* position: initial; */
+      height: 292px;
+  }
+
+  .portrait {
+      width: 86%;
+      /* position: sticky; */
+      position: relative;
+      top: -253px;
+  }
+
+  .title-sub {
+      font-family: 'Libre Baskerville', serif;
+      font-style: italic;
+      font-size: 24px;
+      text-decoration: underline;
+      padding-top: 27px;
+  }
+}
+

@@ -1,0 +1,15 @@
+mixin categories () 
+    div.categories-container
+        h1.categories Categories
+        - site.categories.each(function (category) {
+            +category(category)
+        - })
+
+//-
+    Item = 
+    ["name","_id","slug","path","permalink","posts","length"]
+
+mixin category (item)
+    div 
+        div.cat-name.cursor(onclick='javascript:window.location.href = ' + item.path) - #{item.name}
+        div.cat-num #{item.length}

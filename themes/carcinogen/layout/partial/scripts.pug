@@ -15,4 +15,24 @@ script.
     document.addEventListener('DOMContentLoaded', function() {
         Barba.Pjax.start()
     })
+
+div <script id="__bs_script__">//<![CDATA[ document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.13'><\/script>".replace("HOST", location.hostname)); //]]></script>
+script(src="https://code.jquery.com/jquery-2.2.4.js", integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=", crossorigin="anonymous")
+script.
+    function toggleOpen () {
+        var element = $("#nav-list")
+
+        console.log(element.attr('data-open'))
+
+        if (element.attr('data-open')) {
+             element.removeClass("closed")
+             element.attr('data-open', true);
+        }
+        else {
+            element.addClass("closed")
+            element.attr('data-open', false);
+        }
+    }
+
+
     

@@ -13,73 +13,99 @@
 
 var exec = require('child_process').exec;
 var options = {
-    env : process.env
+    env : process.env,
+    timeout: 3000
 }
 
-/*
- * Start the hexo server the first time.
- */
+var hexoServerProcess;
 
-console.log("[PARENT]: Starting Hexo Server");
-startHexoServer();
-
-/*
- * Restart the server after 5 seconds
- */
-
-function startHexoServer () {
-
+function cycle () {
   hexoServerProcess = exec("hexo server", options);
 
-  /*
-   * Server started, set the events.
-   */
+   hexoServerProcess.stdout.on('data', (data) => {
+    console.log(`[CHILD STDOUT]: ${data}`);
+  });
 
-  console.log("[PARENT]: Restarted child server.");
-  setEvents();
-  
-}
-
-function logServerOutput (data) {
-  console.log(`[CHILD STDOUT]: ${data}`);
-
-  /*
-   * After the server has started, begin the 5 second kill timer.
-   */
-
-  if (data.toString().indexOf("Hexo is running") !== -1) {
-
-    console.log("[PARENT]: Killing in 5 seconds.")
-
-   /*
-    * Kill the server after 5 seconds
-    */
-
-    setTimeout(() => {
-      console.log("[PARENT]: Killed child server.")
-      hexoServerProcess.kill();
-
-      // startHexoServer();
-    }, 5000);
-
-  }
-
-}
-
-function setEvents () {
-  hexoServerProcess.stdout.on('data', logServerOutput);
-
-  hexoServerProcess.stdout.on('close', (data) => {
+   hexoServerProcess.stdout.on('close', (data) => {
     console.log(`[CHILD CLOSE EVENT]: ${data}`)
     
-    console.log("[PARENT]: Restarting child server.")
-    hexoServerProcess = startHexoServer();
+    console.log("[PARENT]: closed.")
+
+    setTimeout(() => {
+      cycle();
+    }, 2000)
   })
 
   hexoServerProcess.stderr.on('data', (data) => {
     console.log(`[CHILD STDERR]: ${data}`);
   });
 }
+
+cycle();
+
+// /*
+//  * Start the hexo server the first time.
+//  */
+
+// console.log("[PARENT]: Starting Hexo Server");
+// startHexoServer();
+
+// /*
+//  * Restart the server after 5 seconds
+//  */
+
+// function startHexoServer () {
+
+//   hexoServerProcess = exec("hexo server", options);
+
+//   /*
+//    * Server started, set the events.
+//    */
+
+//   console.log("[PARENT]: Restarted child server.");
+//   setEvents();
+// }
+
+// function logServerOutput (data) {
+//   console.log(`[CHILD STDOUT]: ${data}`);
+
+//   /*
+//    * After the server has started, begin the 5 second kill timer.
+//    */
+
+//   if (data.toString().indexOf("Hexo is running") !== -1) {
+
+//     console.log("[PARENT]: Killing in 5 seconds.")
+
+//    /*
+//     * Kill the server after 5 seconds
+//     */
+
+//     setTimeout(() => {
+//       console.log("[PARENT]: Killed child server.")
+//       hexoServerProcess.kill('SIGKILL');
+
+//       // startHexoServer();
+//     }, 5000);
+
+//   }
+
+// }
+
+// function setEvents () {
+//   hexoServerProcess.stdout.on('data', logServerOutput);
+
+//   hexoServerProcess.stdout.on('close', (data) => {
+//     console.log(`[CHILD CLOSE EVENT]: ${data}`)
+    
+//     console.log("[PARENT]: Restarting child server.")
+//     hexoServerProcess = startHexoServer();
+//   })
+
+//   hexoServerProcess.stderr.on('data', (data) => {
+//     console.log(`[CHILD STDERR]: ${data}`);
+//   });
+// }
 
 /*
  * Kill the child process when we're done.

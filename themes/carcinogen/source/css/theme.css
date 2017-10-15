@@ -57,6 +57,14 @@ body {
  * ==================================
  */
 
+#Releases {
+    font-weight: 100;
+    font-style: italic;
+    background: antiquewhite;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .barba-flex {
     display: flex;
     flex-direction: row;

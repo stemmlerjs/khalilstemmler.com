@@ -21,16 +21,19 @@ script(src="https://code.jquery.com/jquery-2.2.4.js", integrity="sha256-iT6Q9iMJ
 script.
     function toggleOpen () {
         var element = $("#nav-list")
+        
+        console.log("Element data-open is: " + element.attr('data-open'))
+        
 
-        console.log(element.attr('data-open'))
-
-        if (element.attr('data-open')) {
-             element.removeClass("closed")
-             element.attr('data-open', true);
+        if (element.attr('data-open') == "true") {
+            console.log("Drawer open, closing it")
+             element.addClass("closed")
+             element.attr('data-open', false);
         }
         else {
-            element.addClass("closed")
-            element.attr('data-open', false);
+            console.log("Drawer closed, opening it")
+            element.removeClass("closed")
+            element.attr('data-open', true);
         }
     }
 

@@ -17,10 +17,11 @@ mixin postTitle(title)
 
 //- Tags
 mixin tags(tags)
-    - tags.each(function(tag) {
-        span.cursor.tagname(onclick="javascript:window.location.pathname = '" + tag.path + "'")
-            != tag.name
-    - })
+    #post-tags
+        - tags.each(function(tag) {
+            span.cursor.tagname(onclick="javascript:window.location.pathname = '" + tag.path + "'")
+                != tag.name
+        - })
 
 mixin categories(categories)
     - categories.each(function(category) {

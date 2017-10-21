@@ -116,9 +116,10 @@ markdown:
     - markdown-it-ins
     - markdown-it-sub
     - markdown-it-sup
+    - markdown-it-classy
   anchors:
-    level: 2
+    level: 1
     collisionSuffix: 'v'
-    permalink: true
+    permalink: false
     permalinkClass: header-anchor
     permalinkSymbol: ¶

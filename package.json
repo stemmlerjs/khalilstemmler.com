@@ -25,6 +25,8 @@
     "hexo-renderer-markdown-it": "^3.4.1",
     "hexo-renderer-pug": "0.0.5",
     "hexo-renderer-stylus": "^0.3.1",
-    "hexo-server": "^0.2.0"
+    "hexo-server": "^0.2.0",
+    "markdown-it": "https://github.com/stemmlerjs/markdown-it/tarball/master",
+    "markdown-it-classy": "^0.2.0"
   }
 }

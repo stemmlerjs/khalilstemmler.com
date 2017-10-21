@@ -2,7 +2,8 @@
 title: Beginners Guide to JavaScript Callbacks
 date: 2016-05-30 23:19:59
 tags: [javascript, tutorial, guide, software]
-categories:
+metaimg: "http://khalilstemmler.com/images/blogcontent/callback1.png"
+categories: 
 - [Programming, JavaScript]
 ---
 

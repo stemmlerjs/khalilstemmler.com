@@ -8,6 +8,12 @@ title
 block description
     meta(name='description', content=config.description ? config.description : __('meta_description'))
 
+if page.layout == "post"
+    meta(property="og:image" content=page.metaimg)
+
+//- script.
+//-   console.log(!{JSON.stringify(page.layout)})
+
 meta(name='viewport', content='width=device-width, initial-scale=1')
 
 link(rel='icon', href=url_for(theme.favicon))

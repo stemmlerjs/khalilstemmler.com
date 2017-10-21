@@ -40,3 +40,7 @@ script.
 
 # Tricks in Hexo
 http://www.tricksofthetrades.net/tags/Hexo/
+
+# Tips
+- use brutalist styles for the pictures
+- 

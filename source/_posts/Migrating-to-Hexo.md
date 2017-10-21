@@ -2,6 +2,7 @@
 title: Migrating to Hexo
 date: 2017-09-16 19:28:53
 tags: [journal, nodejs, javascript]
+metaimg: "http://khalilstemmler.com/images/blogcontent/oldwebsiteimage.PNG"
 type: post
 ---
 

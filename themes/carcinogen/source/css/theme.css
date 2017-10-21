@@ -57,12 +57,105 @@ body {
  * ==================================
  */
 
-#Releases {
+ /*
+ * ==================================
+ * MUSIC 
+ * ==================================
+ */
+
+#releases {
     font-weight: 100;
     font-style: italic;
     background: antiquewhite;
     text-align: center;
     margin-bottom: 20px;
+}
+
+.AO {
+  color: #1ca8ff;
+    cursor: pointer;
+    display: inline-block;
+    /* margin: 10px; */
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.album {
+  margin: 0px !important;
+}
+
+.album_img_dig_it_up img {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    right: 28%;
+    bottom:30%;
+    display: none !important;
+}
+
+.AO_dig_it_up:hover + .album_img_dig_it_up img {
+    display: block !important;
+}
+
+.album_img_death_to_the_police_force img {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top:55%;
+    right:2%;
+    display: none !important;
+}
+
+.AO_death_to_the_police_force:hover + .album_img_death_to_the_police_force img {
+    display: block !important;
+}
+
+.album_img_debutante img {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    right: 22%;
+    display: none !important;
+}
+
+.AO_debutante:hover + .album_img_debutante img {
+    display: block !important;
+}
+
+.album_img_separation_stories img {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    right: 22%;
+    display: none !important;
+}
+
+.AO_separation_stories:hover + .album_img_separation_stories img {
+    display: block !important;
+}
+
+.album_img_axion img {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    right: 4%;
+    top: 70%;
+    display: none !important;
+}
+
+.AO_axion:hover + .album_img_axion img {
+    display: block !important;
+}
+
+
+/*
+ * ==================================
+ * END OF MUSIC 
+ * ==================================
+ */
+
+.figure {
+  font-size: 14px !important;
 }
 
 .barba-flex {
@@ -77,7 +170,7 @@ body {
 }
 
 .title-sub {
-    font-family: 'Libre Baskerville', serif;
+    /* font-family: 'Libre Baskerville', serif; */
     /* font-style: italic; */
     font-size: 24px;
     text-decoration: underline;
@@ -194,6 +287,7 @@ a,
 a:active {
   color: #222831;
   text-decoration: none;
+  word-wrap: break-word;
 }
 
 h1,
@@ -454,8 +548,14 @@ header .nav-list-item a {
 }
 
 .post-content h6 {
-  margin-top: 1em;
-  font-size: 2em;
+margin-top: 1em;
+    font-size: 1.3em;
+    font-weight: 100;
+    background-color: #fcd6f9;
+    text-align: center;
+    font-style: italic;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
 .post-content a {
@@ -839,11 +939,11 @@ pre .strong {
  for how to move between pages.
 */
 
-@media (max-width: 440px) {
+@media (max-width: 780px) {
 
   .barba-flex {
     justify-content: center;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   .barba-container {
@@ -855,6 +955,7 @@ pre .strong {
 
   .barba-side {
     opacity: 0;
+    height: 0px;
   }
 
   .title-name {
@@ -941,7 +1042,7 @@ pre .strong {
 
 }
 
-@media (min-width:441px) {
+@media (min-width:781px) {
   
   .mobile-menu-container {
       display: none !important;
@@ -949,6 +1050,10 @@ pre .strong {
 
   .alt-nav-list-items {
       display: none !important;
+  }
+  
+  .barba-container {
+    margin-top: 55px;
   }
 }
 

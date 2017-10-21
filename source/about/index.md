@@ -5,9 +5,13 @@ date: 2017-09-16 22:31:55
 
 I'm an almost post-graduate student living in Oakville, Ontario.
 
+With about 6 years experience in Computer Science and Software Development, I've worked for companies like __IBM__, __Pinnaca__, __iCare Home Health__ and __Jomar Softcorp__. More recently, I've been doing __contract work__ and __building apps__ for clients and startups.
+
+Some interesting facts about me:
+
 - JavaScript / NodeJS is my favourite language to program with
 - I'm currently CTO of [Univjobs](https://univjobs.ca)
-- My favourite areas of engineering include AWS, Cloud Networking and Architecture Design, building [robots](https://www.instagram.com/p/BRmUie3DbSL/?taken-by=stemmlerjs), synths, and User Interaction design.
+- My favourite areas of engineering include AWS + Cloud Networking and Architecture, building [robots](https://www.instagram.com/p/BRmUie3DbSL/?taken-by=stemmlerjs), synths, and User Interaction design.
 - I create [music](/music) and sometimes, I play in [bands](https://debutante-band.bandcamp.com/releases)
 
 ### Programming Skills

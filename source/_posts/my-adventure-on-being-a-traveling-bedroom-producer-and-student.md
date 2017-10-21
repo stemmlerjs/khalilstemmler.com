@@ -2,6 +2,7 @@
 title: My Adventure On Being a Traveling Bedroom Producer and Student
 date: 2016-06-08 12:50:20
 tags: [journal, music, lifestyle]
+metaimg: "http://khalilstemmler.com/images/blogcontent/oldwebsiteimage.PNG"
 categories:
 - [music]
 - [journal]
@@ -11,11 +12,13 @@ I’ve been a student-musician living away from home for about 4 years now. Duri
 
 When I first started at Brock University, I brought all of my gear with me (bass, guitars, amp, monitors, midi controllers, interfaces, pedals, cords, etc) and it was actually pretty sweet having all of my stuff there. It was a decently large room in Village even though I had to tuck a few things underneath my bed.
 
-![Alternative Text](/images/albums/axion.jpg ""Axion" recorded during my first semester at Brock University in Village Residence, Nov 2013")
+![Alternative Text](/images/albums/axion.jpg "“Axion“ recorded during my first semester at Brock University in Village Residence, Nov 2013")
+“Axion“ recorded during my first semester at Brock University in Village Residence, Nov 2013. {figure}
 
-Inbetween being scared straight at the thought of doing bad in school and lifelessly studying for math tests I’d find a slice of time to do some recording. My house-mates were really cool and wouldn’t bother me while I was in my room doing my thing and I generally felt like it was a good creative environment. The only thing inhibiting my creativity was the fear of being too loud and disturbing my studying neighbors (this would be a recurring theme in the years to come).
+In between being scared straight at the thought of doing bad in school and lifelessly studying for math tests I’d find a slice of time to do some recording. My house-mates were really cool and wouldn’t bother me while I was in my room doing my thing and I generally felt like it was a good creative environment. The only thing inhibiting my creativity was the fear of being too loud and disturbing my studying neighbors (this would be a recurring theme in the years to come).
 
 ![Alternative Text](/images/albums/separation.jpg "“Separation Stories” recorded over the period of a year while at Brock University. Released March 2014.")
+“Separation Stories” recorded over the period of a year while at Brock University. Released March 2014. {figure}
 
 I made pretty good use of my monitors, this pair of Puma Headphones and my Flat Sennheiser monitoring headset as I spent about an entire semester mixing my work to sound like Massive Attack’s “Mezzanine”.
 
@@ -28,8 +31,9 @@ Still not learning from my mistakes, the next place I lived at was an off-campus
 
 Living in a basement room in Ottawa was a different story and came to be how I put together my “red bag” which is a bag containing all the absolute necessities including my Toneport UX2 audio interface, misc cords, headphones and a mic. Leaving my pedals at home and only bringing my electric guitar and amp, I came to realize that VST plugins really are your best friend.
 
+![Alternative Text](/images/albums/death.jpg "Death to the Police Force. Recorded in Ottawa in a small basement room during my co-op at IBM from January – April 2015")
+Death to the Police Force. Recorded in Ottawa in a small basement room during my co-op at IBM from January – April 2015 {figure}
 
-Recorded in Ottawa in a small basement room during my co-op at IBM from January – April 2015
 Using FL Studio 9, I did all my guitar tones and effects through running my guitar into my amp and then in to the audio interface where I could map the audio to a channel in FL Studio and throw on Guitar Rig 5. Even made up for the fact that I didn’t have a bass with me at the time by making my guitar sound like a bass. The only thing that I couldn’t make better with technology was the fact that I didn’t want to sing too loudly for too long and piss off my landlord upstairs.
 
 Returning to Oakville for Summer classes, I caught a sweet deal where I subletted an entire townhouse to myself for the price of one room due to everyone being gone for the Summer. This was by far the best place that I ever had to work. I would sit by the living room table and code, work on networking labs and music; all the while noticing straight ahead critters such as rabbits and squirrels running up to the glass screen door.

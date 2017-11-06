@@ -6,12 +6,20 @@ div.mobile-menu-container
     
 ul.nav.nav-list#nav-list.closed(data-open="false")
     each value, key in theme.menu
-        li.nav-list-item(onclick="javascript:window.location.href = '" + url_for(value) + "';")
-            - var re = /^(http|https):\/\/*/gi;
-            - var tar = re.test(value) ? "_blank" : "_self"
-            - var type = value.indexOf('.html') === -1 ? 'no-barba' : ''
-            a.nav-list-link(href=url_for(value) target=tar class=type)
-                != key.toUpperCase()
+        if value.indexOf('github') == -1
+            li.nav-list-item(onclick="javascript:window.location.href = '" + url_for(value) + "';")
+                - var re = /^(http|https):\/\/*/gi;
+                - var tar = re.test(value) ? "_blank" : "_self"
+                - var type = value.indexOf('.html') === -1 ? 'no-barba' : ''
+                a.nav-list-link(href=url_for(value) target=tar class=type)
+                    != key.toUpperCase()
+        else
+            li.nav-list-item
+                - var re = /^(http|https):\/\/*/gi;
+                - var tar = re.test(value) ? "_blank" : "_self"
+                - var type = value.indexOf('.html') === -1 ? 'no-barba' : ''
+                a.nav-list-link(href=url_for(value) target=tar class=type)
+                    != key.toUpperCase()
     each item in [{ name: 'blog', url: 'archives'}, { name: 'music', url: 'music'}, { name: 'projects', url: 'projects'}]
         li.nav-list-item.alt-nav-list-items(onclick="javascript:window.location.href = '/" + item.url + "';")
             a.nav-list-link(target=tar class=type)

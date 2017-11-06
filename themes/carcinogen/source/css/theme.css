@@ -154,6 +154,54 @@ body {
  * ==================================
  */
 
+ /*
+ * ==================================
+ * ABOUT 
+ * ==================================
+ */
+
+.picText {
+  color: #1ca8ff;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.companies {
+  display: flex;
+      flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media (max-width: 523px) {
+  .companies {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+.companies img {
+    height: 130px;
+    width: 130px;
+}
+
+ /*
+ * ==================================
+ * END OF ABOUT 
+ * ==================================
+ */
+
+.twitter-wrapper {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.italics {
+      font-style: italic;
+}
+
 .figure {
   font-size: 14px !important;
 }

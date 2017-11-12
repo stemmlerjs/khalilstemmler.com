@@ -78,7 +78,7 @@ body {
     color: #222832;
     margin-top: 49px;
     margin-bottom: 49px;
-    margin-right: 75px;
+    margin-right: 43px;
 }
 
 .list-icon {
@@ -1169,6 +1169,25 @@ pre .strong {
     font-size: 2em;
     font-size: 3em !important;
 }
+
+  .contact-links-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: baseline;
+    flex-direction: column;
+    margin-bottom: 41px;
+    margin-top: 41px;
+  }
+
+  .contact-links {
+    align-items: center;
+    font-size: 20px;
+    color: #222832;
+    /* margin-top: 49px; */
+    /* margin-bottom: 49px; */
+    /* margin-right: 75px; */
+    margin: 0;
+  }
 
 }
 

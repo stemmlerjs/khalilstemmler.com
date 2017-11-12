@@ -16,7 +16,7 @@ To top things off, my girlfriend and I broke up. This was probably the hardest t
 
 Post-breakup, I found myself not remembering how to make myself happy and needed to take a few days off from working to really re-adjust myself.
 
-It took me a week or so of kareoke, working out and leaning on good friends that I sort of abandoned during my relationship find myself in the right place to do some meaningful reflection. I'm a 22 year old man and I'm still learning a lot about love and relationships:
+It took me a week or so of karaoke, working out and leaning on good friends that I sort of abandoned during my relationship find myself in the right place to do some meaningful reflection. I'm a 22 year old man and I'm still learning a lot about love and relationships:
 
 {% twitter https://twitter.com/stemmlerjs/status/925241735801901056 %}
 
@@ -28,7 +28,7 @@ And I've learned that it's important to stick to what's true to you. Your happin
 
 I realized that for the duration of my relationship, I wasn't making any music. Noticing this was shocking to me because it's something I've been doing my entire life and it brings me a lot of joy, creating. 
 
-Looking back, this year has been a year of tremendous growth an all fronts: professionally and spiritually. I learned a lot of things but I think one that's incredibly relevant as I start to tackle my freelancing lifestyle full force is to never forget what makes you happy and why you started doing what you're doing in the first place. 
+Looking back, this year has been a year of tremendous growth an all fronts; professionally and spiritually. I learned a lot of things but I think one that's incredibly relevant as I start to tackle my freelancing lifestyle full force is to never forget what makes you happy and why you started doing what you're doing in the first place. 
 
 You can listen to the embedded EP "Candy Body" below or you can buy/stream it on [Bandcamp](https://cyanidecanaries.bandcamp.com/album/candy-body-ep). {italics}
 

@@ -11,7 +11,6 @@ Our Full-Stack JavaScript platform is built on AWS and uses React/Redux + NodeJS
 
 My day-to-day operations can be summarized by finding the most effective way to push the product and our company forward.
 
-###### Links
 [Univjobs.ca](https://univjobs.ca)
 [Facebook](https://facebook.com/univjobs/)
 [Instagram](https://instagram.com/univjobs)
@@ -20,7 +19,6 @@ My day-to-day operations can be summarized by finding the most effective way to 
 ![ks12hx-01](/images/proj/ks12hx.png "This is one dope sampler.")
 a very tiny sampler/sequencer thingy.
 
-###### Links
 [I'm moving this somewhere else, it'll be back up soon.]
 [Github](https://github.com/stemmlerjs/mini-sampler)
 
@@ -28,5 +26,4 @@ a very tiny sampler/sequencer thingy.
 ![Glitchie](/images/proj/glitchie.jpg "Glitchie app.")
 A small GUI application written in Java that allows you to databend photos and undo databends.
 
-###### Links
 [Github](https://github.com/stemmlerjs/Glitch-Pond)

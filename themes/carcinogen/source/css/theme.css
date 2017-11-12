@@ -11,12 +11,93 @@ body {
  * Custom CSS
  */
 
+.roboto {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.post-content {
+      font-family: 'Roboto mono', monospace;
+}
+
+.post-content h4 {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.contact-skill-list li {
+  margin-bottom: 10px;
+}
+
+.skill-item {
+  font-weight: bold;
+}
+
+.cta-front {
+    margin-top: 6px;
+    margin-bottom: 50px;
+}
+
+.link-colour {
+  color: #f700a0;
+  cursor: pointer;
+}
+
 .link-style {
       display: block;
     font-weight: 600;
     font-size: 57px;
     line-height: 1.2em;
     cursor: pointer;
+}
+
+.header {
+    font-weight: bold;
+    font-size: 45px;
+    color: #d6a110;
+    font-family: "Helvetica Neue", sans-serif;
+    letter-spacing: -.01em;
+}
+
+.sub {
+    font-size: 24px;
+    padding-top: 0p;
+    margin-top: 0px;
+    /* font-weight: 100; */
+}
+
+.contact-links-container {
+      display: flex;
+    align-items: flex-start;
+    justify-content: baseline;
+}
+
+.contact-links {
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    align-items: center;
+    font-size: 20px;
+    color: #222832;
+    margin-top: 49px;
+    margin-bottom: 49px;
+    margin-right: 75px;
+}
+
+.list-icon {
+  list-style: none !important;
+}
+
+.list-icon a {
+  color: #222831 !important;
+  transition: 0.5s ease-in-out;
+}
+
+.list-icon:hover a {
+  color: #f700a0 !important;
+}
+
+.theme-divider {
+border-top: 1px solid #eee;
+    margin-left: 47px;
+    margin-right: 47px;
 }
 
 .cursor {
@@ -199,7 +280,7 @@ body {
 }
 
 .italics {
-      font-style: italic;
+  font-style: italic;
 }
 
 .figure {
@@ -326,9 +407,9 @@ ul {
 }
 
 p {
-  letter-spacing: -.01em;
-  line-height: 1.8;
-  margin: 1.2em 0;
+letter-spacing: -.06em;
+    line-height: 1.8;
+    margin: 1.2em 0;
 }
 
 a,
@@ -1009,6 +1090,7 @@ pre .strong {
   .title-name {
     line-height: 0.9em;
     font-size: 2.5em;
+    margin-bottom: 21px;
   }
 
   .nav-list {
@@ -1101,7 +1183,7 @@ pre .strong {
   }
   
   .barba-container {
-    margin-top: 55px;
+    margin-top: 0px;
   }
 }
 

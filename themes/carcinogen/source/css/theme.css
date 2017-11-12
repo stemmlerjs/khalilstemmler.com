@@ -4,7 +4,7 @@ body {
   line-height: 1.6;
   background-color: #fff;
   font-family: "Helvetica Neue", sans-serif;
-  border-top: solid 4px #d6a110;
+  border-top: solid 4px #f700a0;
 }
 
 /*
@@ -21,6 +21,10 @@ body {
 
 .post-content h4 {
   font-family: "Helvetica Neue", sans-serif;
+}
+
+.special {
+  color: #f700a0;
 }
 
 .contact-skill-list li {
@@ -41,6 +45,12 @@ body {
   cursor: pointer;
 }
 
+.boxed {
+      border: solid 2px;
+    margin-bottom: 10px;
+    padding-left: 12px;
+}
+
 .link-style {
       display: block;
     font-weight: 600;
@@ -52,7 +62,7 @@ body {
 .header {
     font-weight: bold;
     font-size: 45px;
-    color: #d6a110;
+    color: #f700a0;
     font-family: "Helvetica Neue", sans-serif;
     letter-spacing: -.01em;
 }
@@ -306,9 +316,10 @@ border-top: 1px solid #eee;
 }
 
 .barba-side {
-    width: 30%;
+width: 30%;
     font-weight: 500;
     font-size: 57px;
+    margin-right: 27px;
 }
 
 .barba-side a {
@@ -1105,7 +1116,7 @@ pre .strong {
     background-color: #ffffff;
     border-radius: 3px;
     transition: 0.2s all;
-    height: 455px;
+    height: 488px;
     font-weight: bold;
     margin-bottom: 67px;
   }

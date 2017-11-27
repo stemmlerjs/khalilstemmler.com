@@ -27,6 +27,9 @@ html(lang=config.language)
                             block pagination
                             block copyright
                     else 
+                        main.container
+                            h2.recent-posts-header Recent Posts
+                            block container
                         footer
                             block copyright
         include scripts.pug

@@ -9,7 +9,9 @@ categories:
 
 ![Alternative Text](/images/blogcontent/callback1.png "Callbacks")
 
-I come from a Java background. When I was first learning Node.JS and JavaScript, I had a what I thought was a decent level of understanding in JavaScript and ran into a problem similar to this while I was trying to do something involving pulling data from a database, storing it in a variable and then doing something with that data.
+I come from a Java background. When I was first learning Node.JS and JavaScript, I had what I thought was a decent level of understanding in JavaScript and ran into a problem similar to this while I was trying to do something involving pulling data from a database, storing it in a variable and then doing something with that data.
+
+<!-- more --> 
 
 ```javascript
 var songsList = myDatabaseObject.getSongsList();

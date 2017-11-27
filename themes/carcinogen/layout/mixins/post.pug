@@ -83,6 +83,10 @@ mixin post(item)
             .post-content
                 != item.content
 
+mixin relatedPosts()
+    div
+        != list_related_posts()
+
 //- Page Title for archive, tags, categories, etc --> used with postList()
 mixin collectionPageTitle()
     - var pageType = page.path.substring(0, page.path.indexOf("/"));

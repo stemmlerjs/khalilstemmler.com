@@ -8,7 +8,11 @@ type: post
 
 ![Alternative Text](/images/blogcontent/oldwebsiteimage.PNG "Old khalilstemmler.com")
 
-I remember coding an early version of my first website when I was at Brock in 2013. I brought it to a Data Strutures lecture and showed it to this guy who would become a good friend of mine. Really really proud of what I had put together, I remember him taking a single look at it, laughing and saying "if you need someone to do your website, I can do it for you.". 
+I remember coding an early version of my first website when I was at Brock in 2013. I brought it to a Data Strutures lecture and showed it to this guy who would become a good friend of mine. 
+
+<!-- more --> 
+
+Really really proud of what I had put together, I remember him taking a single look at it, laughing and saying "if you need someone to do your website, I can do it for you.". 
 
 That's not the Computer Science way of things at all, we like a challenge! Us coders and programmers like to learn things ourselves- the hard way (see upcoming blog post on our DevOps polygot, Julio). As my Prof. Bockus once said, "you're either a homosapien... or you're a homologicus. Guess which one you are." Homosapiens actually do a lot better at designing user interfaces because they're more concerned with simplicity and getting right down to the point while homologicus people get excited at features and view technology more as a challenge.
 

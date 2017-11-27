@@ -8,7 +8,13 @@ categories:
 - [journal]
 ---
 
-I’ve been a student-musician living away from home for about 4 years now. During my time at post-secondary schools and co-op work terms, I’ve lived on campus, off-campus, in basement rooms, in townhouses and in detached houses. It was kind of a pain to find a new place just about every 4 months and pack up all my things to move to a different campus or a different city for co op. Especially difficult for someone who carries around a lot of musical instruments and gear as well.
+![Alternative Text](/images/albums/axion.jpg "Old khalilstemmler.com")
+
+I’ve been a student-musician living away from home for about 4 years now. During my time at post-secondary schools and co-op work terms, I’ve lived on campus, off-campus, in basement rooms, in townhouses and in detached houses. 
+
+<!-- more --> 
+
+It was kind of a pain to find a new place just about every 4 months and pack up all my things to move to a different campus or a different city for co op. Especially difficult for someone who carries around a lot of musical instruments and gear as well.
 
 When I first started at Brock University, I brought all of my gear with me (bass, guitars, amp, monitors, midi controllers, interfaces, pedals, cords, etc) and it was actually pretty sweet having all of my stuff there. It was a decently large room in Village even though I had to tuck a few things underneath my bed.
 

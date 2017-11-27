@@ -6,9 +6,11 @@ type: post
 metaimg: "http://khalilstemmler.com/images/albums/candybody.jpg"
 ---
 
-![Alternative Text](/images/albums/candybody.jpg "Candy Body EP")
+Ever since I was a kid, my mom used to always tell me that I was not very good at adapting to change. I used to hate going on road trips or anything that meant that my comfortable environment was at stake. 
 
-Ever since I was a kid, my mom used to always tell me that I was not very good at adapting to change. I used to hate going on road trips or anything that meant that my comfortable environment was at stake. I'm very much realizing that this is just part of my personality. Change is really scary to me, yeah; but without it, I think I'd miss out on a lot of things in life.
+<!-- more --> 
+
+I'm very much realizing that this is just part of my personality. Change is really scary to me, yeah; but without it, I think I'd miss out on a lot of things in life.
 
 As we near the end of the year, I've been stressing a little bit about what's going to happen in January for work, what's going on with my schooling amidst this strike amongst all of the colleges in Canada, getting more serious planning my freelance career, lifestyle and how I'm going to be able to take a single Brock credit in addition to all of these uncertainties. 
 

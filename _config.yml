@@ -84,6 +84,7 @@ theme_config:
     Home: /
     About: /about
     Contact: /contact
+    Portfolio: /portfolio
     GitHub: https://github.com/stemmlerjs
 
 # Deployment

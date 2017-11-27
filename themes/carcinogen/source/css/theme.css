@@ -11,12 +11,30 @@ body {
  * Custom CSS
  */
 
+.recent-posts-header {
+    text-align: left;
+    background-color: black;
+
+    font-style: normal;
+    margin-top: 87px;
+    border: solid 2px;
+    margin-bottom: 10px;
+    padding-left: 12px;
+    color: #222831;
+    background: white;
+    display: block;
+    font-weight: 600;
+    font-size: 57px;
+    line-height: 1.2em;
+    cursor: pointer;
+}
+
 .roboto {
   font-family: 'Roboto Mono', monospace;
 }
 
 .post-content {
-      font-family: 'Roboto mono', monospace;
+  font-family: 'Roboto mono', monospace;
 }
 
 .post-content h4 {
@@ -36,8 +54,8 @@ body {
 }
 
 .cta-front {
-    margin-top: 6px;
-    margin-bottom: 50px;
+  margin-top: 6px;
+  margin-bottom: 50px;
 }
 
 .link-colour {
@@ -46,17 +64,17 @@ body {
 }
 
 .boxed {
-      border: solid 2px;
-    margin-bottom: 10px;
-    padding-left: 12px;
+  border: solid 2px;
+  margin-bottom: 10px;
+  padding-left: 12px;
 }
 
 .link-style {
-      display: block;
-    font-weight: 600;
-    font-size: 57px;
-    line-height: 1.2em;
-    cursor: pointer;
+  display: block;
+  font-weight: 600;
+  font-size: 57px;
+  line-height: 1.2em;
+  cursor: pointer;
 }
 
 .header {
@@ -160,6 +178,26 @@ border-top: 1px solid #eee;
     background: antiquewhite;
     text-align: center;
     margin-bottom: 20px;
+
+        text-align: left;
+    background-color: black;
+    color: white;
+    font-style: italic;
+    padding-left: 16px;
+}
+
+#watch {
+    font-weight: 100;
+    font-style: italic;
+    background: antiquewhite;
+    text-align: center;
+    margin-bottom: 20px;
+
+        text-align: left;
+    background-color: black;
+    color: white;
+    font-style: italic;
+    padding-left: 16px;
 }
 
 .AO {
@@ -173,6 +211,19 @@ border-top: 1px solid #eee;
 
 .album {
   margin: 0px !important;
+}
+
+.album_img_candy_body img {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    right: 40%;
+    bottom:22%;
+    display: none !important;
+}
+
+.AO_candy_body:hover + .album_img_candy_body img {
+    display: block !important;
 }
 
 .album_img_dig_it_up img {
@@ -306,6 +357,8 @@ border-top: 1px solid #eee;
 .title-name {
     font-weight: 700;
     font-size: 75px;
+    line-height: 75px;
+    margin-top: 23px;
 }
 
 .title-sub {
@@ -320,6 +373,7 @@ width: 30%;
     font-weight: 500;
     font-size: 57px;
     margin-right: 27px;
+    margin-top: 30px;
 }
 
 .barba-side a {
@@ -360,11 +414,13 @@ width: 30%;
     height: 391px;
 }
 
+.portrait-container {
+      text-align: center;
+}
+
 .portrait {
       width: 86%;
     /* position: sticky; */
-    position: relative;
-    top: -337px;
 }
 
 .front-container {
@@ -469,8 +525,9 @@ code {
 
 iframe,
 video {
-  max-width: 100%;
-  margin: 1rem auto;
+    max-width: 100%;
+    margin: 1rem auto;
+    height: 445px;
 }
 
 /*table {
@@ -1158,8 +1215,6 @@ pre .strong {
   .portrait {
       width: 100%;
       /* position: sticky; */
-      position: relative;
-      top: -253px;
   }
 
   .title-sub {

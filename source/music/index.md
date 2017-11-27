@@ -3,10 +3,19 @@ title: Music
 date: 2017-09-16 22:33:20
 ---
 
+## Watch
+{% raw %}
+<iframe width="1000" height="505" src="https://www.youtube.com/embed/7hpZ09RvidQ?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+{% endraw %}
+
 ## Releases
 #### Cyanide Canaries
 ![Alternative Text](/images/cyanidecanariesphoto.jpg "Callbacks")
 "A trip-hop turned post-punk/pop solo escapade."
+
+**["Candy Body" is an EP that was released November 5th, 2017.](https://cyanidecanaries.bandcamp.com/album/candy-body-ep)** {AO AO_candy_body} 
+
+![Candy Body](/images/albums/candybody.jpg) {album album_img_candy_body}
 
 **["Dig It Up" is an LP that was released January 1st, 2017.](https://cyanidecanaries.bandcamp.com/album/dig-it-up)** {AO AO_dig_it_up} 
 

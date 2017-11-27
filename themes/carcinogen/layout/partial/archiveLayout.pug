@@ -14,14 +14,10 @@ html(lang=config.language)
                 include nav.pug
                 //- pre #{ JSON.stringify(page.path) }
             .barba-flex
-                block sidenav
                 .barba-container
-                    block intro
-                    block front
-
                     main.container
-                        h2.recent-posts-header Recent Posts
                         block container
                     footer
+                        block pagination
                         block copyright
         include scripts.pug

@@ -8,7 +8,7 @@ metaimg: "http://khalilstemmler.com/images/postheaders/synths.jpg"
 
 ![Alternative Text](/images/postheaders/synths.jpg "Beautiful beautiful synths")
 
-Synths and electronics have always really really intrigued me. I follow [@lookmumnocomputer]("https://instagram.com/lookmumnocomputer") on Instagram and I’m constantly amazed at the crazy electronic instruments he creates. 
+Synths and electronics have always really really intrigued me. I follow [@lookmumnocomputer](https://instagram.com/lookmumnocomputer) on Instagram and I’m constantly amazed at the crazy electronic instruments he creates. 
 
 <!-- more --> 
 
@@ -20,14 +20,14 @@ Synths and electronics have always really really intrigued me. I follow [@lookmu
 
 I reached out and talked to a few of these guys on Instagram that I know are totally killing it and making really cool stuff.
 
-[@moffenzeefmodular]("https://instagram.com/moffenzeefmodular")
-[@behndy]("https://instagram.com/behndy")
+[@moffenzeefmodular](https://instagram.com/moffenzeefmodular)
+[@behndy](https://instagram.com/behndy)
 
 After talking with them and getting their experience and insight, I've put together a game plan. Alright, here it is.
 
 #### The Game Plan to Get Started
 
-1. Start with the book: [The Art of Hardware Hacking]("http://www.nicolascollins.com/texts/originalhackingmanual.pdf"). Just read the book entirely and do all of the exercises, no cheating. Do them all. 
+1. Start with the book: [The Art of Hardware Hacking](http://www.nicolascollins.com/texts/originalhackingmanual.pdf). Just read the book entirely and do all of the exercises, no cheating. Do them all. 
 2. After that, I’m going to flip over and start playing with https://vcvrack.com because “that is the one most people seem to dig” according to @behndy.
 3. Also according to @behndy, get a thorough hands-on education on “synth bits from the ground up, y'know- broken into component pieces”. Makes a lot of sense. Start with the smaller things at the atomic level and then start putting things together.
 
@@ -41,7 +41,7 @@ In fact, I’m realizing how obvious it is that having a mentor and asking quest
 
 Even @moffenzeefmodular jokingly says that he “just had a nagging that [he] couldn’t scratch. [He] found the right people and continues to ask the wrong questions”.
 
-Soif you too are intrigued by the world of modular synths and want to get started hacking things with your hands, you can follow along with me and my plan but most importantly, ask the pros. Find a mentor. I’m sure they’ll be happy to answer any questions you have about something they so very much love to do.
+So if you too are intrigued by the world of modular synths and want to get started hacking things with your hands, you can follow along with me and my plan but most importantly, ask the pros. Find a mentor. I’m sure they’ll be happy to answer any questions you have about something they so very much love to do.
 
 Anyways, really thankful for these guys. I’m looking forward to getting started in the world of modular synths.
 

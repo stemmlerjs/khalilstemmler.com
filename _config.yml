@@ -94,8 +94,9 @@ deploy:
 
 # Search
 search:
-  path: search.xml
-  field: all
+  path: search.json
+  source: all # other values: posts, pages
+  trim_html: false
 
 # Categories
 category_generator:
@@ -127,3 +128,15 @@ markdown:
     permalink: false
     permalinkClass: header-anchor
     permalinkSymbol: ¶
+
+# hexo-admin authentification
+admin:
+  username: stemmlerjs
+  password_hash: $2a$10$m/SSn9odqMtGUTY8Hhp7j.WvObb3Om.nSRREMdH0.hK/Yh1kcD1im
+  secret: df4egfdg-09ui0-9yhf09i8[gbaps[9ti0-9y0-9u8fsgd0-89-908gyshfd0-894ha;ljdfl;jhfd098ghlkhjfg
+
+# Seo friendly sitemap
+sitemap:
+  path: sitemap.xml
+  tag: false
+  category: false

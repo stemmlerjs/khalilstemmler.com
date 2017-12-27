@@ -47,7 +47,7 @@ mixin posts()
                     +postInfo(item)
                     .post-content
                         != item.excerpt
-                    a.read-more(href=url_for(item.path))
+                    a.read-more(onclick="javascript:window.location.href = '" + url_for(item.path) + "';")
                         != __('read_more')
         - })
 
@@ -69,7 +69,22 @@ mixin postList()
                     +postTitle(item.title)
         - })
 
+mixin mailchimpForm()
+    | <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+    | <div id="mc_embed_signup">
+    | <form action="https://khalilstemmler.us17.list-manage.com/subscribe/post?u=6816d2889bed041b6e83840af&amp;id=44ae72b287" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    | <div id="mc_embed_signup_scroll">
+    | <label for="mce-EMAIL">Get Blog Updates</label>
+    | <div class="mc-ctathing">If you want to keep up with me and my endeavours in web design, development and music, be sure to enter your email to subscribe.</div>
+    | <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email" required>
+    | <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    | <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6816d2889bed041b6e83840af_44ae72b287" tabindex="-1" value=""></div>
+    | <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    | </div>
+    | </form>
+    | </div>
 
+<!--End mc_embed_signup-->
 
 //- Post Page
 mixin post(item)

@@ -25,7 +25,7 @@ I’m available for hire on a freelance or contract basis. Why not send me an em
       <i class="fa fa-linkedin" aria-hidden="true"></i>
       LinkedIn
     </a></li>
-    <li class="list-icon"><a href="https://github.com/stemmlerjs/" rel="nofollow" target="_blank" title="Look through my Github profile">
+    <li class="list-icon"><a href="https://github.com/stemmlerjs?tab=overview&from=2017-12-01&to=2017-12-31" rel="nofollow" target="_blank" title="Look through my Github profile">
       <i class="fa fa-github" aria-hidden="true"></i>
       Github
     </a></li>

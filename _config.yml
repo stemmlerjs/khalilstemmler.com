@@ -77,16 +77,16 @@ theme_config:
   favicon: /source/favicon.ico
   logo:
   copyright:
-    since: 2017
+    since: 2018
     name: Khalil Stemmler
-    url: http://khalilstemmler.com
+    url: https://khalilstemmler.com
   menu:
     Home: /
+    Portfolio: /portfolio
+    # Blog: https://blog.khalilstemmler.com
     About: /about
     Contact: /contact
-    Portfolio: /portfolio
-    GitHub: https://github.com/stemmlerjs
-
+    
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:

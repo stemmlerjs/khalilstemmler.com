@@ -3,27 +3,96 @@ title: Portfolio
 date: 2017-09-16 22:33:14
 ---
 
-#### Univjobs
-![Univjobs](/images/proj/univjobs.png "Univjobs.")
-Univjobs is a platform that we built for students to connect to work, internships and gigs near campus. Just hitting 100+ users, we wanted to build a recruiting platform to make it easier for employers to find the right co-ops and new hires, and easier for small business owners to post their first job postings.
+#### Selected Works
 
-Our Full-Stack JavaScript platform is built on AWS and uses React/Redux + NodeJS/Express. As CTO, I design and implement all aspects of our technology stack from back to front including Caching, Authentication, Marketing Automation, Network Architecture and Database Security, Front-end Web Development, API Design, etc. I work with our Chief Design Officer and CEO to promote an Agile environment in order to shape our product into a tool that our users love. Also, I work with our DevOps Engineer to constantly enhance our workflow and speed up development.
+{% raw %}
+<div class="porfolio-items-container">
+  <div class="portfolio-item">
+    <div class="portfolio-item-name"><a href="/portfolio/univjobs">Univjobs</a></div>
+    <div class="portfolio-item-desc">A platform for students to connect to work, internships and gigs near campus.</div>
+    <div class="post-tags">
+      <span class="tagname">React</span>
+      <span class="tagname">Redux</span>
+      <span class="tagname">NodeJS</span>
+      <span class="tagname">ExpressJS</span>
+      <span class="tagname">Redis</span>
+      <span class="tagname">MySQL</span>
+    </div>
+  </div>
 
-My day-to-day operations can be summarized by finding the most effective way to push the product and our company forward.
+  <div class="portfolio-item">
+    <div class="portfolio-item-name"><a href="/portfolio/cost-analysis-tool">Cost Analysis Tool</a></div>
+    <div class="portfolio-item-desc">Client project enabling operators to determine profitability of hydraulic products.</div>
+    <div class="post-tags">
+      <span class="tagname">PHP</span>
+      <span class="tagname">Slim Framework</span>
+      <span class="tagname">React</span>
+      <span class="tagname">Redux</span>
+    </div>
+  </div>
 
-[Univjobs.ca](https://univjobs.ca)
-[Facebook](https://facebook.com/univjobs/)
-[Instagram](https://instagram.com/univjobs)
+  <div class="portfolio-item">
+    <div class="portfolio-item-name"><a href="/portfolio/etherwatch">Etherwatch</a></div>
+    <div class="portfolio-item-desc">Real-time networking monitoring application.</div>
+    <div class="post-tags">
+      <span class="tagname">AWS CloudWatch</span>
+      <span class="tagname">NodeJS</span>
+      <span class="tagname">Ionic</span>
+      <span class="tagname">AngularJS</span>
+      <span class="tagname">Python</span>
+      <span class="tagname">Bash</span>
+    </div>
+  </div>
+  
+</div>
+{% endraw %}
 
-#### ks12hx-01 Sequencer
-![ks12hx-01](/images/proj/ks12hx.png "This is one dope sampler.")
-a very tiny sampler/sequencer thingy.
+#### More Projects
 
-[I'm moving this somewhere else, it'll be back up soon.]
-[Github](https://github.com/stemmlerjs/mini-sampler)
+{% raw %}
+<div class="porfolio-items-container">
+  <div class="portfolio-item">
+    <div class="portfolio-item-name"><a href="/portfolio/glitchie">Glitchie</a></div>
+    <div class="portfolio-item-desc">Create glitch art with Java!</div>
+    <div class="post-tags">
+      <span class="tagname">Java</span>
+    </div>
+  </div>
 
-#### Glitchie
-![Glitchie](/images/proj/glitchie.jpg "Glitchie app.")
-A small GUI application written in Java that allows you to databend photos and undo databends.
+  <div class="portfolio-item">
+    <div class="portfolio-item-name"><a href="/portfolio/ks12hx">KS12HX-01 Sequencer</a></div>
+    <div class="portfolio-item-desc">HTML5 step sequencer utilizing the Web Audio API.</div>
+    <div class="post-tags">
+      <span class="tagname">HTML</span>
+      <span class="tagname">Web Audio API</span>
+      <span class="tagname">JavaScript</span>
+      <span class="tagname">JQuery</span>
+    </div>
+  </div>
 
-[Github](https://github.com/stemmlerjs/Glitch-Pond)
+  <div class="portfolio-item">
+    <div class="portfolio-item-name"><a href="/portfolio/asterisk">Asterisk Twilio Notifications</a></div>
+    <div class="portfolio-item-desc">Real-time missed VoIP call notifications using Twilio.</div>
+    <div class="post-tags">
+      <span class="tagname">Twilio</span>
+      <span class="tagname">NodeJS</span>
+      <span class="tagname">Asterisk</span>
+      <span class="tagname">Bootstrap</span>
+    </div>
+  </div>
+
+  <div class="portfolio-item">
+    <div class="portfolio-item-name"><a href="/portfolio/personal-media-server">Personal Media Server</a></div>
+    <div class="portfolio-item-desc">Angular media server to listen to my music from anywhere.</div>
+    <div class="post-tags">
+      <span class="tagname">MongoDB</span>
+      <span class="tagname">NodeJS</span>
+      <span class="tagname">AngularJS</span>
+    </div>
+  </div>
+  
+</div>
+{% endraw %}
+
+
+

@@ -15,6 +15,40 @@ body {
   cursor:pointer;
  }
 
+
+ /*
+  When the view goes below 1000px, it cuts into a single column,
+  otherwise, it's 2 column
+ */
+ 
+@media (min-width:1000px) {
+  
+  .porfolio-items-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 900px;
+  }
+}
+
+.portfolio-item {
+    width: 40%;
+    min-width: 376px;
+    margin-bottom: 53px;
+        margin-right: 30px;
+}
+
+.portfolio-item-name {
+    font-size:  23px;
+    font-weight:  bold;
+
+}
+
+.portfolio-item-desc {
+
+}
+
  #mc_embed_signup{
     background: #fff;
     clear: left;
@@ -130,7 +164,8 @@ body {
 
 .cta-front {
   margin-top: 6px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
+  font-size: 25px;
 }
 
 .link-colour {
@@ -429,6 +464,7 @@ border-top: 1px solid #eee;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    margin-top: 50px;
 }
 
 .title-name {
@@ -496,7 +532,7 @@ width: 30%;
 }
 
 .portrait {
-      width: 86%;
+      /* width: 86%; */
     /* position: sticky; */
 }
 

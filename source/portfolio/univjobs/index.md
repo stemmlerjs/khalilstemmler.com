@@ -4,6 +4,18 @@ date: 2017-09-16 22:33:14
 ---
 
 ![Univjobs](/images/proj/univjobs.png "Univjobs.")
+
+{% raw %}
+<div class="post-tags">
+    <span class="tagname">React</span>
+    <span class="tagname">Redux</span>
+    <span class="tagname">NodeJS</span>
+    <span class="tagname">ExpressJS</span>
+    <span class="tagname">Redis</span>
+    <span class="tagname">MySQL</span>
+</div>
+{% endraw %}
+
 Univjobs is a platform that we built for students to connect to work, internships and gigs near campus. Just hitting 300+ users, we wanted to build a recruiting platform to make it easier for employers to find the right co-ops and new hires, and easier for small business owners to post their first job postings.
 
 Our Full-Stack JavaScript platform is built on AWS and uses React/Redux + NodeJS/Express. 

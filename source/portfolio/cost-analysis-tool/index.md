@@ -3,7 +3,16 @@ title: Cost Analysis Tool
 date: 2017-09-16 22:33:14
 ---
 
-Lynch Fluids Control Inc. is a hydraulic components company responsible for designing, manufacturing, integrating & distributing to the mobile & industrial markets. 
+{% raw %}
+<div class="post-tags">
+      <span class="tagname">PHP</span>
+      <span class="tagname">Slim Framework</span>
+      <span class="tagname">React</span>
+      <span class="tagname">Redux</span>
+</div>
+{% endraw %}
+
+[Lynch Fluids Control Inc](http://www.lynch.ca/). is a hydraulic components company responsible for designing, manufacturing, integrating & distributing to the mobile & industrial markets. 
 
 Lynch contracted a software project through my school to build a Cost Analysis Tool so that operators could determine the profitability of items manufactured in real-time. 
 

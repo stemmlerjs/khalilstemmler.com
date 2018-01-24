@@ -15,6 +15,22 @@ body {
   cursor:pointer;
  }
 
+.list-lvl-1 {
+      margin-top: 10px;
+}
+
+.list-lvl-2 {
+  margin-left: 2%;
+}
+
+.list-lvl-3 {
+  margin-left: 4%;
+}
+
+.list-lvl-4 {
+  margin-left: 6%;
+}
+
 
  /*
   When the view goes below 1000px, it cuts into a single column,
@@ -43,6 +59,11 @@ body {
     font-size:  23px;
     font-weight:  bold;
 
+}
+
+.portfolio-item-image {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .portfolio-item-desc {
@@ -592,7 +613,7 @@ letter-spacing: -.06em;
     margin: 1.2em 0;
 
     font-family: Lato;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.00em;
 }
 
 a,
@@ -890,8 +911,8 @@ margin-top: 1em;
 .post-content li {
   margin-left: 1em;
   list-style-type: disc;
-      font-family: Lato;
-    letter-spacing: 0.06em;
+  font-family: Lato;
+  letter-spacing: 0.0em;
 }
 
 .post-content blockquote.warning {

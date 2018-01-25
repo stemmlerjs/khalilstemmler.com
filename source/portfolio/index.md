@@ -9,7 +9,9 @@ date: 2017-09-16 22:33:14
 <div class="porfolio-items-container">
   <div class="portfolio-item">
     <div class="portfolio-item-name"><a href="/portfolio/univjobs">Univjobs</a></div>
+    <a href="/portfolio/univjobs">
     <img class="portfolio-item-image" src="/images/proj/univjobs.png" alt="Univjobs" title="Univjobs.">
+    </a>
     <div class="portfolio-item-desc">A platform for students to connect to work, internships and gigs near campus.</div>
     <div class="post-tags">
       <span class="tagname">React</span>
@@ -23,7 +25,9 @@ date: 2017-09-16 22:33:14
 
   <div class="portfolio-item">
     <div class="portfolio-item-name"><a href="/portfolio/cost-analysis-tool">Cost Analysis Tool</a></div>
+    <a href="/portfolio/cost-analysis-tool">
         <img class="portfolio-item-image" src="/images/proj/lynch.JPG" alt="Cost Analysis Tool" title="Cost Analysis Tool.">
+        </a>
     <div class="portfolio-item-desc">Client project enabling operators to determine profitability of hydraulic products.</div>
     <div class="post-tags">
       <span class="tagname">PHP</span>
@@ -35,7 +39,9 @@ date: 2017-09-16 22:33:14
 
   <div class="portfolio-item">
     <div class="portfolio-item-name"><a href="/portfolio/etherwatch">Etherwatch</a></div>
+    <a href="/portfolio/etherwatch">
     <img class="portfolio-item-image" src="/images/proj/etherwatch.JPG" alt="Real-time networking monitoring application" title="Real-time networking monitoring application">
+    </a>
     <div class="portfolio-item-desc">Real-time networking monitoring application.</div>
     <div class="post-tags">
       <span class="tagname">AWS CloudWatch</span>
@@ -49,7 +55,9 @@ date: 2017-09-16 22:33:14
 
   <div class="portfolio-item">
     <div class="portfolio-item-name"><a href="/portfolio/iot-security">Security In The IOT Ecosystem</a></div>
+    <a href="/portfolio/iot-security">
     <img class="portfolio-item-image" src="/images/proj/security-in-iot.JPG" alt="IOT" title="IOT">
+    </a>
     <div class="portfolio-item-desc">Research paper on IoT device security challenges in the current internet landscape.</div>
     <div class="post-tags">
       <span class="tagname">Research Paper</span>
@@ -65,7 +73,9 @@ date: 2017-09-16 22:33:14
 <div class="porfolio-items-container">
   <div class="portfolio-item">
     <div class="portfolio-item-name"><a href="/portfolio/glitchie">Glitchie</a></div>
+    <a href="/portfolio/glitchie">
         <img class="portfolio-item-image" src="/images/proj/glitchie.jpg" alt="IOT" title="IOT">
+    </a>
     <div class="portfolio-item-desc">Create glitch art with Java!</div>
     <div class="post-tags">
       <span class="tagname">Java</span>
@@ -84,7 +94,9 @@ date: 2017-09-16 22:33:14
 
   <div class="portfolio-item">
     <div class="portfolio-item-name"><a href="/portfolio/ks12hx">KS12HX-01 Sequencer</a></div>
+    <a href="/portfolio/ks12hx">
     <img class="portfolio-item-image" src="/images/proj/ks12hx.png" alt="IOT" title="IOT">
+    </a>
     <div class="portfolio-item-desc">HTML5 step sequencer utilizing the Web Audio API.</div>
     <div class="post-tags">
       <span class="tagname">HTML</span>
@@ -96,7 +108,9 @@ date: 2017-09-16 22:33:14
 
   <div class="portfolio-item">
     <div class="portfolio-item-name"><a href="/portfolio/asterisk">Asterisk Twilio Notifications</a></div>
+    <a href="/portfolio/asterisk">
     <img class="portfolio-item-image" src="/images/proj/asterisk.JPG" alt="IOT" title="IOT">
+    </a>
     <div class="portfolio-item-desc">Real-time missed VoIP call notifications using Twilio.</div>
     <div class="post-tags">
       <span class="tagname">Twilio</span>
@@ -108,7 +122,9 @@ date: 2017-09-16 22:33:14
 
   <div class="portfolio-item">
     <div class="portfolio-item-name"><a href="/portfolio/personal-media-server">Personal Media Server</a></div>
+    <a href="/portfolio/personal-media-server">
     <img class="portfolio-item-image" src="/images/proj/music-player.jpg" alt="IOT" title="IOT">
+    </a>
     <div class="portfolio-item-desc">Angular media server to listen to my music from anywhere.</div>
     <div class="post-tags">
       <span class="tagname">MongoDB</span>

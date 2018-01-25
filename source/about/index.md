@@ -9,7 +9,7 @@ Part-time student in my last semester, working and living in the Greater Toronto
 
 I've been a Comp Sci student for 5 years and managed to gain about 3 years practical development experience working for awesome companies like __IBM__, __Pinnaca__, __iCare Home Health__, and __Jomar Softcorp__ in addition to building [a startup](http://oakvillenews.org/univjobs-boosts-job-opportunities-ontario/) and working client contracts.
 
-My professional goal is to find remote employment with a company that builds beautiful products using the latest web development technologies, allows me lead projects from the ground-up, and fosters lifelong learning.
+My professional goal is to find remote employment with a company that builds beautiful products using the latest web development technologies, employs passionate people and fosters lifelong learning.
 
 My personal goal is to be a part of a community of like-minded artists, engineers and creatives to make art, tech and experiences that are unique and memorable.
 
@@ -35,26 +35,26 @@ Internet Communications Technology Diploma - Sheridan College 2017
 
 # Core Competencies
 
-I know a lot of different languages and frameworks (I'm always learning a new one), but I think that it's more important to talk about what core software development skills I have and less about the actual choice of language because I can pick up new languages and frameworks without a problem. 
+I consider myself a JavaScript specialist with a very strong background in computer networking and databases.
 
-Mention how I specialize in JavaScript.
+I know a lot of different languages and frameworks (I'm always learning a new one), but I prefer to talk about core software development skills because I can pick up new languages and frameworks without a problem. 
 
-Having built my own tech startup, I have a deep understanding of a modern application development. I have professional experience designing applications from concept to inception. I'm highly knowledgeable in areas such as:
+Having built my own startup, I have a deep understanding of a modern application development. I have professional experience designing applications from concept to inception. I'm highly knowledgeable in areas such as:
 
-- software development design patterns
-- templating & routing
+- Software development design patterns
+- Templating & routing
 - API Design patterns
-- security principles
-- product life-cycle
+- Security principles
+- Product life-cycle
 - UI/UX design
-- project management and collaboration with Git and Asana
-- continuous integration tools
+- Project management and collaboration with Git and Asana
+- Continuous integration tools
 - SQL, data modeling and design
 
-Additionally, because I completed a degree in Internet Communications Technology, I also feel very 
+Additionally, because I completed a degree in Internet Communications Technology, I have these skills:
 
 • Deep understanding of TCP/IP
-• DevOps tooling
+• Web and app server configuration
 • Experience pen-testing with TCPDump, Wireshark and NMap
 • Strong Linux networking stack understanding; experience with IPtables and Conntrack 
 • Cisco IOS, Juniper JunOS
@@ -63,7 +63,8 @@ Additionally, because I completed a degree in Internet Communications Technology
 • VirtualBox, VMware, GNS3
 • Windows Active Directory
 • Amazon Web Services
-• Most knowledgeable with CloudWatch, VPC, IAM, EC2
+
+I prefer software development over network engineering and dev ops but I think that my knowledge of the Internet and what actually happens at every layer has made me a stronger software developer.
 
 {% raw %}
 If you'd like to see more details, check out <a href="#" onclick="window.open('/files/khalil-stemmler-software-developer-resume-2018.pdf'); return false;">my resume</a>.
@@ -96,7 +97,7 @@ I'm hungry to become the best developer I can be. I love leading projects, I lov
 
 # Fun Random Facts About Me
 
-- JavaScript is my favourite language and NodeJS is my go to backend and scripting language.
+- JavaScript is my favourite language and NodeJS is my go to backend and scripting language (although I've been really getting into Ruby these days).
 - I'm currently CTO of [Univjobs](https://univjobs.ca) / DCommons Lab Corp and work 2 hours a day on company tasks.
 - My favourite album is "[Junkyard](https://youtu.be/Q88nEF9cbbk)" by The Birthday Party.
 - ~~I enjoy~~ I'm addicted to reading code, engineering, and self-improvement books.
@@ -104,9 +105,8 @@ I'm hungry to become the best developer I can be. I love leading projects, I lov
 - My second favourite album is "[Rock and Roll Nightclub](https://www.youtube.com/watch?v=JoiMqsp8xSo)" by Mac Demarco.
 - I'm really into [Brutalist UX](https://www.uxbrutalism.com/) and design my art sites with respect to this framework
 
-
-
-
-
+{% raw %}
+<br/>
+{% endraw %}
 
 ![Alternative Text](/images/coding.png "Me, coding")

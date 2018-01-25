@@ -36,6 +36,9 @@ Charles Javelona, CEO of Univjobs pitching at the 2018 iCube Pitch Competition. 
 
 As an entrepreneur, building Univjobs after participating in YCombinator's Startup School has been one of the most fulfilling experiences in my software development career so far.
 
+![Univjobs](/images/proj/meet-ceo.JPG "Charles, with CEO of Apple having visited Sheridan College. Dated January 24th, 2018.")
+Charles, with CEO of Apple having visited Sheridan College. Dated January 24th, 2018. {figure}
+
 [Sign up for Univjobs](https://univjobs.ca)
 [Univjobs Facebook Page](https://facebook.com/univjobs/)
 [Univjobs Instagram](https://instagram.com/univjobs)

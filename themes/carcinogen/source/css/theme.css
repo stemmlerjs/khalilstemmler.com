@@ -31,6 +31,10 @@ body {
   margin-left: 6%;
 }
 
+.mekinda img {
+  max-width: 189px !important;
+}
+
 
  /*
   When the view goes below 1000px, it cuts into a single column,
@@ -46,13 +50,22 @@ body {
     flex-wrap: wrap;
     width: 900px;
   }
+  
 }
+
+
 
 .portfolio-item {
     width: 40%;
-    min-width: 376px;
+    /* max-width: 376px; */
     margin-bottom: 53px;
-        margin-right: 30px;
+    margin-right: 30px;
+}
+
+@media (max-width:1000px) {
+.portfolio-item {
+      width: 100% !important;
+  }
 }
 
 .portfolio-item-name {
@@ -1284,6 +1297,7 @@ pre .strong {
   .barba-flex {
     justify-content: center;
     flex-direction: column;
+    margin-top:0px;
   }
 
   .barba-container {
@@ -1296,6 +1310,7 @@ pre .strong {
   .barba-side {
     opacity: 0;
     height: 0px;
+    margin-top: 0px;
   }
 
   .title-name {
@@ -1376,7 +1391,7 @@ pre .strong {
   .post-content h1, .post-block .post-title {
     margin-top: 9px;
     font-size: 2em;
-    font-size: 3em !important;
+    font-size: 2em !important;
 }
 
   .contact-links-container {

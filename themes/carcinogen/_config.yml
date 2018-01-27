@@ -8,8 +8,8 @@ menu:
   GitHub: 
   RSS: /atom.xml
 
-favicon: /favicon.svg
-logo: /logo.svg
+favicon: /favicon.ico
+logo: /logo.ico
 
 # Disqus shortname
 disqus:

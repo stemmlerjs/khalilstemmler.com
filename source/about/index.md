@@ -5,6 +5,8 @@ date: 2017-09-16 22:31:55
 
 # Where I am in my journey
 
+![Alternative Text](/images/professional.JPG "Me") {mekinda}
+
 Part-time student in my last semester, working and living in the Greater Toronto Area.
 
 I've been a Comp Sci student for 5 years and managed to gain about 3 years practical development experience working for awesome companies like __IBM__, __Pinnaca__, __iCare Home Health__, and __Jomar Softcorp__ in addition to building [a startup](http://oakvillenews.org/univjobs-boosts-job-opportunities-ontario/) and working client contracts.
@@ -35,11 +37,11 @@ Internet Communications Technology Diploma - Sheridan College 2017
 
 # Core Competencies
 
-I consider myself a JavaScript specialist with a very strong background in computer networking and databases.
+I consider myself a JavaScript specialist with a very strong background in computer networking and a very deep understanding of Java, SQL and Object Oriented programming.
 
 I know a lot of different languages and frameworks (I'm always learning a new one), but I prefer to talk about core software development skills because I can pick up new languages and frameworks without a problem. 
 
-Having built my own startup, I have a deep understanding of a modern application development. I have professional experience designing applications from concept to inception. I'm highly knowledgeable in areas such as:
+Having shipped production code in front of real users, I have excellent knowledge of modern application development practices. I have professional experience designing applications from concept to inception. I'm highly knowledgeable in areas such as:
 
 - Software development design patterns
 - Templating & routing
@@ -48,7 +50,7 @@ Having built my own startup, I have a deep understanding of a modern application
 - Product life-cycle
 - UI/UX design
 - Project management and collaboration with Git and Asana
-- Continuous integration tools
+- Continuous integration
 - SQL, data modeling and design
 
 Additionally, because I completed a degree in Internet Communications Technology, I have these skills:

@@ -69,14 +69,17 @@ body {
 }
 
 .portfolio-item-name {
-    font-size:  23px;
-    font-weight:  bold;
+font-size: 23px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #1CA8FF;
 
 }
 
 .portfolio-item-image {
   margin-top: 10px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .portfolio-item-desc {
@@ -1429,4 +1432,82 @@ pre .strong {
     margin-top: 0px;
   }
 }
+
+/*
+ Microsoft Edge CSS rules
+*/
+
+@supports (-ms-ime-align:auto) {
+  .branding a {
+    font-size: 20px;
+  }
+
+  .wrap {
+    max-width: 1200px;
+  }
+
+  header {
+    min-height: 165px;
+  }
+
+  header .nav-list-item a {
+    font-size: 16px;
+  }
+
+  header .nav-list-item {
+    padding: 10px 10px;
+  }
+
+  footer .copyright {
+    font-size: 14px;
+    margin: 40px 40px;
+    border-top: 1px solid #eee;
+    text-align: center;
+  }
+
+  .post .post-title {
+    font-size: 50px !important;
+}
+
+.post-content h4 {
+    margin-top: 1.4em;
+    font-size: 25px;
+}
+
+.post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
+    margin-bottom: 15px;
+}
+
+
+.portfolio-item-desc {
+  font-size: 15px;
+}
+
+p {
+    letter-spacing: -0.06em;
+    line-height: 1.8;
+    margin: 15px 0;
+    font-family: Lato;
+    letter-spacing: 0em;
+    font-size: 15px;
+}
+
+
+.post-content h1 {
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.post-content {
+    font-family: Lato;
+    font-size: 16px;
+}
+
+
+
+
+
+
+}
+
 

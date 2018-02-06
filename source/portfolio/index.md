@@ -53,6 +53,8 @@ date: 2017-09-16 22:33:14
     <div class="portfolio-item-desc">Research paper on IoT device security challenges in the current internet landscape.</div>
     <div class="post-tags">
       <span class="tagname">Research Paper</span>
+      <span class="tagname">Networking</span>
+      <span class="tagname">Security</span>
     </div>
   </div>
   
@@ -96,7 +98,7 @@ date: 2017-09-16 22:33:14
 
   <div class="portfolio-item">
     <div class="portfolio-item-name" onclick="javascript:window.location.href = '/portfolio/asterisk';">Asterisk Twilio Notifications</div>
-    <img class="portfolio-item-image" onclick="javascript:window.location.href = '/portfolio/asterisk';" src="/images/proj/asterisk.JPG" alt="IOT" title="IOT">\
+    <img class="portfolio-item-image" onclick="javascript:window.location.href = '/portfolio/asterisk';" src="/images/proj/asterisk.JPG" alt="IOT" title="IOT">
     <div class="portfolio-item-desc">Real-time missed VoIP call notifications using Twilio.</div>
     <div class="post-tags">
       <span class="tagname">Twilio</span>
@@ -108,7 +110,7 @@ date: 2017-09-16 22:33:14
 
   <div class="portfolio-item">
     <div class="portfolio-item-name" onclick="javascript:window.location.href = '/portfolio/personal-media-server';">Personal Media Server</div>
-    <img class="portfolio-item-image" onclick="javascript:window.location.href = '/portfolio/personal-media-server';" src="/images/proj/music-player.jpg" alt="IOT" title="IOT">
+    <img class="portfolio-item-image" onclick="javascript:window.location.href = '/portfolio/personal-media-server';" src="/images/proj/music.PNG" alt="IOT" title="IOT">
     <div class="portfolio-item-desc">Angular media server to listen to my music from anywhere.</div>
     <div class="post-tags">
       <span class="tagname">MongoDB</span>

@@ -82,8 +82,8 @@ theme_config:
     url: https://khalilstemmler.com
   menu:
     Home: /
+    Blog: https://blog.khalilstemmler.com
     Portfolio: /portfolio
-    # Blog: https://blog.khalilstemmler.com
     About: /about
     Contact: /contact
     

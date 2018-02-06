@@ -9,7 +9,7 @@ date: 2017-09-16 22:31:55
 
 Part-time student in my last semester, working and living in the Greater Toronto Area.
 
-I've been a Comp Sci student for 5 years and managed to gain about 3 years practical development experience working for awesome companies like __IBM__, __Pinnaca__, __iCare Home Health__, and __Jomar Softcorp__ in addition to building [a startup](http://oakvillenews.org/univjobs-boosts-job-opportunities-ontario/) and working client contracts.
+I've been a Comp Sci student for 5 years and managed to gain about 3 years practical development experience working for awesome companies like __IBM__, __Pinnaca__, __iCare Home Health__, and __Jomar Softcorp__ in addition to building [a student recruitment app](http://oakvillenews.org/univjobs-boosts-job-opportunities-ontario/) and working client contracts.
 
 My professional goal is to find remote employment with a company that builds beautiful products using the latest web development technologies, employs passionate people and fosters lifelong learning.
 
@@ -21,7 +21,7 @@ If my personal and professional goals collide, I'm a complete man.
 
 {% raw %}
 <br/>
-You can download <a href="#" onclick="window.open('/files/khalil-stemmler-software-developer-resume-2018.pdf'); return false;">my resume in PDF format</a> for your records if you like. It contains my employment history and technical skills.
+You can download <a href="#" onclick="window.open('/files/khalil-stemmler-software-developer-resume.pdf'); return false;">my resume in PDF format</a> for your records if you like. It contains my employment history and technical skills.
 {% endraw %}
 
 # Work History

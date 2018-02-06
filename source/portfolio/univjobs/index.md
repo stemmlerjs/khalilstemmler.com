@@ -16,28 +16,22 @@ date: 2017-09-16 22:33:14
 </div>
 {% endraw %}
 
-Univjobs is a platform that we built for students to connect to work, internships and gigs near campus. Just hitting 300+ users, we wanted to build a recruiting platform to make it easier for employers to find the right co-ops and new hires, and easier for small business owners to post their first job postings.
+![univjobs-gif](/gifs/univjobs-dash.gif)
 
-Our Full-Stack JavaScript platform is built on AWS and uses React/Redux + NodeJS/Express. 
+# What is Univjobs?
 
-I currently work part-time as CTO of Univjobs. 90% of my time is spent on high leverage activities about 10% is spent delegating tasks and assisting my team.
+Basically, being a broke college/university student wasn't fun. We wanted to see if we could help people find gigs and part-time jobs that were actually related to their area of study so that they could pay for groceries while learning something.
 
-I've designed all aspects of our technology stack from back to front including authentication, network infrastructure, front-end architecture, marketing automation, API and data model design. I work with our Chief Design Officer, DevOps Engineer and Junior Developer in agile sprints in order to use feedback to drive the product towards being a tool that users love and will tell all their friends.
+The pretty way to say it is that "Univjobs is a platform that we built for students to connect to work, internships and gigs near campus".
 
-We were recently mentioned in the Oakville news:
+As a developer, creating Univjobs after participating in YCombinator's Startup School and learning all of the modern web tools, practices and methodologies has been one of the most fulfilling and valuable experiences in my software development career so far.
 
-![Univjobs](/images/proj/univjobs-news.JPG "Univjobs in the Oakville News.")
-The Univjobs team, as featured in the Oakville News on January 12th, 2018. You can read the full article here: [http://oakvillenews.org/univjobs-boosts-job-opportunities-ontario/](http://oakvillenews.org/univjobs-boosts-job-opportunities-ontario/)  {figure}
+# What did I do?
 
-We also won 1st place at the iCube Pitch competition:
+- Led the development and assisted on the design of the Univjobs student recruitment platform.
+- Full stack development using Node.js, Express, React, Redis, AWS, and MariaDB.
 
-![Univjobs](/images/proj/univjobs-pitch.JPG "Charles Javelona, the CTO of Univjobs winning the iCube Pitch Competition.")
-Charles Javelona, CEO of Univjobs pitching at the 2018 iCube Pitch Competition. {figure}
-
-As an entrepreneur, building Univjobs after participating in YCombinator's Startup School has been one of the most fulfilling experiences in my software development career so far.
-
-![Univjobs](/images/proj/meet-ceo.JPG "Charles, with CEO of Apple having visited Sheridan College. Dated January 24th, 2018.")
-Charles, with CEO of Apple having visited Sheridan College. Dated January 24th, 2018. {figure}
+I've always believed that the best way to learn a new tool or a framework is to have a project to learn it on. Univjobs has been the project that I've used to learn CI/CD, testing frameworks, agile workflows, Webpack, Gulp, React, Redux, etc.
 
 [Sign up for Univjobs](https://univjobs.ca)
 [Univjobs Facebook Page](https://facebook.com/univjobs/)

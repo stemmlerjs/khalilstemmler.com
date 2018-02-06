@@ -3,6 +3,8 @@ title: Security In The IOT Ecosystem
 date: 2017-09-16 22:33:14
 ---
 
+![security paper](/images/proj/security.PNG "security paper") 
+
 This is a research paper that I wrote on IoT device security challenges in the current internet landscape.
 
 {% raw %}

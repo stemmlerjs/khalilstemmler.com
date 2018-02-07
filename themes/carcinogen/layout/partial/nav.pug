@@ -20,12 +20,7 @@ ul.nav.nav-list#nav-list.closed(data-open="false")
                 - var type = value.indexOf('.html') === -1 ? 'no-barba' : ''
                 a.nav-list-link(href=url_for(value) target=tar class=type)
                     != key.toUpperCase()
-    each item in [{ name: 'blog', url: 'https://blog.khalilstemmler.com'}, { name: 'music', url: 'music'}]
-        if item.name == 'blog'
+    each item in [{ name: 'music', url: 'music'}]
             li.nav-list-item.alt-nav-list-items(onclick="javascript:window.location.href = '" + item.url + "';")
-                a.nav-list-link(target=tar class=type)
-                    != item.name.toUpperCase()
-        else
-            li.nav-list-item.alt-nav-list-items(onclick="javascript:window.location.href = '/" + item.url + "';")
                 a.nav-list-link(target=tar class=type)
                     != item.name.toUpperCase()

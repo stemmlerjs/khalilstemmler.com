@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin-left: 10em; */
+    /* margin-right: 19%; */
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 4em;
+}
+
+.logoContainer {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.name {
+    font-size: 3em;
+    color: black;
+}
+
+.name a {
+    color: black;
+    text-decoration: none;
+}
+
+.title {
+    color: #8a8a8a;
+}
+
+.navigationItems {
+    display: flex;
+    flex-direction: row;
+        padding-top: 23px;
+}
+
+.navigationItemElement {
+    padding-left: 1.8em;
+    text-transform: uppercase;
+}
+
+.navigationItemElement a {
+    color: #8a8a8a;
+    font-weight: 500;
+}

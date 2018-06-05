@@ -5,6 +5,8 @@ body {
   background-color: #fff;
   font-family: "Helvetica Neue", sans-serif;
   border-top: solid 4px #f700a0;
+      padding: 0;
+    margin: 0;
 }
 
 /*
@@ -577,8 +579,8 @@ border-top: 1px solid #eee;
 }
 
 .portrait {
-      /* width: 86%; */
-    /* position: sticky; */
+       width: 86%; 
+     position: sticky; 
 }
 
 .front-container {

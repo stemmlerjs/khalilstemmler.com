@@ -36,7 +36,7 @@ collections:
         name: "projects"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "projects-page"}
-          - {label: "Projects", name: projects, widget: list, fields: [{label: "Title", name: "title", widget: "string"}, {label: "Body", name: "body", widget: "markdown"}, {label: "Picture", name: picture, widget: image }, {label: "Featured", name: featured, widget: boolean }, {label: Tags, name: tags, widget: list, fields: [{label: tag, widget: "string"}]}]}
+          - {label: "Projects", name: projects, widget: list, fields: [{label: "Title", name: "title", widget: "string"}, {label: "Body", name: "body", widget: "markdown"}, {label: "Picture", name: picture, widget: image }, {label: "Featured", name: featured, widget: boolean }, {label: "Link", name: 'Link', widget: "string"}, {label: Tags, name: tags, widget: list, fields: [{label: Tag, name: 'project_tag', widget: "string"}]}]}
 
       - file: "src/pages/products/index.md"
         label: "Products Page"

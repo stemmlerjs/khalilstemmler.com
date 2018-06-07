@@ -16,5 +16,7 @@ connect to meaningful employment.
 I write and speak about JavaScript, web design, development and business strategy in
 Ecommerce.
 
+When I'm not hacking away, I'm usually spending time with loved ones or making [music](https://soundcloud.com/cyanidecanaries/sets/cyanide-canaries-a).
+
 You can [reach out](/contact) to me if you'd like to chat — let's grab a coffee if
 you're in the GTA.

@@ -1,0 +1,33 @@
+.featuredProjectContainer {
+    margin-bottom: 2em;
+    flex-direction: row;
+    display: flex;
+}
+
+.featuredProjectContainer > div {
+    padding-left: 2em;
+    width: 50%;
+}
+
+.featuredProjectContainer > a {
+    width: 50%;
+}
+
+.otherProjectContainer {
+
+}
+
+.tag {
+    color: white;
+    background: #00b0e8;
+    /* font-weight: bold; */
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
+    padding: 7px;
+    display: inline-block;
+    border-radius: 3px;
+    padding-left: 1em;
+    padding-right: 1em;
+        margin-right: 9px;
+    margin-bottom: 9px;
+}

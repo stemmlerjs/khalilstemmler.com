@@ -1,22 +1,74 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-// import Features from '../components/Features'
-// import Testimonials from '../components/Testimonials'
-// import Pricing from '../components/Pricing'
 
-export const ProjectsPageTemplate = ({
-  projects
-}) => (
-  <section className="section section--gradient">
-    <div className="container">
+import styles from '../styles/Projects.module.css'
+
+const Tags = (props) => {
+  return (
+    <div>
       {
-        projects.map((project, index) => {
-          return <div key={index}>{project.title}</div>
+        props.tags.map((tag, index) => {
+          return (
+            <div className={styles.tag} key={index}>{tag.project_tag}</div>
+          )
         })
       }
     </div>
-  </section>
-)
+  )
+}
+
+const FeaturedProjects = (props) => {
+  return (
+    <section>
+      {
+        props.projects.map((project, index) => {
+          return <div className={styles.featuredProjectContainer} key={index}>
+            <a href={project.link}><img src={project.picture}/></a>
+            <div>
+              <h2>{project.title}</h2>
+              <p>{project.body}</p>
+              <Tags tags={project.tags}/>
+            </div>
+          </div> 
+        })
+      }
+    </section>
+  )
+}
+
+const OtherProjects = (props) => {
+  return (
+    <section>
+      {
+        props.projects.map((project, index) => {
+          return <div key={index}>
+            <div>
+              <h2>{project.title}</h2>
+              <p>{project.body}</p>
+            </div>
+          </div> 
+        })
+      }
+    </section>
+  )
+}
+
+export const ProjectsPageTemplate = ({projects}) => {
+  console.log(projects, "projects")
+  return (
+    <div>
+      <h1>Featured Projects</h1>
+      <FeaturedProjects
+        projects={projects.filter(p => p.featured)}
+      />
+
+      <h1>Other Projects</h1>
+      <OtherProjects
+        projects={projects.filter(p => !p.featured)}
+      />
+    </div>
+  )
+}
 
 ProjectsPageTemplate.propTypes = {
   projects: PropTypes.array
@@ -57,6 +109,9 @@ export const projectPageQuery = graphql`
               body
               featured
               picture
+              tags {
+                project_tag
+              }
             }
           }
         }

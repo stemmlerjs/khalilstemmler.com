@@ -34,5 +34,7 @@ projects:
       Real-time network monitoring application written in server-side NodeJS,
       accompanied by a React Native app mobile app.
     title: Etherwatch
+  - body: Create your own Glitch art with this desktop app.
+    title: Glitchie
 ---
 

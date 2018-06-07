@@ -36,9 +36,7 @@
 
 /* ME  */
 
-.meContainer {
-    
-}
+.meContainer {}
 
 .meContainer img {
     height: 120px;
@@ -52,5 +50,16 @@
 @media (max-width: 1150px) {
     .meContainer img {
         opacity: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+         padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .container h1 {
+        text-align: center;
     }
 }

@@ -2,20 +2,49 @@
     
 }
 
-.container .form-label.form-label-auto { display: block; float: none; text-align: left; width: inherit; }
-.container .form-label-left{
-        width:150px;
-    }
-    .container .form-line{
-        padding-top:12px;
-        padding-bottom:12px;
-    }
-    .container .form-label-right{
-        width:150px;
-    }
-    .container .form-all{
-        width:690px;
-        color:#555 !important;
-        font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif;
-        font-size:14px;
-    }
+.formStyles {
+
+}
+
+.formStyles input {
+        width: 100%;
+    border-radius: 2px;
+    border: solid 1px #c9c9c9;
+    padding: 4px;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.formStyles select {
+        width: 100%;
+    border-radius: 2px;
+    border: solid 1px #c9c9c9;
+    padding: 4px;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.formStyles textarea {
+        width: 100%;
+    border-radius: 2px;
+    border: solid 1px #c9c9c9;
+    padding: 4px;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.formStyles input[type="submit"] {
+    width: 50%;
+    background: #00b0e8;
+    color: white;
+    text-transform: uppercase;
+    font-style: italic;
+    border: solid 1px #00b0e8;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 7px;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,.2);
+}

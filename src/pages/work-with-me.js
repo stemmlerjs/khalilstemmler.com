@@ -101,7 +101,7 @@ class WorkWithMe extends React.Component {
         <p>Once you submit this form, weʼll get back to you within <b>24 hours</b>.</p>
 
 
-        <form id="contact_form" action="https://formspree.io/khalilstemmler@gmail.com" method="POST">
+        <form className={styles.formStyles} id="contact_form" action="https://formspree.io/khalilstemmler@gmail.com" method="POST">
           <h2>Your contact details</h2>
 
           <div>Your name (required) </div>
@@ -162,7 +162,20 @@ class WorkWithMe extends React.Component {
             <option value="30000+">$30000</option>
           </select>
 
-          <input type="submit" value="Send"/>
+          <div>Is there a specific deadline for this project's completion? (optional) </div>
+          <input type="date" name="completion_date"/>
+
+          <Divider/>
+
+          <h2>A few more things</h2>
+
+          <div>How did you hear about me? (required) </div>
+          <input required type="text" name="howd_you_hear_about_me"/>
+
+          <div>What's your favourite snack? </div>
+          <input type="text" name="fav_snack"/>
+          <br/><br/>
+          <input type="submit" value="Submit Enquiry"/>
         </form>
         
       </div>

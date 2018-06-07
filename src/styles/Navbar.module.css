@@ -154,6 +154,7 @@ z-index: 98;
 .overlayContainer h1 a {
   color:white;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .overlayOpen {

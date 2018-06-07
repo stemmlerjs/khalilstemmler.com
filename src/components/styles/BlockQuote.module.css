@@ -16,3 +16,9 @@
     color: #797979;
     margin-bottom: 0.6em;
 }
+
+@media (max-width: 600px) {
+    .blockQuote {
+        padding-left: 1em;
+    }
+}

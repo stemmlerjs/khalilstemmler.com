@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-netlify-cms",
-  "description": "Example Gatsby, and Netlify CMS project",
+  "name": "khalil-stemmler-website",
+  "description": "Khalil Stemmler's website built on Gatsby, and Netlify CMS",
   "version": "1.1.3",
-  "author": "Austin Green",
+  "author": "Khalil Stemmler",
   "dependencies": {
     "bulma": "^0.6.0",
     "gatsby": "^1.9.213",

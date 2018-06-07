@@ -1,8 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: "Annick Beau | Makeup Artist",
+    title: "Khalil Stemmler - Web & Shopify Developer / Designer",
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography.js`,
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {

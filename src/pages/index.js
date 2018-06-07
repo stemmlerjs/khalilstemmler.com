@@ -2,6 +2,21 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
+import Divider from '../components/Divider'
+import BlockQuote from '../components/BlockQuote'
+
+import styles from '../styles/Index.module.css'
+
+import me from '../img/me.jpg'
+
+const Me = () => {
+  return (
+    <div className={styles.meContainer}>
+      <img src={me}></img>
+    </div>
+  )
+}
+
 export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props
@@ -9,6 +24,37 @@ export default class IndexPage extends React.Component {
 
     return (
       <section>
+        <Me/>
+        <h1>I'm a software developer helping small to medium-sized businesses and creatives succeed with Shopify.</h1>
+
+        <h2>Application Development</h2>
+        <p>Need a custom app to improve your business? Have a good idea for the Shopify App store?</p>
+        <p>I'll help you design and build it.</p>
+
+        <h2>Migrations / Store Setup</h2>
+        <p>Coming from another ecommerce platform? Setting up your store for the first time?</p>
+
+        <BlockQuote 
+          text={'Knowing how to set up a theme for optimum conversion rate is something that most store owners simply don’t have experience to do.'}
+          author={'Kurt Elster'}
+          authorCompany={'Ethercycle'}
+          authorCompanySite={'https://ethercycle.com'}
+        />
+        <p>I'll plan and execute a migration and help you get your store setup for good conversion rates.</p>
+
+        <h2>Theme Development</h2>
+        <p>Want to customize the look and feel of your online store? Want specific functionality?</p>
+        <p>I'll work with you to get exactly what you're looking for.</p>
+
+        <h2>Integrations</h2>
+        <p>Is there software that you absolutely need to integrate with Shopify?</p>
+        <p>I'll hook it up.</p>
+
+        <Divider/>
+
+        <p>Interested in working together? <Link to="/contact">Let's chat</Link>.</p>
+        <p>Have a different type of project in mind? Here's a list of <Link to="/technologies">other technologies</Link> I'm pretty darn
+        good at that I can help you with.</p>
 
       </section>
     )
@@ -22,59 +68,6 @@ IndexPage.propTypes = {
     }),
   }),
 }
-
-var x  = {
-        /**
-         * <section className="section">
-        <div className="container">
-          <div className="content">
-            <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
-          </div>
-          {posts
-            .map(({ node: post }) => (
-              <div
-                className="content"
-                style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
-                key={post.id}
-              >
-                <p>
-                  <Link className="has-text-primary" to={post.fields.slug}>
-                    {post.frontmatter.title}
-                  </Link>
-                  <span> &bull; </span>
-                  <small>{post.frontmatter.date}</small>
-                </p>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button is-small" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
-                </p>
-              </div>
-            ))}
-        </div>
-      </section>
-         */
-      }
-
-/**
- * Notes on how this query is working:
- * 
- * It uses templateKey (which can be found in any of the markup files in pages/) in order
- * and it FILTERS in on only one of those (the "blog-post" one). So, what we're seeing is
- * that this query looks through all of those markups and only the one with "blog-post"
- * as it's template key gets returned.
- * 
- * That's pretty lit.
- * 
- * Now, after having filtered to only that single file, we're going to
- * look at all of the edges > nodes (which are the elements themselves) and only
- * return a max 400 word excerpt.
- * 
- * 
- */
 
 export const pageQuery = graphql`
   query IndexQuery {

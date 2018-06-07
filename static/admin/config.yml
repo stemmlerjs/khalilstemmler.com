@@ -42,6 +42,13 @@ collections:
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: Display_Picture, name: display_picture, widget: image}
 
+      - file: "src/pages/projects/index.md"
+        label: "Projects"
+        name: "projects"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "projects-page"}
+          - {label: "Projects", name: projects, widget: list, fields: [{label: "Title", name: "title", widget: "string"}, {label: "Body", name: "body", widget: "markdown"}, {label: "Picture", name: picture, widget: image }, {label: "Featured", name: featured, widget: boolean }]}
+
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"

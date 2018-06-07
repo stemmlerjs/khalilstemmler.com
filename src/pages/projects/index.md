@@ -26,5 +26,13 @@ projects:
       - project_tag: MySQL
       - project_tag: ReactJS
     title: Univjobs
+  - body: >-
+      Client project enabling operators to determine profitability of hydraulic
+      products.
+    title: Lynch Fluids - Cost Analysis Tool
+  - body: >-
+      Real-time network monitoring application written in server-side NodeJS,
+      accompanied by a React Native app mobile app.
+    title: Etherwatch
 ---
 

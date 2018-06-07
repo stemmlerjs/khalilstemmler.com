@@ -19,17 +19,6 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
-  # Gallery to hold all of our images at the front
-  - name: "gallery"
-    label: "Gallery"
-    folder: "src/img/gallery"
-    create: true # can other create
-    slug: "gallery-item-{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields: 
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "gallery-list"}
-      - {label: "Title", name: title, widget: string, default: 'Front page Gallery'}
-      - {label: "Gallery Item", name: "gallery_item", widget: "list", fields: [{label: Image, name: image, widget: image}] }
-
   - name: "pages"
     label: "Pages"
     files:
@@ -47,7 +36,7 @@ collections:
         name: "projects"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "projects-page"}
-          - {label: "Projects", name: projects, widget: list, fields: [{label: "Title", name: "title", widget: "string"}, {label: "Body", name: "body", widget: "markdown"}, {label: "Picture", name: picture, widget: image }, {label: "Featured", name: featured, widget: boolean }]}
+          - {label: "Projects", name: projects, widget: list, fields: [{label: "Title", name: "title", widget: "string"}, {label: "Body", name: "body", widget: "markdown"}, {label: "Picture", name: picture, widget: image }, {label: "Featured", name: featured, widget: boolean }, {label: Tags, name: tags, widget: list, fields: [{label: tag, widget: "string"}]}]}
 
       - file: "src/pages/products/index.md"
         label: "Products Page"

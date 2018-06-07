@@ -8,5 +8,23 @@ projects:
       - project_tag: Web Design
       - project_tag: JavaScript
     title: Fran World
+  - Link: 'https://univjobs.ca'
+    body: >-
+      Designed and developed the student recruitment platform, Univjobs.
+      Empowers students to find local part-time and recent-grad employment.
+
+
+      Univjobs is powered on NodeJS microservices, making it easy to add new
+      features and test.
+    featured: true
+    picture: /img/image 16.png
+    tags:
+      - project_tag: App Development
+      - project_tag: Web Design
+      - project_tag: JavaScript
+      - project_tag: NodeJS
+      - project_tag: MySQL
+      - project_tag: ReactJS
+    title: Univjobs
 ---
 

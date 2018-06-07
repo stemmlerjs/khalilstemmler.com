@@ -18,6 +18,8 @@ const GetStartedButton = () => {
 }
 
 function renderActiveIfOnPage (page) {
+  if (typeof window == "undefined") return navbarStyles.navigationItemElement;
+  
   return !!~window.location.href.indexOf(page)
     ? `${navbarStyles.selectedItem} ${navbarStyles.navigationItemElement}`
     : navbarStyles.navigationItemElement
@@ -54,6 +56,7 @@ const Overlay = (props) => {
       ? `${navbarStyles.overlayOpen} ${navbarStyles.overlayContainer}`
       : navbarStyles.overlayContainer}>
 
+      <h1 onClick={props.toggleBurgerMenu}><Link to="/">Home</Link></h1>
       <h1 onClick={props.toggleBurgerMenu}><Link to="/about">About</Link></h1>
       <h1 onClick={props.toggleBurgerMenu}><Link to="/projects">Projects</Link></h1>
       <h1 onClick={props.toggleBurgerMenu}><Link to="/contact">Contact</Link></h1>
@@ -85,6 +88,10 @@ class Navbar extends React.Component {
       ...this.state,
       menuOpen: !this.state.menuOpen
     })
+  }
+
+  componentDidMount = () => {
+
   }
 
   render = () => {

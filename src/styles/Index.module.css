@@ -47,6 +47,8 @@
     opacity: 1;
 }
 
+.landingTitle {}
+
 @media (max-width: 1150px) {
     .meContainer img {
         opacity: 0;
@@ -61,5 +63,13 @@
 
     .container h1 {
         text-align: center;
+    }
+
+    .landingTitle {
+        font-size: 1.5em!important;
+    }
+
+    ul {
+        margin-left: 2em !important;
     }
 }

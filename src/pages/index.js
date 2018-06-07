@@ -25,7 +25,7 @@ export default class IndexPage extends React.Component {
     return (
       <section>
         <Me/>
-        <h1>I'm a software developer helping small to medium-sized businesses and creatives succeed with Shopify.</h1>
+        <h1 className={styles.landingTitle}>I'm a software developer helping small to medium-sized businesses and creatives succeed with Shopify.</h1>
 
         <h2>Application Development</h2>
         <p>Need a custom app to improve your business? Have a good idea for the Shopify App store?</p>

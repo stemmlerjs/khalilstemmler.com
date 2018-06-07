@@ -20,5 +20,6 @@
 @media (max-width: 600px) {
     .blockQuote {
         padding-left: 1em;
+        font-size: 0.7em;
     }
 }

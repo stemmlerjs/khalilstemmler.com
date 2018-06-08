@@ -18,7 +18,6 @@ const Tags = (props) => {
 }
 
 const FeaturedProjects = (props) => {
-  console.log(props.projects, "featured")
   return (
     <section>
       {

@@ -3,12 +3,14 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+
 import './all.sass'
 
 import styles from '../styles/Index.module.css'
 
 const TemplateWrapper = ({ children }) => (
-  <div style={{    maxWidth: '1260px', margin: '0 auto'}}>
+  <div>
     <Helmet 
       title="Khalil Stemmler - Web & Shopify Developer / Designer" 
 
@@ -47,8 +49,9 @@ const TemplateWrapper = ({ children }) => (
       ]}
 
     />
-    <Navbar />
-    <div className={styles.container}>{children()}</div>
+    <Navbar style={{  maxWidth: '1260px', margin: '0 auto'}}/>
+    <div style={{  maxWidth: '1260px', margin: '0 auto', minHeight: '58%'}} className={styles.container}>{children()}</div>
+    <Footer/>
   </div>
 )
 

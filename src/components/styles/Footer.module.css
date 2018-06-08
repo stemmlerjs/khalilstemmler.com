@@ -1,0 +1,163 @@
+.container {
+  background: #2F373A;
+  color: white;
+}
+
+.topFooter {
+    padding: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 16px;
+    border-bottom: solid 1px #595959;
+    padding-left: 2em;
+    padding-right: 2em;
+        align-items: center;
+        flex-direction: row;
+}
+
+.mailListCopy {
+    width: 40%;
+    line-height: 18px;
+    color: #dddddd;
+}
+
+.mailchimpContainer {
+  width: 60%;
+}
+
+.mailchimpContainer form {
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.mailchimpContainer input {
+    border: 1px solid #fff;
+    padding: 5px;
+    margin-left: 1em;
+    cursor: pointer;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+}
+
+.mailchimpContainer input[type="email"] {
+  width: 100%;
+}
+
+.mailchimpContainer input[type="submit"] {
+  color: white;
+    background: #ee009e;
+    border: solid 1px #ee009e;
+    padding: 5px;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: 10px;
+}
+
+.mailchimpContainer form > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.mailchimpContainer #mc-embedded-subscribe {
+color: white;
+    background: #ee009e;
+    border: solid 1px #ee009e;
+    padding: 5px;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: 5px;
+}
+
+.mailchimpContainer > div {
+      text-align: right;
+    display: flex;
+}
+
+.mailchimpContainer button {
+      
+}
+
+.bottomFooter {
+    padding: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 16px;
+    border-bottom: solid 1px #595959;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.bottomFooter h3 {
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-right: 2em;
+}
+
+.bottomFooter h3 a {
+  color: white;
+}
+
+.bottomFooterFlex {
+  display: flex;
+  flex-direction: row;
+}
+
+.logosContainer {
+      padding: 1em;
+    /* display: -webkit-box; */
+    display: -ms-flexbox;
+    /* display: flex; */
+    /* font-size: 16px; */
+    /* border-bottom: 1px solid #595959; */
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.logosContainer img {
+    display: inline-block;
+    max-width: 20em;
+    margin-bottom: 0;
+    margin-right:5em;
+}
+
+.signature {
+ width: 100%;
+    color: silver;
+    text-align: right;
+    font-size: 14px;
+
+}
+
+@media (max-width: 500px) {
+  .signature {
+    text-align: left;
+  }
+}
+
+@media (max-width: 680px) {
+  .topFooter {
+    flex-direction: column;
+  }
+  .mailListCopy {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .mailchimpContainer {
+    width: 100%;
+  }
+
+  .bottomFooter {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bottomFooterFlex:nth-of-type(1) {
+    margin-bottom: 1em;
+    text-align: center;
+  }
+}

@@ -9,7 +9,7 @@ const Tags = (props) => {
       {
         props.tags.map((tag, index) => {
           return (
-            <div className={styles.tag} key={index}>{tag.project_tag}</div>
+            <div className={styles.tag} key={index}>{tag}</div>
           )
         })
       }
@@ -18,6 +18,7 @@ const Tags = (props) => {
 }
 
 const FeaturedProjects = (props) => {
+  console.log(props.projects, "featured")
   return (
     <section>
       {
@@ -54,7 +55,6 @@ const OtherProjects = (props) => {
 }
 
 export const ProjectsPageTemplate = ({projects}) => {
-  console.log(projects, "projects")
   return (
     <div>
       <h1>Featured Projects</h1>
@@ -75,44 +75,40 @@ ProjectsPageTemplate.propTypes = {
 }
 
 const ProjectsPage = ({ data }) => {
-  console.log(data)
-  const { frontmatter } = data.allMarkdownRemark.edges[0].node
+  const edges = data.allMarkdownRemark.edges;
 
   return (
     <ProjectsPageTemplate
-      projects={frontmatter.projects}
+      projects={edges.map(edge => edge.node.frontmatter)}
     />
   )
 }
 
-ProjectsPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
-}
+// ProjectsPage.propTypes = {
+//   data: PropTypes.shape({
+//     markdownRemark: PropTypes.shape({
+//       frontmatter: PropTypes.object,
+//     }),
+//   }),
+// }
 
 export default ProjectsPage
 
 export const projectPageQuery = graphql`
   query ProjectsPageQuery {
   allMarkdownRemark(
-      filter: { frontmatter: { templateKey: { eq: "projects-page" } } }
+      filter: { frontmatter: { templateKey: { eq: "project-page" } } }
     ) {
       edges {
         node {
           frontmatter {
             title
-            projects {
-              title
-              body
-              featured
-              picture
-              tags {
-                project_tag
-              }
-            }
+            body
+            featured
+            link
+            picture
+            description
+            tags
           }
         }
       }

@@ -8,6 +8,7 @@ import BlockQuote from '../components/BlockQuote'
 import styles from '../styles/Index.module.css'
 
 import me from '../img/me.jpg'
+import partner from '../img/partner-logo/shopify-partner.png'
 
 const Me = () => {
   return (
@@ -25,7 +26,9 @@ export default class IndexPage extends React.Component {
     return (
       <section>
         <Me/>
-        <h1 className={styles.landingTitle}>I'm a software developer helping small to medium-sized businesses and creatives succeed with Shopify.</h1>
+        <h1 className={styles.landingTitle}>I'm a software developer helping businesses and creatives succeed with Shopify.</h1>
+        
+        <img src={partner}/>
 
         <h2>Application Development</h2>
         <p>Need a custom app to improve your business? Have a good idea for the Shopify App store?</p>
@@ -53,8 +56,10 @@ export default class IndexPage extends React.Component {
         <Divider/>
 
         <p>Interested in working together? <Link to="/contact">Let's chat</Link>.</p>
-        <p>Have a different type of project in mind? Here's a list of <Link to="/technologies">other technologies</Link> I'm pretty darn
-        good at that I can help you with.</p>
+
+        <h2>Have a different type of project in mind?</h2> 
+        
+        <p>Check out some <Link to="/technologies">other tricks</Link> this guy can do for your business.</p>
 
       </section>
     )

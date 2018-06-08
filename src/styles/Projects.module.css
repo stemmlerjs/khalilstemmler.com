@@ -31,3 +31,22 @@
         margin-right: 9px;
     margin-bottom: 9px;
 }
+
+@media (max-width:790px) {
+    .featuredProjectContainer {
+        flex-direction: column;
+    }
+
+    .featuredProjectContainer > a {
+        width: 100%;
+    }
+
+    .featuredProjectContainer > div {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .featuredProjectContainer img {
+        width: 100%;
+    }
+}

@@ -135,11 +135,32 @@ color: white;
   .signature {
     text-align: left;
   }
+
+  .logosContainer {
+    text-align: center;
+  }
+
+  .logosContainer > img {
+    margin-right:0;
+    width: 100%;
+        max-width: 230px;
+  }
+
+  .signature {
+    text-align: center;
+  }
+
+  .mailchimpContainer input {
+    margin-left: 0;
+  }
+  
 }
 
 @media (max-width: 680px) {
   .topFooter {
     flex-direction: column;
+        padding-left: 1em;
+    padding-right: 1em;
   }
   .mailListCopy {
     width: 100%;

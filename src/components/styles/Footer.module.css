@@ -80,7 +80,7 @@ color: white;
 }
 
 .bottomFooter {
-    padding: 1em;
+    padding: 3em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -88,10 +88,11 @@ color: white;
     border-bottom: solid 1px #595959;
     padding-left: 2em;
     padding-right: 2em;
+        align-items: center;
 }
 
 .bottomFooter h3 {
-    font-weight: 500;
+    font-weight: normal;
     text-transform: uppercase;
     margin-right: 2em;
 }
@@ -118,9 +119,10 @@ color: white;
 
 .logosContainer img {
     display: inline-block;
-    max-width: 20em;
+    max-width: 191px;
     margin-bottom: 0;
-    margin-right:5em;
+    margin-right: 5em;
+    width: 15em;
 }
 
 .signature {
@@ -129,6 +131,19 @@ color: white;
     text-align: right;
     font-size: 14px;
 
+}
+
+.footerSocialContainer {
+    margin-left: 3em;
+    display: flex;
+}
+
+.footerSocialContainer img {
+    width: 64px;
+    min-width: 24px;
+    margin-right: 1em;
+    margin-bottom: 0;
+    max-width: 24px;
 }
 
 @media (max-width: 500px) {
@@ -171,14 +186,23 @@ color: white;
   .mailchimpContainer {
     width: 100%;
   }
+}
 
+
+@media (max-width: 790px) {
   .bottomFooter {
     flex-direction: column;
     align-items: center;
+    align-items: flex-start;
   }
 
   .bottomFooterFlex:nth-of-type(1) {
     margin-bottom: 1em;
     text-align: center;
+  }
+
+  .footerSocialContainer {
+        margin-top: 1em;
+        margin-left: 0px;
   }
 }

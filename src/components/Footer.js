@@ -5,6 +5,11 @@ import styles from './styles/Footer.module.css'
 
 import khalil from '../img/partner-logo/khalil-logo.png'
 import partnerLogo from '../img/partner-logo/partner-logo-black.jpg'
+
+import twitter from '../img/twitter-logo.png'
+import linkedIn from '../img/linkedin-logo.png'
+import instagram from '../img/instagram-logo.png'
+
 import Link from 'gatsby-link'
 
 const MailChimpSignup = () => (
@@ -42,6 +47,12 @@ const Footer = (props) => {
           <h3><Link to="/about">About</Link></h3>
           <h3><Link to="/blog">Blog</Link></h3>
           <h3><Link to="/contact">Contact</Link></h3>
+        </div>
+
+        <div className={styles.footerSocialContainer}>
+          <a href={'https://twitter.com/stemmlerjs'}><img src={twitter}/></a>
+          <a href={'https://twitter.com/stemmlerjs'}><img src={linkedIn}/></a>
+          <a href={'https://twitter.com/stemmlerjs'}><img src={instagram}/></a>
         </div>
       </div>
 

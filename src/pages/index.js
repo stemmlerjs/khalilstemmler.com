@@ -19,16 +19,26 @@ const Me = () => {
 }
 
 export default class IndexPage extends React.Component {
+
+  scrollToTop () {
+
+  }
+
   render() {
     const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
+    // const { edges: posts } = data.allMarkdownRemark
+    console.log(data)
 
     return (
       <section>
         <Me/>
-        <h1 className={styles.landingTitle}>I'm a software developer helping businesses and creatives succeed with Shopify.</h1>
+        <h1 className={styles.landingTitle}>I'm a web developer / designer & Shopify Partner helping businesses succeed in Ecommerce.</h1>
         
         <img src={partner}/>
+        
+        <h2>Theme Development</h2>
+        <p>Want to customize the look and feel of your online store? Want specific functionality?</p>
+        <p>I'll work with you to get exactly what you're looking for.</p>
 
         <h2>Application Development</h2>
         <p>Need a custom app to improve your business? Have a good idea for the Shopify App store?</p>
@@ -44,10 +54,7 @@ export default class IndexPage extends React.Component {
           authorCompanySite={'https://ethercycle.com'}
         />
         <p>I'll plan and execute a migration and help you get your store setup for good conversion rates.</p>
-
-        <h2>Theme Development</h2>
-        <p>Want to customize the look and feel of your online store? Want specific functionality?</p>
-        <p>I'll work with you to get exactly what you're looking for.</p>
+        
 
         <h2>Integrations</h2>
         <p>Is there software that you absolutely need to integrate with Shopify?</p>
@@ -78,7 +85,7 @@ export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] },
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } }}
+      filter: { frontmatter: { templateKey: { eq: "project-page" } }}
     ) {
       edges {
         node {
@@ -90,7 +97,6 @@ export const pageQuery = graphql`
           frontmatter {
             title
             templateKey
-            date(formatString: "MMMM DD, YYYY")
           }
         }
       }

@@ -110,8 +110,8 @@ class WorkWithMe extends React.Component {
           <div>Your email address (required) </div>
           <input required type="email" name="_replyto"/>
 
-          <div>Your phone number (required)</div>
-          <input required type="number" name="phone_number"/>
+          <div>Your phone number (optional)</div>
+          <input type="number" name="phone_number"/>
 
           <Divider/>
 
@@ -129,8 +129,8 @@ class WorkWithMe extends React.Component {
           <div>Does your buusiness have a website? (optional) </div>
           <input type="text" name="website"/>
 
-          <div>How many people work in your business? (required) </div>
-          <select required name="business_company_size" form="contact_form">
+          <div>How many people work in your business? (optional) </div>
+          <select name="business_company_size" form="contact_form">
             <option value="me">Just me</option>
             <option value="2-10">2 - 10</option>
             <option value="11-30">11 - 30</option>
@@ -147,6 +147,7 @@ class WorkWithMe extends React.Component {
             <option value="custom_shopify_application">Custom Shopify Application</option>
             <option value="moving_to_shopify">Moving to Shopify</option>
             <option value="wordpress_development">WordPress Development</option>
+            <option value="app_development">Application Development</option>
             <option value="something_else">Something else</option>
           </select>
 

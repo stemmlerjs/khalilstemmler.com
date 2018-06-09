@@ -24,11 +24,7 @@
     font-weight: 700;
     color: #313131;
     margin-bottom: .9em;
-    margin-top: 2.6em;
-}
-
-.container h2:nth-of-type(1) {
-    margin-top: 1em;
+    margin-top: 0em ;
 }
 
 
@@ -38,6 +34,17 @@
     font-size: 18px;
     margin-top: 2em;
     margin-bottom: 2em;
+}
+
+.overrideContainer {
+}
+
+.overrideContainer h2 {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #313131;
+    margin-bottom: .9em;
+    margin-top: 0em;
 }
 
 /* ME  */
@@ -54,6 +61,17 @@
 }
 
 .landingTitle {}
+
+.image {
+  max-width: 100px;
+  margin-bottom: 0;
+}
+
+.imageContainer {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
 
 @media (max-width: 1470px) {
     .meContainer img {

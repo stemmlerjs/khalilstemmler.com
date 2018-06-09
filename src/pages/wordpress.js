@@ -54,7 +54,7 @@ export default class WordPress extends React.Component {
         </div>
 
         <h2>Email Automation</h2>
-        <p>Are you utilizing probably the best (and simplest) way to convert more leads?</p>
+        <p>Are you utilizing the best (and simplest) way to convert more leads?</p>
 
         <BlockQuote 
           text={'Sending emails is one of the best channels for growth. You can typically see 10% to 20% additional revenue by having an email automation in place.'}
@@ -72,7 +72,7 @@ the right time.</p>
 
         <h2 style={{marginTop:'3em'}}>Have a different type of project in mind?</h2> 
         
-        <p>Check out some <Link to="/technologies">other tricks</Link> this guy can do for your business.</p>
+        <p>Check out some <Link to="/services">other tricks</Link> this guy can do for your business.</p>
 
       </section>
     )

@@ -6,8 +6,7 @@ display_picture: /img/me.jpg
 
 I'm Khalil, a freelance web designer / developer specializing in Ecommerce theme and application development, particularly on Shopify.
 
-My background is as a software and network engineer, and Iʼve worked with numerous
-sorts of platforms, web frameworks and languages. 
+My background is as a software and network engineer, and Iʼve worked with numerous platforms, web frameworks and languages. 
 
 I'm also the CTO of [Univjobs](https://univjobs.ca), a student recruitment platform that helps recent grads
 connect to meaningful employment.

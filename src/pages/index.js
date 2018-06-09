@@ -66,7 +66,7 @@ export default class IndexPage extends React.Component {
 
         <h2>Have a different type of project in mind?</h2> 
         
-        <p>Check out some <Link to="/technologies">other tricks</Link> this guy can do for your business.</p>
+        <p>Check out some <Link to="/services">other tricks</Link> this guy can do for your business.</p>
 
       </section>
     )

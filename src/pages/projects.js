@@ -65,6 +65,8 @@ export const ProjectsPageTemplate = ({projects}) => {
       <OtherProjects
         projects={projects.filter(p => !p.featured)}
       />
+
+      <h2><i>More portfolio projects on the way!</i></h2>
     </div>
   )
 }

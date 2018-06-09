@@ -202,7 +202,7 @@ z-index: 98;
   }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 800px) {
   .navigationItems {
     display: none;
   }

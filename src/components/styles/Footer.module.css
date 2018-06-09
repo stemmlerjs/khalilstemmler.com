@@ -196,10 +196,20 @@ color: white;
     align-items: flex-start;
   }
 
-  .bottomFooterFlex:nth-of-type(1) {
+  .bottomFooterFlex {
     margin-bottom: 1em;
-    text-align: center;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
   }
+
+  .bottomFooter h3 {
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-right: 2em;
+    padding-bottom: 2em;
+}
 
   .footerSocialContainer {
         margin-top: 1em;

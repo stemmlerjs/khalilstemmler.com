@@ -58,7 +58,8 @@ const Overlay = (props) => {
 
       <h1 onClick={props.toggleBurgerMenu}><Link to="/">Home</Link></h1>
       <h1 onClick={props.toggleBurgerMenu}><Link to="/about">About</Link></h1>
-      <h1 onClick={props.toggleBurgerMenu}><Link to="/projects">Projects</Link></h1>
+      <h1 onClick={props.toggleBurgerMenu}><Link to="/projects">Work</Link></h1>
+      <h1 onClick={props.toggleBurgerMenu}><Link to="/services">Services</Link></h1>
       <h1 onClick={props.toggleBurgerMenu}><Link to="/contact">Contact</Link></h1>
       <Link onClick={props.toggleBurgerMenu} to="/work-with-me">
         <button className={navbarStyles.getStartedButtonOverlay}>Get started</button>
@@ -108,6 +109,7 @@ class Navbar extends React.Component {
         </div>
         <div className={navbarStyles.navigationItems}>
           <h2 className={renderActiveIfOnPage('about')}><Link to="/about">About</Link></h2>
+          <h2 className={renderActiveIfOnPage('services')}><Link to="/services">Services</Link></h2>
           <h2 className={renderActiveIfOnPage('projects')}><Link to="/projects">Projects</Link></h2>
           <h2 className={renderActiveIfOnPage('contact')}><Link to="/contact">Contact</Link></h2>
           <GetStartedButton/>

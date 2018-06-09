@@ -1,0 +1,12 @@
+
+.imagesContainer {
+max-width: 700px;
+}
+
+.imagesContainer img {
+  padding-left: 2em;
+}
+
+.imagesContainer img:nth-child(1) {
+  padding-left: 0;
+}

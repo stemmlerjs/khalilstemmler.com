@@ -8,7 +8,12 @@ const BlockQuote = (props) => {
     <quote className={styles.blockQuote}>
       <div>
         <p>{props.text}</p>
-        <p>- {props.author}, <a href={props.authorCompanySite}>{props.authorCompany}</a></p>
+        {
+          !!props.author == true
+          ? <p>- {props.author}, <a href={props.authorCompanySite}>{props.authorCompany}</a></p>
+          : ''
+        }
+        
       </div>
     </quote>
   )

@@ -55,6 +55,37 @@
 
 .landingTitle {}
 
+
+.toTopButton {
+    opacity: 0;
+    color: white;
+    padding: 2px;
+    position: fixed;
+    top: 30px;
+    right: 15px;
+    z-index: 20;
+    border: none;
+    outline: none;
+        background: #00b0e8;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 18px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+    transition: all .3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,.2);
+}
+
+.toTopButton i {
+        font-size: 2em;
+}
+
 @media (max-width: 1470px) {
     .meContainer img {
         opacity: 0;

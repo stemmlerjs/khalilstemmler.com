@@ -5,9 +5,19 @@ import styles from '../styles/WorkWithMe.module.css'
 
 import Divider from '../components/Divider'
 
+const todo = {
+
+}
+
 class WorkWithMe extends React.Component {
   constructor () {
     super();
+    this.state = {
+      todo: {
+        BLOG_POSTS_DONE: false,
+        RESOURCE_BLOG_DONE: false
+      }
+    }
   }
 
   componentDidMount = () => {
@@ -41,17 +51,26 @@ class WorkWithMe extends React.Component {
     customers</li>
         </ul>
 
-        <p>You can <Link to="/resources/20-tips">learn more</Link> about the kinds of things you can do to
+        {
+          this.state.todo.RESOURCE_BLOG_DONE
+            ? <p>You can <Link to="/resources/20-tips">learn more</Link> about the kinds of things you can do to
     ensure your ecommerce store is performing at it's full potential.</p>
+            : ''
+        }
+        
 
         <p>
-          Shopify is the <Link to="/blog/why-shopify">best ecommerce platform</Link> for any new business
+          Shopify is the {
+            this.state.todo.BLOG_POSTS_DONE 
+              ? <Link to="/why-shopify">best ecommerce platform</Link>
+              : <a href={'https://www.mlveda.com/blog/10-reasons-why-shopify-is-the-best-option/'}>best ecommerce platform</a>
+          } for any new business
     to build their store on- it's why I've chosen it as the backbone
     of my freelance business. If you're established on a different
     platform (such as WooCommerce) and would like to stay there,
     or you have an entirely non-ecommerce related project (an app,
-    website, some custom scripting), there are also a number of
-    <Link to="/technologies">other services</Link> that I offer and can do really well.
+    website, some custom scripting), there are also a number of 
+    <Link to="/services"> other services</Link> that I offer and can do really well.
         </p>
 
         <p>
@@ -81,8 +100,7 @@ class WorkWithMe extends React.Component {
         <ul>
           <li>are detail-oriented</li>
           <li>are decisive</li>
-          <li>pay their bills promptly</li>
-          <li>like me</li>
+          <li>like me!</li>
         </ul>
 
         <Divider/>
@@ -126,7 +144,7 @@ class WorkWithMe extends React.Component {
           <div>What does your business sell or do? (required) </div>
           <textarea required type="text" form="contact_form" name="business_sells"/>
 
-          <div>Does your buusiness have a website? (optional) </div>
+          <div>Does your business have a website? (optional) </div>
           <input type="text" name="website"/>
 
           <div>How many people work in your business? (optional) </div>

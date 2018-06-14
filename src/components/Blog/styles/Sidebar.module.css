@@ -54,3 +54,10 @@ color: #ee009e;
 .selected {
     color: #ee009e !important;
 }
+
+
+@media (max-width: 750px) {
+    .container {
+        display: none;
+    }   
+}

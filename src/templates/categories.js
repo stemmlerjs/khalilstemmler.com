@@ -22,7 +22,6 @@ class CategoryRoute extends React.Component {
 
     const category = this.props.pathContext.category
     const title = this.props.data.site.siteMetadata.title
-    const totalCount = this.props.data.posts.totalCount
 
     return (
       <section className={styles.container}>

@@ -22,10 +22,6 @@ class TagRoute extends React.Component {
 
     const tag = this.props.pathContext.tag
     const title = this.props.data.site.siteMetadata.title
-    const totalCount = this.props.data.posts.totalCount
-    const tagHeader = `${totalCount} post${
-      totalCount === 1 ? '' : 's'
-    } tagged with “${tag}”`
 
     return (
       <section className={styles.container}>

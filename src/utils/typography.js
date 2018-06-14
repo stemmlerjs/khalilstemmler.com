@@ -20,7 +20,11 @@ const typography = new Typography({
     },
     pre: {
       marginTop: '3em !important',
-      marginBottom: '3em !important'
+      marginBottom: '3em !important',
+      borderRadius: '0 !important'
+    },
+    ol: {
+      fontSize: '1.3em'
     }
     // blockquote: {
     //   ...adjustFontSizeTo('19px'),

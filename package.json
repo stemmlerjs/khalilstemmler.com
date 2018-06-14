@@ -26,6 +26,7 @@
     "prismjs": "^1.14.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
+    "react-disqus-comments": "^1.2.0",
     "react-ga": "^2.5.3",
     "react-helmet": "^5.2.0",
     "react-jotform-embed": "^1.0.3",

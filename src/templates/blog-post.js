@@ -4,6 +4,15 @@ import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import Content, { HTMLContent } from '../components/Content'
+import ReactDisqusComments from 'react-disqus-comments';
+
+import styles from '../styles/Blog.module.css'
+
+function getUniquePageIdentifier () {
+  return typeof window !== 'undefined' && window.location.href
+      ? typeof window !== 'undefined' && window.location.href
+      : 'https://khalilstemmler.com'
+}
 
 export const BlogPostTemplate = ({
   content,
@@ -12,8 +21,13 @@ export const BlogPostTemplate = ({
   tags,
   title,
   helmet,
+  date,
+  image,
+  category
 }) => {
   const PostContent = contentComponent || Content
+
+  console.log(category)
 
   return (
     <section className="section">
@@ -24,6 +38,13 @@ export const BlogPostTemplate = ({
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
+            
+            <h4 className={styles.date}>{date} — in <Link className={styles.category} to={`/blog/categories/${kebabCase(category)}/`}>{category}</Link></h4>
+
+            <div>
+              <img src={image}/>
+            </div>
+
             <p>{description}</p>
             <PostContent content={content} />
             {tags && tags.length ? (
@@ -32,12 +53,18 @@ export const BlogPostTemplate = ({
                 <ul className="taglist">
                   {tags.map(tag => (
                     <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                      <Link to={`/blog/tags/${kebabCase(tag)}/`}>{tag}</Link>
                     </li>
                   ))}
                 </ul>
               </div>
             ) : null}
+            <ReactDisqusComments
+              shortname="khalilstemmler-com"
+              identifier={ getUniquePageIdentifier() }
+              title={title}
+              url={ getUniquePageIdentifier() }
+              />
           </div>
         </div>
       </div>
@@ -64,6 +91,9 @@ const BlogPost = ({ data }) => {
       helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
+      date={post.frontmatter.date}
+      image={post.frontmatter.image}
+      category={post.frontmatter.category}
     />
   )
 }
@@ -86,6 +116,8 @@ export const pageQuery = graphql`
         title
         description
         tags
+        image
+        category
       }
     }
   }

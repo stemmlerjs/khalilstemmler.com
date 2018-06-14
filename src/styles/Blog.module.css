@@ -2,3 +2,17 @@
         display: flex;
     flex-direction: row;
 }
+
+.date {
+    color: #c9c9c9 !important;
+    margin-top: 0 !important;
+    margin-bottom: 3em !important;
+}
+
+.category {
+    color: #c9c9c9 !important;
+}
+
+.category:hover {
+    text-decoration: underline;
+}

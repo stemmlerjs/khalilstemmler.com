@@ -8,6 +8,8 @@ import BlockQuote from '../components/BlockQuote'
 import LandingPage from '../components/LandingPage'
 import CallToAction from '../components/CallToAction'
 import LetsBuildIt from '../components/LetsBuildIt'
+import FeaturedProject from '../components/FeaturedProject'
+import Skills from '../components/Skills'
 
 import styles from '../styles/Index.module.css'
 import partner from '../img/partner-logo/shopify-partner.png'
@@ -23,6 +25,8 @@ export default class IndexPage extends React.Component {
       <section>
         <LandingPage/>
         <LetsBuildIt/>
+        <Skills/>
+        <FeaturedProject/>
         <CallToAction/>
       </section>
     )

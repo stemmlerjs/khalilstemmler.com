@@ -6,6 +6,8 @@ import me from '../img/me.jpg'
 import Link from 'gatsby-link'
 import styles from './styles/LandingPage.module.css'
 
+import cowboy from '../img/cowboy.png'
+
 class LandingPage extends React.Component {
   constructor () {
     super();
@@ -23,6 +25,8 @@ class LandingPage extends React.Component {
     }, 2000);
   }
 
+  // 🤠
+
   componentDidMount () {
     console.log(this.interval)
   }
@@ -35,7 +39,7 @@ class LandingPage extends React.Component {
           </div>
           <div>
             <h1 className={styles.landingTitle}>
-              Howdy 🤠 I'm a software developer in Toronto. I can help you <span className={styles.ability}>
+              Howdy <img className={styles.cowboy} style={{ display: 'inline-block'}} src={cowboy}/>. I'm a software developer in Toronto. I can help you <span className={styles.ability}>
               {this.state.abilities[this.state.counter]}
               </span>.
             </h1>

@@ -1,0 +1,33 @@
+
+.outer {
+        margin-top: 7em;
+    margin-bottom: 7em;
+}
+
+.container {
+    position: relative;
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    background-color: #ff9df7;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+}
+
+.container:hover .mask {
+    opacity:0.4;
+}
+
+.projectTitle {
+        font-size: 1.4em;
+    font-weight: bold;
+    text-transform: unset;
+    margin-bottom: 0px;
+    margin-top: 1em;
+}

@@ -1,0 +1,32 @@
+.container {
+
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexContainer > div {
+    width: 50%;
+}
+
+.leftContainer {
+    font-size: 1.6em;
+    color: #2f2f2f;
+    width: 50%;
+    padding-right: 2em;
+}
+
+.elementHeader {
+        font-size: 1.6em;
+    margin-bottom: 1em;
+        color: #2f2f2f;
+}
+
+.flexContainer p {
+    margin-bottom: 2em;
+    margin-top: 1.5em;
+    color: #7f7f7f;
+    line-height: 1.4em;
+}

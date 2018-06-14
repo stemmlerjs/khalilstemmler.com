@@ -10,8 +10,14 @@ const typography = new Typography({
   bodyBoldWeight: '700',
   overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
     p: {
-      fontSize: '18px'
+      fontSize: '1.4em'
     },
+    h4: {
+          lineHeight: '3rem',
+    margin: '0',
+    color: '#c9c9c9',
+    fontSize: '1.1em !important'
+    }
     // blockquote: {
     //   ...adjustFontSizeTo('19px'),
     //   color: gray(41),

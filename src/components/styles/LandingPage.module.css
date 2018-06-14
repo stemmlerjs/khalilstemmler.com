@@ -86,6 +86,14 @@ background: #EE009E;
     top: -5px;
 }
 
+.cowboy {
+        display: inline-block;
+    width: 1.5em;
+    margin: 0;
+    position: relative;
+    top: 9px;
+}
+
 @media (max-width: 780px) {
   .container {
         margin-top: 18%;

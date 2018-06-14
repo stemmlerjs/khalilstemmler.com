@@ -18,7 +18,7 @@ export default class Blog extends React.Component {
 
     posts = helpers.blog.getPostsFromQuery(posts);
     categories = helpers.blog.getCategoriesFromQuery(categories);
-    tags = helpers.blog.etTagsFromQuery(tags);
+    tags = helpers.blog.getTagsFromQuery(tags);
 
     console.log(posts)
 

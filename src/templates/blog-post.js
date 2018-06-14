@@ -5,6 +5,9 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import Content, { HTMLContent } from '../components/Content'
 import ReactDisqusComments from 'react-disqus-comments';
+import SEO from '../components/SEO';
+
+import helpers from '../helpers'
 
 import styles from '../styles/Blog.module.css'
 
@@ -81,19 +84,26 @@ BlogPostTemplate.propTypes = {
 }
 
 const BlogPost = ({ data }) => {
-  const { markdownRemark: post } = data
+  let { markdownRemark: post } = data;
+
+  post = Object.assign({}, post.fields, post.frontmatter)
 
   return (
     <BlogPostTemplate
       content={post.html}
       contentComponent={HTMLContent}
-      description={post.frontmatter.description}
-      helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
-      tags={post.frontmatter.tags}
-      title={post.frontmatter.title}
-      date={post.frontmatter.date}
-      image={post.frontmatter.image}
-      category={post.frontmatter.category}
+      description={post.description}
+      helmet={
+        <SEO 
+          isBlogPost={true}
+          postData={post}
+          postImage={post.image}
+        />}
+      tags={post.tags}
+      title={post.title}
+      date={post.date}
+      image={post.image}
+      category={post.category}
     />
   )
 }
@@ -111,6 +121,9 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       id
       html
+      fields {
+        slug
+      }
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title

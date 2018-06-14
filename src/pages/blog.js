@@ -9,42 +9,16 @@ import BlogResults from '../components/Blog/BlogResults'
 
 import styles from '../styles/Blog.module.css'
 
-function getPostsFromQuery (posts) {
-  return posts.edges.map((edge) => edge.node)
-  .map((node) => Object.assign(
-    {}, node.frontmatter, node.fields)
-  );
-}
-
-function getCategoriesFromQuery (categories) {
-  return _.uniq(
-    categories.edges.map((edge) => edge.node)
-    .map((node) => Object.assign(
-      {}, node.frontmatter
-    ))
-    .map((c) => c.category)
-    .sort()
-  )
-}
-
-function getTagsFromQuery (tags) {
-  return _.uniq(tags.edges.map((edge) => edge.node)
-    .map((node) => Object.assign(
-      {}, node.frontmatter
-    ))
-    .reduce((acc, e) => acc.concat(e.tags), [])
-    .sort()
-  )
-}
+import helpers from '../helpers'
 
 export default class Blog extends React.Component {
   render() {
     const { data } = this.props
     let { categories, posts, tags } = data;
 
-    posts = getPostsFromQuery(posts);
-    categories = getCategoriesFromQuery(categories);
-    tags = getTagsFromQuery(tags);
+    posts = helpers.blog.getPostsFromQuery(posts);
+    categories = helpers.blog.getCategoriesFromQuery(categories);
+    tags = helpers.blog.etTagsFromQuery(tags);
 
     console.log(posts)
 

@@ -107,11 +107,11 @@ const MenuList = (props) => {
       {
         props.items.map((item, index) => {
           if (item.email) {
-            return <a href="mailto:khalilstemmler@gmail.com">{item.name}</a>
+            return <a key={index} href="mailto:khalilstemmler@gmail.com">{item.name}</a>
           }
 
           else if (item.external) {
-            return <a href={item.url}>{item.name}</a>
+            return <a key={index} href={item.url}>{item.name}</a>
           }
           
           else 

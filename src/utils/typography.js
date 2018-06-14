@@ -17,6 +17,10 @@ const typography = new Typography({
     margin: '0',
     color: '#c9c9c9',
     fontSize: '1.1em !important'
+    },
+    pre: {
+      marginTop: '3em !important',
+      marginBottom: '3em !important'
     }
     // blockquote: {
     //   ...adjustFontSizeTo('19px'),

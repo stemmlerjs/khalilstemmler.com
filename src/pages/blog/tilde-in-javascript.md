@@ -7,4 +7,5 @@ tags:
   - JavaScript
 category: Web Development
 image: /img/annick.jpg
+published: true
 ---

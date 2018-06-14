@@ -24,7 +24,7 @@ AboutPageTemplate.propTypes = {
 
 const AboutPage = ({ data }) => {
   const { markdownRemark: post } = data
-
+  
   return (
     <AboutPageTemplate
       contentComponent={HTMLContent}

@@ -103,7 +103,11 @@ export const pageQuery = graphql`
     }
     
     posts: allMarkdownRemark(
-        filter: { frontmatter: { templateKey: { eq: "blog-post" }}}
+        filter: { frontmatter: { 
+          templateKey: { eq: "blog-post" } 
+          published: { eq: true }
+        }
+      }
         limit: 1000
       ) {
         edges {

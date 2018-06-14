@@ -7,10 +7,12 @@ import Link from 'gatsby-link'
 
 import styles from './styles/BlogResults.module.css'
 
-const BlogFeatureImage = ({ image }) => {
+const BlogFeatureImage = ({ image, slug }) => {
   return (
     <div className={styles.featureImage}>
-      <img src={image}/>
+      <Link to={slug}>
+        <img src={image}/>
+      </Link>
     </div>
   )
 }
@@ -26,7 +28,7 @@ const TagsAndCategories = ({ tags, category }) => {
               tags.map((tag, index) => {
 
                 if ((tags.length !== 1) && (index == tags.length - 1)) {
-                  return <span>{`, `}<Link to={`/blog/tags/${kebabCase(tag)}`} key={index}>{tag}</Link></span>
+                  return <span key={index}>{`, `}<Link to={`/blog/tags/${kebabCase(tag)}`}>{tag}</Link></span>
                 }
 
                 return <Link to={`/blog/tags/${kebabCase(tag)}`} key={index}>{tag}</Link>
@@ -51,13 +53,13 @@ const BlogPost = ({ post }) => {
       />
       <BlogFeatureImage
         image={post.image}
+        slug={post.slug}
       />
     </div>
   )
 }
 
 const BlogResults = ({ posts }) => {
-  console.log(posts, "asd")
   return (
     <div className={styles.container}>
       {

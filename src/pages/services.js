@@ -15,6 +15,8 @@ import react from '../img/services/react-logo.png'
 import node from '../img/services/node-logo.png'
 import php from '../img/services/php-logo.svg'
 
+import LetsBuiltIt from '../components/LetsBuildIt'
+
 const Me = () => {
   return (
     <div className={styles.meContainer}>
@@ -28,7 +30,7 @@ export default class Services extends React.Component {
     return (
       <section className={styles.overrideContainer}>
         <h1>Services</h1>
-        
+        <LetsBuiltIt/>
         <div className={styles.imagesContainer}>
           <img style={{ width: '50%'}} src={shopify}/>
           <img style={{ width: '50%'}} src={wordpress}/>
@@ -62,7 +64,7 @@ Express, Sequelize, Redis, ElasticSearch, AWS and more.</p>
 I love designing and coding beautiful responsive websites. If you've got wireframes, I can take it from
 there - I can also help with coming up with a design that resonates with you and
 your audience base.</p>
-        <i>PS: Check out these <a href={'http://brutalistwebsites.com/'}>brutalist websites</a>. These are "a reaction by a younger generation to the lightness, optimism, and frivolity of today's web design". This emerging trend is particually effective in cutting through the monotony of all the other 3x3 landing pages most businesses use to promote their services.</i>
+        <i>PS: Check out these <a href={'http://brutalistwebsites.com/'}>brutalist websites</a>. These are "a reaction by a younger generation to the lightness, optimism, and frivolity of today's web design". This emerging trend is... interesting.</i>
 
 
         <h2>Something else in mind?</h2>

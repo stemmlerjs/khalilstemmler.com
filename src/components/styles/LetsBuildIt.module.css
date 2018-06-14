@@ -42,6 +42,7 @@
     justify-content: space-evenly;
     margin-top: 6em;
     margin-bottom: 6em;
+    flex-wrap: wrap;
 }
 
 .pillar {
@@ -54,6 +55,7 @@
     padding: 2em;
     max-width: 240px;
     box-shadow: 6px 20px 36px -6px rgba(0,0,0,.12);
+    margin-top: 3em;
 }
 .pillar > div {
         font-size: 1.1em;
@@ -65,4 +67,10 @@
     font-size: 1.4em;
     line-height: 1.4em;
     margin-bottom: 0.7em;
+}
+
+@media (max-width: 700px) {
+    .heroContainer {
+            flex-direction: column;
+    }
 }

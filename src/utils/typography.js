@@ -13,7 +13,7 @@ const typography = new Typography({
       fontSize: '1.4em'
     },
     h4: {
-          lineHeight: '3rem',
+          lineHeight: '1.4em',
     margin: '0',
     color: '#c9c9c9',
     fontSize: '1.1em !important'

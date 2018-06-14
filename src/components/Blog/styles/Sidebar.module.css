@@ -1,0 +1,52 @@
+.container {
+    color: #3a3a3a;
+    width: 30%;
+}
+
+.standard {
+    font-size: 18px;
+    line-height: 31px;
+    color: #5d5d5d;
+    text-decoration: none;
+}
+
+.standard a {
+    font-size: 18px;
+    line-height: 31px;
+    color: #5d5d5d;
+    text-decoration: none;
+}
+
+.header {
+    margin-bottom: 0.7em;
+}
+
+.standard a:hover {
+    color: #ee009e;
+}
+
+.section {
+        margin-bottom: 2em;
+}
+
+.sectionLarge {
+    margin-bottom: 4em;
+}
+
+.tags {
+
+}
+
+.tags a {
+     font-size: 18px;
+    line-height: 31px;
+    color: #5d5d5d;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.tags a:hover {
+color: #ee009e;
+}

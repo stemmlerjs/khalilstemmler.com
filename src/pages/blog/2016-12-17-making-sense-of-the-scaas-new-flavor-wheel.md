@@ -1,11 +1,13 @@
 ---
 templateKey: blog-post
-title: Making sense of the SCAA’s new Flavor Wheel
+title: I Made A Robot!
 date: 2016-12-17T15:04:10.000Z
-description: The Coffee Taster’s Flavor Wheel, the official resource used by coffee tasters, has been revised for the first time this year.
+description: I made a really cute little robot
 tags:
-  - flavor
-  - tasting
+  - Fun
+  - Arduino
+category: Web Development
+image: null
 ---
 
 ![flavor wheel](/img/flavor_wheel.jpg)

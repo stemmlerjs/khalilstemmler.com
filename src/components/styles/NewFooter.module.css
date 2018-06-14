@@ -50,7 +50,7 @@ max-width: 1260px;
 .menuList {
     display: flex;
     flex-direction: column;
-        min-width: 373px;
+     min-width: 24vw;
 }
 
 .menuListTitle {

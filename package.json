@@ -20,6 +20,7 @@
     "gatsby-transformer-sharp": "^1.6.21",
     "lodash": "^4.17.5",
     "lodash-webpack-plugin": "^0.11.4",
+    "moment": "^2.22.2",
     "netlify-cms": "^1.7.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
@@ -27,6 +28,7 @@
     "react-helmet": "^5.2.0",
     "react-jotform-embed": "^1.0.3",
     "sharp": "^0.20.3",
+    "underscore": "^1.9.1",
     "uuid": "^3.2.1",
     "web-animations-js": "^2.3.1"
   },

@@ -3,10 +3,12 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 4em;
-    padding-top: 3em;
+padding-top: 2em;
     display: flex;
     flex-direction: row;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .container img {
@@ -40,12 +42,17 @@
 
 .navigationItemElement {
     padding-left: 1.8em;
-    text-transform: uppercase;
+        font-size: 18px;
 }
 
 .navigationItemElement a {
     color: #2D2D2D;
     font-weight: normal;
+    transition: 0.2s ease-in;
+}
+
+.navigationItemElement a:hover {
+color: #EE009E;
 }
 
 .getStartedButton {
@@ -192,7 +199,7 @@ z-index: 98;
     color: #e900c5;
 }
 
-@media (max-width:845px) {
+@media (max-width:950px) {
   .regularLogo {
     display: none;
   }

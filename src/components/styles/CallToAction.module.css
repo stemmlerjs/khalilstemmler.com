@@ -1,0 +1,20 @@
+.container {
+    /* max-width: 80%; */
+    /* margin: 0 auto; */
+    margin-top: 2em;
+}
+
+.container p {
+        font-size: 1.6em;
+}
+
+.mail {
+    color: #00b0e8;
+    text-decoration: underline;
+    font-size: 1.6em;
+}
+
+.mail:hover {
+  transition: 0.2s ease-in;
+  color: #31cbfc;
+}

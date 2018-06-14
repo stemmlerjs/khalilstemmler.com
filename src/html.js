@@ -34,7 +34,7 @@ module.exports = class HTML extends React.Component {
 <script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.6436" type="text/javascript"></script>
           {css}
         </head>
-        <body style={{ borderTop: 'solid 4px #ee009e' }} {...this.props.bodyAttributes}>
+        <body style={{ borderTop: 'solid 2px #ee009e' }} {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
           <div
             key={`body`}

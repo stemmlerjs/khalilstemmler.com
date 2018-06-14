@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
 
+import ContactForm from '../components/ContactForm'
+
 export const ContactPageTemplate = ({ title, content, contentComponent, displayPicture }) => {
   const PageContent = contentComponent || Content
 
@@ -9,6 +11,7 @@ export const ContactPageTemplate = ({ title, content, contentComponent, displayP
     <section>
       <h1>{title}</h1>
       <PageContent className="content" content={content} />
+      <ContactForm/>
     </section>
   )
 }

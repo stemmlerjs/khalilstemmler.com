@@ -1,13 +1,14 @@
 ---
 templateKey: contact-page
 title: Contact
+instagram: stemmlerjs
+twitter: stemmlerjs
+github: stemmlerjs
+number: (519) 429-9674
 ---
 
-The best way to get in contact with me is either at **khalilstemmler@gmail.com**
-or on Twitter [@stemmlerjs](https://twitter.com/stemmlerjs).
+Howdy 🤠 If you submit this form, I'll get back to you within 12 hours. 
 
-If you [submit this form](/work-with-me), I'll get back to you within 24 hours on how we can start your project.
-
-Thanks! - Khalil
+You can also send me things via **khalilstemmler@gmail.com** or follow me on [Twitter](https://twitter.com/stemmlerjs) & [Instagram](https://instagram.com/stemmlerjs).
 
 

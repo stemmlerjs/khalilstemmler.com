@@ -45,7 +45,7 @@ specialize in Ecommerce development and you can count on me to help you meet you
 
         <h2>Shopify Development</h2>
         <p>Shopify is the best choice for anyone who wants to start selling their products online. 
-        Shopify already has a proven track record of addressing the common challenges faced by entrepreneurs and business owners. I <Link to="/">help business owners</Link> with their themes, private apps and customization.</p>
+        Shopify already has a proven track record of addressing the common challenges faced by entrepreneurs and business owners. I <Link to="/shopify">help business owners</Link> with their themes, private apps and customization.</p>
 
         <h2>WordPress Development</h2>
         <p>WordPress is the world's most widely used CMS and it's great for a large number

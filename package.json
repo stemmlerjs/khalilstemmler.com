@@ -27,7 +27,8 @@
     "react-helmet": "^5.2.0",
     "react-jotform-embed": "^1.0.3",
     "sharp": "^0.20.3",
-    "uuid": "^3.2.1"
+    "uuid": "^3.2.1",
+    "web-animations-js": "^2.3.1"
   },
   "keywords": [
     "gatsby"

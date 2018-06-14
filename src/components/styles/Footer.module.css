@@ -1,5 +1,5 @@
 .container {
-  background: #2F373A;
+  background: #262626;
   color: white;
 }
 
@@ -80,15 +80,17 @@ color: white;
 }
 
 .bottomFooter {
-    padding: 3em;
+padding: 3em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     font-size: 16px;
-    border-bottom: solid 1px #595959;
-    padding-left: 2em;
-    padding-right: 2em;
-        align-items: center;
+    border-bottom: 1px solid #595959;
+    padding: 1em 2em;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+        justify-content: center;
 }
 
 .bottomFooter h3 {
@@ -107,35 +109,35 @@ color: white;
 }
 
 .logosContainer {
-      padding: 1em;
-    /* display: -webkit-box; */
+padding: 1em;
     display: -ms-flexbox;
-    /* display: flex; */
-    /* font-size: 16px; */
-    /* border-bottom: 1px solid #595959; */
     padding-left: 2em;
     padding-right: 2em;
+    margin: 0 auto;
+    max-width: 500px;
 }
 
 .logosContainer img {
     display: inline-block;
     max-width: 191px;
     margin-bottom: 0;
-    margin-right: 5em;
     width: 15em;
 }
 
 .signature {
- width: 100%;
+    width: 100%;
     color: silver;
-    text-align: right;
+    text-align: center;
     font-size: 14px;
 
 }
 
 .footerSocialContainer {
     margin-left: 3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    max-height: 25px;
 }
 
 .footerSocialContainer img {
@@ -158,7 +160,7 @@ color: white;
   .logosContainer > img {
     margin-right:0;
     width: 100%;
-        max-width: 230px;
+    max-width: 175px;
   }
 
   .signature {
@@ -194,14 +196,14 @@ color: white;
     flex-direction: column;
     align-items: center;
     align-items: flex-start;
+        align-items: center;
+    text-align: center;
   }
 
   .bottomFooterFlex {
-    margin-bottom: 1em;
-    text-align: left;
     display: flex;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
   }
 
   .bottomFooter h3 {

@@ -16,9 +16,30 @@ class TemplateWrapper extends React.Component{
     super();
   }
 
+  animate () {
+    // if (typeof document !== undefined)
+    //   document.querySelector('#root')
+    //     .animate({
+    //       opacity: [0, 1],
+    //       easing: 'ease-out'
+    //   }, {
+    //       direction: 'alternate',
+    //       duration: 1500,
+    //   });
+  }
+
   componentDidMount () {
     window.addEventListener("scroll", this.handleScroll);
+    this.animate();
+    
   }
+
+  componentWillReceiveProps(nextProps) {
+    if (this.props.location.pathname !== nextProps.location.pathname) {
+      this.animate();
+    }
+  }
+  
 
   /**
    * handleScroll
@@ -54,14 +75,14 @@ class TemplateWrapper extends React.Component{
 
   render () {
     return (
-      <div>
+      <div id="root">
         <Helmet 
-          title="Khalil Stemmler - Web & Shopify Developer / Designer" 
+          title="Khalil Stemmler - Software Developer / Designer" 
 
           meta={[
             // Server side rendering meta data
-            { property: "og:title" ,  content: "Khalil Stemmler - Web & Shopify Developer / Designer" },
-            { property: "og:description" , content: "Freelance Web & Shopify Developer / Designer" },
+            { property: "og:title" ,  content: "Khalil Stemmler - Software Developer / Designer" },
+            { property: "og:description" , content: "Khalil Stemmler - Software Developer / Designer" },
             { property: "og:type" , content: "site" },
             { property: "og:url" , content: "khalilstemmler.com" },
             // { property: "og:image" , content: "<%= image %>" },

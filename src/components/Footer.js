@@ -12,6 +12,8 @@ import instagram from '../img/instagram-logo.png'
 
 import Link from 'gatsby-link'
 
+import newStyles from './styles/NewFooter.module.css'
+
 const MailChimpSignup = () => (
 <div id="mc_embed_signup">
 <form action="https://khalilstemmler.us17.list-manage.com/subscribe/post?u=6816d2889bed041b6e83840af&amp;id=44ae72b287" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" noValidate>
@@ -25,22 +27,33 @@ const MailChimpSignup = () => (
 </form>
 </div>
 )
+
+const TopFooter = (props) => {
+  return (
+    <div className={styles.topFooter}>
+      <div className={styles.mailListCopy}>Learn how to optimize and grow your online store on Shopify with weekly content.</div>
+      <div className={styles.mailchimpContainer}>
+        <MailChimpSignup/>
+      </div>
+      
+    </div>
+  )
+}
+
 const Footer = (props) => {
   return (
     <div className={styles.container}>
-
-      <div className={styles.topFooter}>
-        <div className={styles.mailListCopy}>Learn how to optimize and grow your online store on Shopify with weekly content.</div>
-        <div className={styles.mailchimpContainer}>
-          <MailChimpSignup/>
-        </div>
-        
-      </div>
+      {
+        true == false 
+        ? <TopFooter/>
+        : ''
+      }
+      
 
       <div className={styles.bottomFooter}>
         <div className={styles.bottomFooterFlex}>
           <h3>519.429.9674</h3>
-          <h3><Link to="/work-with-me">Start a project</Link></h3>
+          <h3><Link to="/contact">Start a project</Link></h3>
           <h3><Link to="/projects">Work</Link></h3>
         </div>
         <div className={styles.bottomFooterFlex}>
@@ -76,4 +89,70 @@ const Footer = (props) => {
   )
 }
 
-export default Footer
+const FooterHeader = () => {
+  return (
+    <div className={newStyles.footerHeaderContainer}>
+      <h3>Khalil Stemmler</h3>
+      <a href="mailto:khalilstemmler@gmail.com">khalilstemmler@gmail.com</a>
+      <p>519.429.9674</p>
+      <p>I'm a Canadian software developer. I can help you build your next project.</p>
+    </div>
+  )
+}
+
+const MenuList = (props) => {
+  return (
+    <div className={newStyles.menuList}>
+      <div className={newStyles.menuListTitle}>{props.title}</div>
+      {
+        props.items.map((item, index) => {
+          if (item.email) {
+            return <a href="mailto:khalilstemmler@gmail.com">{item.name}</a>
+          }
+
+          else if (item.external) {
+            return <a href={item.url}>{item.name}</a>
+          }
+          
+          else 
+            return <Link style={{ textDecoration: 'none'}} to={item.url} key={index}>{item.name}</Link>
+        })
+      }
+    </div>
+  )
+}
+
+const Menu = () => {
+  return (
+    <div className={newStyles.menuContainer}>
+      <MenuList title={'Menu'} items={[
+        { name: 'About', url: '/about' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'Services', url: 'services' }
+      ]}/>
+      <MenuList title={'Contact'} items={[
+        { name: 'Inquiry', url: '/contact' },
+        { name: 'khalilstemmler@gmail.com', url: 'khalilstemmler@gmail.com', email: true },
+        { name: '@stemmlerjs', url: 'https://twitter.com/stemmlerjs', external: true }
+      ]}/>
+
+      <MenuList title={'Social'} items={[
+        { name: 'GitHub', url: 'https://github.com/stemmlerjs', external: true },
+        { name: 'Twitter', url: 'https://twitter.com/stemmlerjs', external: true },
+        { name: 'Instagram', url: 'https://instagram.com/stemmlerjs', external: true },
+        { name: 'LinkedIn', url: 'https://www.linkedin.com/in/khalilstemmler/', external: true }
+      ]}/>
+    </div>
+  )
+}
+
+const NewFooter = (props) => {
+  return (
+    <div className={newStyles.container}>
+      <FooterHeader/>
+      <Menu/>
+    </div>
+  )
+}
+
+export default NewFooter

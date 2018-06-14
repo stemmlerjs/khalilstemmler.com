@@ -31,6 +31,10 @@ class LandingPage extends React.Component {
     console.log(this.interval)
   }
 
+  componentWillUnmount () {
+    clearInterval(this.interval)
+  }
+
   render () {
     return (
       <div className={styles.container}>

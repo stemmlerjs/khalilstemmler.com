@@ -14,31 +14,43 @@ export default {
      */
 
     getPostsFromQuery: (posts) => {
-      return posts.edges.map((edge) => edge.node)
-      .map((node) => Object.assign(
-        {}, node.frontmatter, node.fields)
-      );
+      if (posts) {
+        return posts.edges.map((edge) => edge.node)
+        .map((node) => Object.assign(
+          {}, node.frontmatter, node.fields)
+        );
+      }
+
+      return [];
     },
 
     getCategoriesFromQuery: (categories) => {
-      return _.uniq(
-        categories.edges.map((edge) => edge.node)
-        .map((node) => Object.assign(
-          {}, node.frontmatter
-        ))
-        .map((c) => c.category)
-        .sort()
-      )
+      if (categories) {
+        return _.uniq(
+          categories.edges.map((edge) => edge.node)
+          .map((node) => Object.assign(
+            {}, node.frontmatter
+          ))
+          .map((c) => c.category)
+          .sort()
+        )
+      }
+      return [];
     },
 
     getTagsFromQuery: (tags) => {
-      return _.uniq(tags.edges.map((edge) => edge.node)
-        .map((node) => Object.assign(
-          {}, node.frontmatter
-        ))
-        .reduce((acc, e) => acc.concat(e.tags), [])
-        .sort()
-      )
+      if (tags) {
+        return _.uniq(tags.edges.map((edge) => edge.node)
+          .map((node) => Object.assign(
+            {}, node.frontmatter
+          ))
+          .reduce((acc, e) => acc.concat(e.tags), [])
+          .sort()
+        )
+      }
+
+      return [];
+      
     }
   }
 

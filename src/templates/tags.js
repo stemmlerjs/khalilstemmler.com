@@ -14,7 +14,7 @@ class TagRoute extends React.Component {
     let posts = this.props.data.posts;
     let categories = this.props.data.categories;
     let tags = this.props.data.tags;
-    console.log(posts)
+
     posts = helpers.blog.getPostsFromQuery(posts);
     categories = helpers.blog.getCategoriesFromQuery(categories);
     tags = helpers.blog.getTagsFromQuery(tags);

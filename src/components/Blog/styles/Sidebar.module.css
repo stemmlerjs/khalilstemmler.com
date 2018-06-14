@@ -50,3 +50,7 @@
 .tags a:hover {
 color: #ee009e;
 }
+
+.selected {
+    color: #ee009e !important;
+}

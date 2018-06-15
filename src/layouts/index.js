@@ -97,7 +97,8 @@ class TemplateWrapper extends React.Component{
 
             // SEO Keywords
             { name:"keywords", content:"shopify developer, shopify developer oakville, shopify developer brantford, javascript developer, node shopify developer" }, 
-            { name:"author", content:"Khalil Stemler" }
+            { name:"author", content:"Khalil Stemler" },
+            { name: 'description', content: 'Khalil Stemmler is a Software Developer / Designer specializing in JavaScript and Ecommerce on Shopify'}
           ]}
 
           /**
@@ -115,6 +116,8 @@ class TemplateWrapper extends React.Component{
             { href: 'https://cdn.jotfor.ms/themes/CSS/566a91c2977cdfcd478b4567.css?', rel: 'stylesheet', type: 'text/css'},
             { href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', rel: 'stylesheet', type: 'text/css'}
           ]}
+
+          
 
         />
         <Navbar style={{  maxWidth: '1260px', margin: '0 auto'}}/>

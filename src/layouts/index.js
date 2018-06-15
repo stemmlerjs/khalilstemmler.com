@@ -106,14 +106,6 @@ class TemplateWrapper extends React.Component{
            */
 
           link={[
-            // { href: "https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i", rel: "stylesheet" },
-            { src: 'https://cdn.jotfor.ms/static/prototype.forms.js', type: "text/javascript"},
-            { src: 'https://cdn.jotfor.ms/static/jotform.forms.js?3.3.6436', type: "text/javascript"},
-            { href: 'https://cdn.jotfor.ms/static/formCss.css?3.3.6436', rel: 'stylesheet', type: 'text/css'},
-            { href: 'https://cdn.jotfor.ms/css/styles/nova.css?3.3.6436', rel: 'stylesheet', type: 'text/css'},
-
-            { href: 'https://cdn.jotfor.ms/css/printForm.css?3.3.6436', rel: 'stylesheet', type: 'text/css', media: "print" },
-            { href: 'https://cdn.jotfor.ms/themes/CSS/566a91c2977cdfcd478b4567.css?', rel: 'stylesheet', type: 'text/css'},
             { href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', rel: 'stylesheet', type: 'text/css'}
           ]}
 

@@ -77,6 +77,7 @@ export const pageQuery = graphql`
     }
     
     posts: allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
         filter: { frontmatter: { 
           templateKey: { eq: "blog-post" } 
           published: { eq: true }

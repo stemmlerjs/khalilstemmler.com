@@ -86,7 +86,7 @@ BlogPostTemplate.propTypes = {
 const BlogPost = ({ data }) => {
   let { markdownRemark: post } = data;
 
-  post = Object.assign({}, post.fields, post.frontmatter)
+  post = Object.assign({}, post, post.fields, post.frontmatter)
 
   return (
     <BlogPostTemplate

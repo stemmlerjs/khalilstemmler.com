@@ -7,6 +7,7 @@
     "bulma": "^0.6.0",
     "gatsby": "^1.9.213",
     "gatsby-link": "^1.6.37",
+    "gatsby-plugin-compression": "0.0.1",
     "gatsby-plugin-favicon": "^2.1.1",
     "gatsby-plugin-google-analytics": "^1.0.31",
     "gatsby-plugin-netlify": "^1.0.21",

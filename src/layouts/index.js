@@ -97,7 +97,7 @@ class TemplateWrapper extends React.Component{
 
             // SEO Keywords
             { name:"keywords", content:"shopify developer, shopify developer oakville, shopify developer brantford, javascript developer, node shopify developer" }, 
-            { name:"author", content:"Khalil Stemler" },
+            { name:"author", content:"Khalil Stemmler" },
             { name: 'description', content: 'Khalil Stemmler is a Software Developer / Designer specializing in JavaScript and Ecommerce on Shopify'}
           ]}
 

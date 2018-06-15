@@ -56,13 +56,13 @@ const Overlay = (props) => {
       ? `${navbarStyles.overlayOpen} ${navbarStyles.overlayContainer}`
       : navbarStyles.overlayContainer}>
 
-      <h1 onClick={props.toggleBurgerMenu}><Link to="/">Home</Link></h1>
-      <h1 onClick={props.toggleBurgerMenu}><Link to="/about">About</Link></h1>
-      <h1 onClick={props.toggleBurgerMenu}><Link to="/blog">Blog</Link></h1>
+      <div onClick={props.toggleBurgerMenu}><Link to="/">Home</Link></div>
+      <div onClick={props.toggleBurgerMenu}><Link to="/about">About</Link></div>
+      <div onClick={props.toggleBurgerMenu}><Link to="/blog">Blog</Link></div>
       {/*<h1 onClick={props.toggleBurgerMenu}><Link to="/projects">Work</Link></h1>*/}
       
-      <h1 onClick={props.toggleBurgerMenu}><Link to="/contact">Contact</Link></h1>
-      <h1 onClick={props.toggleBurgerMenu}><Link to="/services">Services</Link></h1>
+      <div onClick={props.toggleBurgerMenu}><Link to="/contact">Contact</Link></div>
+      <div onClick={props.toggleBurgerMenu}><Link to="/services">Services</Link></div>
       <Link onClick={props.toggleBurgerMenu} to="/work-with-me">
         <button className={navbarStyles.getStartedButtonOverlay}>Get started</button>
       </Link>
@@ -110,11 +110,11 @@ class Navbar extends React.Component {
           </Link>
         </div>
         <div className={navbarStyles.navigationItems}>
-          <h2 className={renderActiveIfOnPage('about')}><Link to="/about">About</Link></h2>
-          <h2 className={renderActiveIfOnPage('blog')}><Link to="/blog">Blog</Link></h2>
-          <h2 className={renderActiveIfOnPage('services')}><Link to="/services">Services</Link></h2>
+          <div className={renderActiveIfOnPage('about')}><Link to="/about">About</Link></div>
+          <div className={renderActiveIfOnPage('blog')}><Link to="/blog">Blog</Link></div>
+          <div className={renderActiveIfOnPage('services')}><Link to="/services">Services</Link></div>
           {/*<h2 className={renderActiveIfOnPage('projects')}><Link to="/projects">Projects</Link></h2>*/}
-          <h2 className={renderActiveIfOnPage('contact')}><Link to="/contact">Contact</Link></h2>
+          <div className={renderActiveIfOnPage('contact')}><Link to="/contact">Contact</Link></div>
           <GetStartedButton/>
         </div>
           {

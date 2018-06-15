@@ -17,6 +17,9 @@ module.exports = {
     //     // exclude: ["/preview/**", "/do-not-track/me/too/"],
     //   },
     // },
+    {
+      resolve: `gatsby-plugin-sitemap`
+    },
     `gatsby-plugin-compression`,
     {
       resolve: `gatsby-plugin-favicon`,

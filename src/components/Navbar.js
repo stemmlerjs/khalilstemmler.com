@@ -56,14 +56,14 @@ const Overlay = (props) => {
       ? `${navbarStyles.overlayOpen} ${navbarStyles.overlayContainer}`
       : navbarStyles.overlayContainer}>
 
-      <div onClick={props.toggleBurgerMenu}><Link to="/">Home</Link></div>
-      <div onClick={props.toggleBurgerMenu}><Link to="/about">About</Link></div>
-      <div onClick={props.toggleBurgerMenu}><Link to="/blog">Blog</Link></div>
+      <div className={navbarStyles.mobileNavItem} onClick={props.toggleBurgerMenu}><Link to="/">Home</Link></div>
+      <div className={navbarStyles.mobileNavItem} onClick={props.toggleBurgerMenu}><Link to="/about">About</Link></div>
+      <div className={navbarStyles.mobileNavItem} onClick={props.toggleBurgerMenu}><Link to="/blog">Blog</Link></div>
       {/*<h1 onClick={props.toggleBurgerMenu}><Link to="/projects">Work</Link></h1>*/}
       
-      <div onClick={props.toggleBurgerMenu}><Link to="/contact">Contact</Link></div>
-      <div onClick={props.toggleBurgerMenu}><Link to="/services">Services</Link></div>
-      <Link onClick={props.toggleBurgerMenu} to="/work-with-me">
+      <div className={navbarStyles.mobileNavItem} onClick={props.toggleBurgerMenu}><Link to="/contact">Contact</Link></div>
+      <div className={navbarStyles.mobileNavItem} onClick={props.toggleBurgerMenu}><Link to="/services">Services</Link></div>
+      <Link onClick={props.toggleBurgerMenu} to="/contact">
         <button className={navbarStyles.getStartedButtonOverlay}>Get started</button>
       </Link>
 

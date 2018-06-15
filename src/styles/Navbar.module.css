@@ -150,7 +150,7 @@ z-index: 98;
     /* background: linear-gradient(#00b0e8, #ff50c1); */
 }
 
-.overlayContainer h1 {
+.overlayContainer div {
   font-size: 2em;
   margin-bottom: 0.5em;
   cursor: pointer;
@@ -159,9 +159,10 @@ z-index: 98;
 
 
 .overlayContainer h1 a {
-  color:white;
-  cursor: pointer;
-  font-weight: bold;
+color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: normal;
 }
 
 .overlayOpen {
@@ -197,6 +198,13 @@ z-index: 98;
     background: white;
     border: solid 1px white;
     color: #e900c5;
+}
+
+.mobileNavItem > a{
+color: #ffffff !important;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: normal !important;
 }
 
 @media (max-width:950px) {

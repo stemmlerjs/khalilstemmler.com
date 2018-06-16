@@ -79,8 +79,9 @@ const SEO = ({ postData, postImage, isBlogPost }) => {
   const description =
     postMeta.description || postData.excerpt || config.description;
   const image = `${config.url}${postImage}` || config.image;
+  const slug = postMeta.slug;
   const url = postMeta.slug
-    ? `${config.url}${path.sep}${postMeta.slug}`
+    ? `${config.url}${postMeta.slug}`
     : config.url;
   const datePublished = isBlogPost ? postMeta.date : false;
 

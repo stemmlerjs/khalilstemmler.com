@@ -16,7 +16,9 @@ It's not every day that you see a tilde in JavaScript.
 I was taking a look through the source code for the Twit NPM library when I was creating a Twitter Bot and came across the following lines of code:
 
 ```
-if(~followers.indexOf(target)) {  // do some action}
+if(~followers.indexOf(target)) {
+  // do some action
+}
 ```
 
 Notice the **tilde **on the first line? Let's find out what that's all about.
@@ -24,7 +26,8 @@ Notice the **tilde **on the first line? Let's find out what that's all about.
 I [discovered that](https://stackoverflow.com/questions/12337360/javascript-tilde-twos-complement) when we use the ~ operator, it does -(A + 1) where A is the value to the right of the tilde. For example, we'd get -2 if we did this (since -(1 + 1) = -2):
 
 ```
-~['apples', 'oranges'].indexOf('apples'); // => 0~['apples', 'oranges'].indexOf('oranges'); // => -2
+~['apples', 'oranges'].indexOf('apples'); // => 0
+~['apples', 'oranges'].indexOf('oranges'); // => -2
 ```
 
 Maybe you're like me and you're not really seeing the usefulness of using tilde yet. 
@@ -34,16 +37,33 @@ It turns out that it's _actually useful_ for determining the truthiness of a **n
 For a moment, let's just realize the mad crazy language that we're working with and recall that JavaScript does this:
 
 ```
--2 ? true : false; // => true0 ? true : false; // => false-1 ? true : false; // => true 😲
+-2 ? true : false; // => true
+0 ? true : false; // => false
+-1 ? true : false; // => true 😲
 ```
 
-Ah! Isn't that funny? -1 has a truthiness of **true **and the only integer that has a truthiness of **false **is 0. So really, we can use tilde as a shorthand. Check this out:
+Ah! Isn't that funny? -1 has a truthiness of **true **and the only integer that has a truthiness of **false **is 0. So really, we can use tilde as a shorthand.
+ Check this out:
 
 ```
-// Instead of doing thisif(!fruits.indexOf('apples') != -1) {  // Mmm, I love apples.} else {  // We ain't got no apples}// We can do this to see if an array contains a particular value (btw, there's a better way to do this with ES6 now.if (!!~fruits.indexOf('apples') {  // Yay apples} else {  // Still no apples}
+// Instead of doing this
+if(!fruits.indexOf('apples') != -1) {
+  // Mmm, I love apples.
+}
+
+ else {
+  // We ain't got no apples
+}
+// We can do this 
+to see if an array contains a particular value (btw, there's a better way to do this with ES6 now.if (!!~fruits.indexOf('apples') {
+  // Yay apples
+}
+ else {
+  // Still no apples
+}
 ```
 
-\
+\
 Now, the question then becomes... am I going to use this? Probably not, but it's cool to know that it exists after having stumbled upon it. I don't think I'd use this much solely because I'd prefer others to understand my code as fast as possible if they have to read it.
 
 I hope you learned something here and won't get alienated next time you see a ~ floating around.

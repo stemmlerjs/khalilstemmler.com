@@ -88,6 +88,7 @@ class TemplateWrapper extends React.Component{
             { property: "og:type" , content: "site" },
             { property: "og:url" , content: "khalilstemmler.com" },
             { name: 'theme-color', content: '#ee009e'},
+            { name: "apple-mobile-web-app-status-bar-style", content:"black-translucent" },
 
             // { property: "og:image" , content: "<%= image %>" },
             // { property: "og:image:type" , content: "image/png" },

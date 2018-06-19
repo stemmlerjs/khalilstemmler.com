@@ -6,7 +6,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent, displayPic
   const PageContent = contentComponent || Content
 
   return (
-    <section>
+    <section className={'scene_element--fadein '}>
       <h1>{title}</h1>
       <div style={{ textAlign: 'center'}}>
         <img style={{ borderRadius: '100%', height: '10em'}} src={displayPicture}/>

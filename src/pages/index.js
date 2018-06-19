@@ -10,23 +10,33 @@ import CallToAction from '../components/CallToAction'
 import LetsBuildIt from '../components/LetsBuildIt'
 import FeaturedProject from '../components/FeaturedProject'
 import Skills from '../components/Skills'
+import SelectedProjects from '../components/SelectedProjects'
+import SectionDivider from '../components/SectionDivider'
+import RecentPosts from '../components/RecentPosts'
 
 import styles from '../styles/Index.module.css'
 import partner from '../img/partner-logo/shopify-partner.png'
 
-
-
+import helpers from '../helpers'
 
 export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props
 
+    const recentPosts = helpers.blog.getPostsFromQuery(data.posts);
+    console.log(recentPosts)
+
     return (
-      <section>
+      <section className={'scene_element--fadein'}>
         <LandingPage/>
+        <SectionDivider/>
         <LetsBuildIt/>
+        <SectionDivider/>
+        <SelectedProjects/>
+        <SectionDivider/>
+        <RecentPosts posts={recentPosts}/>
+        <SectionDivider/>
         <Skills/>
-        <FeaturedProject/>
         <CallToAction/>
       </section>
     )
@@ -43,23 +53,30 @@ IndexPage.propTypes = {
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] },
-      filter: { frontmatter: { templateKey: { eq: "project-page" } }}
-    ) {
-      edges {
-        node {
-          excerpt(pruneLength: 400)
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            templateKey
+    posts: allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+        filter: { frontmatter: { 
+          templateKey: { eq: "blog-post" } 
+          published: { eq: true }
+        }
+      }
+        limit: 4
+      ) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+              date 
+              description
+              tags 
+              category
+              image
+            }
           }
         }
       }
-    }
   }
 `

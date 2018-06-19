@@ -8,7 +8,7 @@ export const ContactPageTemplate = ({ title, content, contentComponent, displayP
   const PageContent = contentComponent || Content
 
   return (
-    <section>
+    <section className={'scene_element--fadein '}>
       <h1>{title}</h1>
       <PageContent className="content" content={content} />
       <ContactForm/>

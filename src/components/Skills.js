@@ -2,13 +2,21 @@ import React from 'react'
 
 import styles from './styles/Skills.module.css'
 
+import picOfMe from '../img/picofme.png'
+
 const Skills = (props) => {
   return (
     <div className={styles.outer}>
       <h4>Skills</h4>
 
       <div className={styles.flexContainer}>
-        <div className={styles.leftContainer}>I understand the challenges of working remotely. Here are a couple things I'm good at.</div>
+        <div className={styles.leftContainer}>
+          I understand the challenges of working remotely. Here are a couple things I'm good at.
+
+          <div className={styles.imageContainer}>
+            <img src={picOfMe}/>
+          </div>
+        </div>
         <div>
           <h3 className={styles.elementHeader}>Communication</h3>
           <p>Communication is absolutely paramount dealing with any team or client. I take the time to fully understand your needs and keep you updated on how the project is evolving.</p>

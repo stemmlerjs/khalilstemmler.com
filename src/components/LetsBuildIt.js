@@ -29,7 +29,7 @@ const LetsBuildIt = (props) => {
           text={`I create web
           sites, fully-fledged web apps, sites, and stores
           with NodeJS, React,
-          Shopify and WordPress. `}/>
+          Shopify and WordPress.`}/>
         <Pillar title={'Web Design'} 
           text={`I design websites that
             are functional, easy

@@ -1,0 +1,40 @@
+
+.postContainer {
+width: 50%;
+    display: inline-block;
+    padding: 20px;
+}
+
+.title {
+    text-decoration: none;
+    color: #3b3a3a;
+    cursor: pointer;
+    font-size: 1.4em;
+    font-weight: 500;
+    /* margin-top: .6em; */
+    margin-bottom: .6em;
+}
+
+.body {
+    color: #9e9e9e;
+}
+
+.imageContainer {
+display: block;
+}
+
+.imageContainer > img {
+}
+
+.postContainerInner {
+        display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 800px) {
+    .postContainer {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 2em;
+    }
+}

@@ -6,9 +6,13 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 import './all.sass'
+import $ from 'jquery'; 
 
 import styles from '../styles/Index.module.css'
 
+import "./dist/smooth.js"
+
+import "./animations.css"
 import "./prism.css"
 
 import { scrollToY }  from '../utils/utils'
@@ -112,14 +116,26 @@ class TemplateWrapper extends React.Component{
             { href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', rel: 'stylesheet', type: 'text/css'}
           ]}
 
-          
-
         />
         <Navbar style={{  maxWidth: '1260px', margin: '0 auto'}}/>
         <div onClick={this.handleScrollToTop} className={styles.toTopButton} id="to-top-button">
           <i className={"fa fa-angle-up"}></i>
         </div>
-        <div style={{  maxWidth: '1260px', margin: '0 auto', minHeight: '58%'}} className={styles.container}>{this.props.children()}</div>
+
+        {
+          /**
+           * #main
+           * 
+           * We're using SmoothState.js https://css-tricks.com/add-page-transitions-css-smoothstate-js/
+           * The initial load has a smooth render and every other page
+           * needs a specific thing on it.
+           */
+        }
+
+        <div id="main" 
+          style={{  maxWidth: '1260px', margin: '0 auto', minHeight: '58%'}} 
+          className={`${styles.container} scene_element_initial--fadein `}>
+          {this.props.children()}</div>
         <Footer/>
       </div>
     )

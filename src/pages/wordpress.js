@@ -29,7 +29,7 @@ export default class WordPress extends React.Component {
 
   render() {
     return (
-      <section className={styles.overrideContainer}>
+      <section className={`${styles.overrideContainer} scene_element--fadein`}>
         <Me/>
         <h1 className={styles.landingTitle}>I help businesses take their online presence to the next level with WordPress.</h1>
         

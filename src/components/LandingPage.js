@@ -47,11 +47,7 @@ class LandingPage extends React.Component {
               {this.state.abilities[this.state.counter]}
               </span>.
             </h1>
-            <p>I design, build & maintain cool stuff on the web.</p>
-
-            <p>I like to code, be creative, and solve problems.</p>
-
-            <p>Let's chat <a className={styles.mail} href="mailto:khalilstemmler@gmail.com">khalilstemmler@gmail.com</a></p>
+            <p>I design, build & maintain cool stuff on the web. <br/>Mostly with #React, #Redux, and #Node. <br/>I like to code, be creative and entrepreneurial, and solve problems.</p>
 
             <div className={styles.buttonContainer}>
               <Link to="/services"><button className={styles.whatIDo}>What I do</button></Link>

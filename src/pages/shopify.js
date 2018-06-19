@@ -30,7 +30,7 @@ export default class ShopifyPage extends React.Component {
     console.log(data)
 
     return (
-      <section>
+      <section className={'scene_element--fadein '}>
         <Me/>
         <h1 className={styles.landingTitle}>I'm a web developer / designer & Shopify Partner helping businesses succeed in Ecommerce.</h1>
         

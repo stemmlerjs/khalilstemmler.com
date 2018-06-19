@@ -27,11 +27,10 @@ const TagsAndCategories = ({ tags, category }) => {
             {
               tags.map((tag, index) => {
 
-                if ((tags.length !== 1) && (index == tags.length - 1)) {
-                  return <span key={index}>{`, `}<Link to={`/blog/tags/${kebabCase(tag)}`}>{tag}</Link></span>
-                }
+                if (index == 0) return <Link to={`/blog/tags/${kebabCase(tag)}`} key={index}>{tag}</Link>
+                return <span key={index}>{`, `}<Link to={`/blog/tags/${kebabCase(tag)}`}>{tag}</Link></span>
 
-                return <Link to={`/blog/tags/${kebabCase(tag)}`} key={index}>{tag}</Link>
+                
               })
             }  
           </span>
@@ -61,11 +60,17 @@ const BlogPost = ({ post }) => {
 
 const BlogResults = ({ posts }) => {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} scene_element--fadein`}>
       {
         posts.map((post, index) => {
           return <BlogPost key={index} post={post}/>
         })
+      }
+
+      {
+        posts.length == 0
+          ? <div style={{ color: '#a4a4a4'}}>No posts in this category yet</div>
+          : ''
       }
     </div>
   )

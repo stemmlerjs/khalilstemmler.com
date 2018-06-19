@@ -1,0 +1,56 @@
+
+.container {
+    
+}
+
+.selectedProjectContainer {
+    display: flex;
+    flex-direction: row;
+        margin-bottom: 3em;
+
+}
+
+.imageContainer {
+width: 60%;
+}
+
+.textContainer {
+    width: 40%;
+        padding-left: 30px;
+}
+
+.title {
+
+}
+
+.text {
+
+}
+
+.tag {
+    display: inline-block;
+    background-color: #00b0e8;
+    color: white;
+    font-weight: 500;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+        margin-right: 10px;
+}
+
+@media (max-width: 1000px) {
+    .selectedProjectContainer {
+        flex-direction: column;
+           margin-bottom: 6em;
+    }
+    .imageContainer {
+        width: 100%;
+    }
+
+    .textContainer {
+        width: 100%;
+    }
+}

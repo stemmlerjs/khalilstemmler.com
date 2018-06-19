@@ -28,7 +28,7 @@ const Me = () => {
 export default class Services extends React.Component {
   render () {
     return (
-      <section className={styles.overrideContainer}>
+      <section className={`${styles.overrideContainer} scene_element--fadein`}>
         <h1>Services</h1>
         <LetsBuiltIt/>
         <div className={styles.imagesContainer}>

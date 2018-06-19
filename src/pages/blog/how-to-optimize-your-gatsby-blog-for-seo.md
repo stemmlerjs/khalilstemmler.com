@@ -18,7 +18,7 @@ published: false
 
 I've been using Gatsby for about a month now and after taking the time to learn it, I've really been enjoying it. So far, I've put together this blog, a landing page for a pet project, a portfolio website for a client and a blog for my business using Gatsby and I have a **strong **feeling that I'll be using it for a lot more projects. As a full-stack JavaScript-er, any day I don't have to use WordPress is a good day 😃 (just kidding, WordPress is actually pretty lit).
 
-One of the important parts of building a blog is making sure that each of your blog pages are unique and indexable by search engines. The [Gatsby documentation](https://www.gatsbyjs.org/docs/seo/) points to using the [gatsby-plugin-react-helment](https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet) plugin to add meta tags to your blog, but doesn't give a nice concrete example as to how you might set up a nice reusable component to do this. That's what I'm going to share with you today.
+One of the most important parts of building a blog is making sure that each of your blog posts have the appropriate meta tags in them so that when your content is shared and indexed by search engines, it shows the correct title, description and keywords. The [Gatsby documentation](https://www.gatsbyjs.org/docs/seo/) points to using the [gatsby-plugin-react-helment](https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet) plugin to add meta tags to your blog, but doesn't give a nice concrete example as to how you might set up a nice reusable component to do this. That's what I'm going to share with you today.
 
 We're going to create a simple reusable component that you can use in your blog post template. 
 
@@ -42,13 +42,11 @@ const Config = {
 export default Config
 ```
 
-For each blog post, we'll want ```title``` key is what we'll use as a fallback in cas
+For each blog post, we'll want to have the title of the blog post show up as the title. But for every other route that's not a blog post, we can configure the `title` to use as a fallback.
 
+Hook up your `logo`, `twitter` and website `url` as well here.
 
-
-2. Create the reusable component
-
-3. Hook it up in your blog post template file
+## 2. Create the reusable component
 
 **app/components/SEO.js**
 
@@ -193,6 +191,14 @@ SEO.defaultProps = {
 
 export default SEO;
 ```
+
+
+
+https://moz.com/blog/json-ld-for-beginners
+
+
+
+## 3. Hook it up in your blog post template file
 
 **app/templates/blog-post.js**
 

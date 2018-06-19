@@ -10,7 +10,10 @@ import $ from 'jquery';
 
 import styles from '../styles/Index.module.css'
 
-import "./dist/smooth.js"
+if (typeof window !== undefined) {
+  require ("./dist/smooth.js")
+}
+
 
 import "./animations.css"
 import "./prism.css"

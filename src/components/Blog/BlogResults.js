@@ -44,7 +44,7 @@ const TagsAndCategories = ({ tags, category }) => {
 const BlogPost = ({ post }) => {
   return (
     <div>
-      <div className={styles.date}>{moment(new Date(post.date)).format('MMMM Do YYYY')}</div>
+      {/*<div className={styles.date}>{moment(new Date(post.date)).format('MMMM Do YYYY')}</div>*/}
       <div className={styles.title}><Link to={post.slug}>{post.title}</Link></div>
       <div className={styles.description}>{post.description}</div>
       <TagsAndCategories

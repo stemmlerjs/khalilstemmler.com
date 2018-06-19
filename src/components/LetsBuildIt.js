@@ -27,16 +27,15 @@ const LetsBuildIt = (props) => {
       <div className={styles.pillarsContainer}>
         <Pillar title={'App Development'} 
           text={`I create web
-          sites, web apps and 
-          develop sites and stores
+          sites, fully-fledged web apps, sites, and stores
           with NodeJS, React,
           Shopify and WordPress. `}/>
         <Pillar title={'Web Design'} 
           text={`I design websites that
             are functional, easy
-            on the eyes and 
-            tell your brand's 
-            authentic story.`}/>
+            on the eyes, tell your story, and 
+            act as a your best
+            sales tool.`}/>
         <Pillar title={'Ecommerce Development'} 
           text={`I design web sites 
             that convert visitors

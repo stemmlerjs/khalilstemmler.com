@@ -33,16 +33,16 @@ export const BlogPostTemplate = ({
   console.log(category)
 
   return (
-    <section className="section">
+    <section>
       {helmet || ''}
-      <div className="container content">
-        <div className="columns">
-          <div style= {{ margin: '0 auto'}} className="column is-8">
+      <div>
+        <div>
+          <div style= {{ margin: '0 auto'}} className="column is-10">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
             
-            <h4 className={styles.date}>{date} — in <Link className={styles.category} to={`/blog/categories/${kebabCase(category)}/`}>{category}</Link></h4>
+            <h4 className={styles.date}>in <Link className={styles.category} to={`/blog/categories/${kebabCase(category)}/`}>{category}</Link></h4>
 
             <div>
               <img src={image}/>

@@ -9,7 +9,7 @@ import './all.sass'
 
 import styles from '../styles/Index.module.css'
 
-require("prismjs/themes/prism-okaidia.css");
+import "./prism.css"
 
 import { scrollToY }  from '../utils/utils'
 

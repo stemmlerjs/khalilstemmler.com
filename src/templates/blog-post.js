@@ -30,8 +30,6 @@ export const BlogPostTemplate = ({
 }) => {
   const PostContent = contentComponent || Content
 
-  console.log(category)
-
   return (
     <section>
       {helmet || ''}
@@ -49,7 +47,7 @@ export const BlogPostTemplate = ({
             </div>
 
             <p>{description}</p>
-            <PostContent content={content} />
+            <PostContent className={'blog-post-content'} content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>

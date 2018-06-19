@@ -12,13 +12,13 @@ tags:
   - Gatsby
 category: Web Development
 image: /img/web-1280-–-1.png
-published: false
+published: true
 ---
-# Damn, this tool is fuggen awesome 🔥
+# Man, this tool is really awesome 🔥
 
-I've been using Gatsby for about a month now and after taking the time to learn it, I've really been enjoying it. So far, I've put together this blog, a landing page for a pet project, a portfolio website for a client and a blog for my business using Gatsby and I have a **strong **feeling that I'll be using it for a lot more projects. As a full-stack JavaScript-er, any day I don't have to use WordPress is a good day 😃 (just kidding, WordPress is actually pretty lit).
+I've been using Gatsby for about a month now and after taking the time to learn it, I've really been enjoying it. So far, I've put together this blog, a landing page for a pet project, a portfolio website for a client and a blog for my business using Gatsby and I have a **strong** feeling that I'll be using it for a lot more projects. As a full-stack JavaScript-er, any day I don't have to use WordPress is a good day 😃 (just kidding, WordPress is actually pretty lit).
 
-One of the most important parts of building a blog is making sure that each of your blog posts have the appropriate meta tags in them so that when your content is shared and indexed by search engines, it shows the correct title, description and keywords. The [Gatsby documentation](https://www.gatsbyjs.org/docs/seo/) points to using the [gatsby-plugin-react-helment](https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet) plugin to add meta tags to your blog, but doesn't give a nice concrete example as to how you might set up a nice reusable component to do this. That's what I'm going to share with you today.
+One of the most important parts of building a blog is making sure that each of your blog posts has the appropriate meta tags in them so that when your content is shared and indexed by search engines, it shows the correct title, description and keywords. The [Gatsby documentation](https://www.gatsbyjs.org/docs/seo/) points to using the [gatsby-plugin-react-helment](https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet) plugin to add meta tags to your blog, but doesn't give a nice concrete example as to how you might set up a nice reusable component to do this. That's what I'm going to share with you today.
 
 We're going to create a simple reusable component that you can use in your blog post template. 
 
@@ -47,6 +47,8 @@ For each blog post, we'll want to have the title of the blog post show up as the
 Hook up your `logo`, `twitter` and website `url` as well here.
 
 ## 2. Create the reusable component
+
+This file takes in the ```isBlogPost```, ```postData```, and ```postImage``` props and builds a component describing the data in JSON-LD format. It also injects your blog post data into the meta tags. Thank you to [Jason Lengstorf](https://github.com/jlengstorf/lengstorf.com) for sharing this snippet.
 
 **app/components/SEO.js**
 
@@ -192,13 +194,15 @@ SEO.defaultProps = {
 export default SEO;
 ```
 
+The coolest part about [Helmet](https://www.gatsbyjs.org/packages/gatsby-plugin-react-helmet) is that you can use it multiple times in any nested component structure but the result will always come from the very last instance of it. So if we used Helmet earlier in our ```layout/index.js```, when we hook it up in our ```app/templates/blog-post.js```, it will take the result from Helmet in our blog post template. That's because Gatsby renders our layout first before rendering our template files.
 
-
-https://moz.com/blog/json-ld-for-beginners
-
+If you want to learn more about JSON-LD, you can [check this out](https://moz.com/blog/json-ld-for-beginners).
 
 
 ## 3. Hook it up in your blog post template file
+
+The final thing to do is to actually hook it up in your template file for your blog posts. Here's what mine looks like.
+
 
 **app/templates/blog-post.js**
 
@@ -341,20 +345,9 @@ export const pageQuery = graphql`
 ```
 
 ## That's it
+Easy right? That's how you create a reusable SEO component with Helmet in Gatsby. Now you should be able to use something like Facebook's URL Debugger and test it out to see if it works properly. If you have other types of collections and templates like tags, categories, products, services, etc- you could extend this so that each of those pages are SEO optimized as well. I'll be doing that in the near future.
 
-\[let the reader know they've arrived at the end]
+I hope this was helpful to you! Let me know if you have any questions in the comments. 
 
-\[summarize what they've learned or how they've benefited from your post]
+Keep building cool things.
 
-\[ask a question to encourage the reader to leave a comment or react]
-
-If your site is uploaded, you can use a tool like Facebook URL debugger to test out your SEO. 
-
-I hope this was useful to you. 
-
-Resources: 
-
-Jason Lengstorf's personal site - <https://github.com/jlengstorf/lengstorf.com>
-
-This blog -\
-<https://github.com/stemmlerjs/khalilstemmler.com>

@@ -14,7 +14,6 @@ class CallToAction  extends React.Component {
       <h4>Hire Me</h4>
         <p>Are you looking for a communicative, punctual & experienced software developer / designer?</p>
         <p>I can help you bring your web, Ecommerce project, or app from concept to completion.</p>
-        <a className={styles.mail} href="mailto:khalilstemmler@gmail.com">khalilstemmler@gmail.com</a>
       </div>
     )
   }

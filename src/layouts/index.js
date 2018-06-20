@@ -10,10 +10,6 @@ import $ from 'jquery';
 
 import styles from '../styles/Index.module.css'
 
-if (typeof window !== undefined) {
-  require ("./dist/smooth.js")
-}
-
 
 import "./animations.css"
 import "./prism.css"
@@ -40,6 +36,10 @@ class TemplateWrapper extends React.Component{
   componentDidMount () {
     window.addEventListener("scroll", this.handleScroll);
     this.animate();
+
+    if (typeof window !== undefined) {
+      require ("./dist/smooth.js")
+    }
     
   }
 

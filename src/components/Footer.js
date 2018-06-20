@@ -94,8 +94,7 @@ const FooterHeader = () => {
     <div className={newStyles.footerHeaderContainer}>
       <h3>Khalil Stemmler</h3>
       <a href="mailto:khalilstemmler@gmail.com">khalilstemmler@gmail.com</a>
-      <p>519.429.9674</p>
-      <p>I'm a Canadian software developer. I can help you build your next project.</p>
+      <p>I'm a Canadian software developer. Have a question or want to <Link to="/contact">work together?</Link></p>
     </div>
   )
 }

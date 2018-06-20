@@ -35,6 +35,11 @@ class LandingPage extends React.Component {
     clearInterval(this.interval)
   }
 
+  scrollToAbout () {
+    var element_to_scroll_to = document.getElementById('about');
+    element_to_scroll_to.scrollIntoView({ behavior: 'smooth' });
+  }
+
   render () {
     return (
       <div className={styles.container}>
@@ -47,11 +52,14 @@ class LandingPage extends React.Component {
               {this.state.abilities[this.state.counter]}
               </span>.
             </h1>
-            <p>I design, build & maintain cool stuff on the web. <br/>Mostly with #React, #Redux, and #Node. <br/>I like to code, be creative and entrepreneurial, and solve problems.</p>
+            <p>I design, build & maintain cool stuff on the web. <br/>Mostly with modern web technology like #React, #Redux, and #Node. <br/>I like to code, be creative, and solve problems.</p>
 
             <div className={styles.buttonContainer}>
-              <Link to="/services"><button className={styles.whatIDo}>What I do</button></Link>
-              <Link to="/contact"><button className={styles.contact}>Contact</button></Link>
+
+                <button onClick={() => this.scrollToAbout()} className={styles.whatIDo}>What I do</button>
+              <Link to="/contact">
+                <button className={styles.contact}>Contact</button>
+              </Link>
             </div>
           </div>
       </div>

@@ -5,7 +5,7 @@ const typography = new Typography({
   baseLineHeight: '1.78',
   headerFontFamily: ['Roboto', 'sans-serif'],
   headerWeight: '700',
-  bodyFontFamily: ['Nunito', 'Roboto', 'sans-serif'],
+  bodyFontFamily: ['Nunito', 'Roboto', 'Roboto Mono', 'sans-serif'],
   bodyColor: '#2D2D2D',
   bodyBoldWeight: '700',
   overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({

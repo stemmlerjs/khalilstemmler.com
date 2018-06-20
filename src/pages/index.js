@@ -7,7 +7,7 @@ import Divider from '../components/Divider'
 import BlockQuote from '../components/BlockQuote'
 import LandingPage from '../components/LandingPage'
 import CallToAction from '../components/CallToAction'
-import LetsBuildIt from '../components/LetsBuildIt'
+import DigitalResume from '../components/DigitalResume'
 import FeaturedProject from '../components/FeaturedProject'
 import Skills from '../components/Skills'
 import SelectedProjects from '../components/SelectedProjects'
@@ -30,7 +30,7 @@ export default class IndexPage extends React.Component {
       <section className={'scene_element--fadein'}>
         <LandingPage/>
         <SectionDivider/>
-        <LetsBuildIt/>
+        <DigitalResume/>
         <SectionDivider/>
         <SelectedProjects/>
         <SectionDivider/>

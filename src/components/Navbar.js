@@ -62,7 +62,7 @@ const Overlay = (props) => {
       {/*<h1 onClick={props.toggleBurgerMenu}><Link to="/projects">Work</Link></h1>*/}
       
       <div className={navbarStyles.mobileNavItem} onClick={props.toggleBurgerMenu}><Link to="/contact">Contact</Link></div>
-      <div className={navbarStyles.mobileNavItem} onClick={props.toggleBurgerMenu}><Link to="/services">Services</Link></div>
+      {/*<div className={navbarStyles.mobileNavItem} onClick={props.toggleBurgerMenu}><Link to="/services">Services</Link></div>*/}
       <Link onClick={props.toggleBurgerMenu} to="/contact">
         <button className={navbarStyles.getStartedButtonOverlay}>Get started</button>
       </Link>
@@ -112,7 +112,7 @@ class Navbar extends React.Component {
         <div className={navbarStyles.navigationItems}>
           <div className={renderActiveIfOnPage('about')}><Link to="/about">About</Link></div>
           <div className={renderActiveIfOnPage('blog')}><Link to="/blog">Blog</Link></div>
-          <div className={renderActiveIfOnPage('services')}><Link to="/services">Services</Link></div>
+          {/*<div className={renderActiveIfOnPage('services')}><Link to="/services">Services</Link></div>*/}
           {/*<h2 className={renderActiveIfOnPage('projects')}><Link to="/projects">Projects</Link></h2>*/}
           <div className={renderActiveIfOnPage('contact')}><Link to="/contact">Contact</Link></div>
           <GetStartedButton/>

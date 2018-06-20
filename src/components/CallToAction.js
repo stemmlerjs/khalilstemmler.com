@@ -12,8 +12,8 @@ class CallToAction  extends React.Component {
     return (
       <div className={styles.container}>
       <h4>Hire Me</h4>
-        <p>Are you looking for a communicative, punctual & experienced software developer / designer?</p>
-        <p>I can help you bring your web, Ecommerce project, or app from concept to completion.</p>
+        <p>Are you looking for a communicative, punctual & experienced software developer?</p>
+        <p>I can help you bring your project from concept to completion.</p>
       </div>
     )
   }

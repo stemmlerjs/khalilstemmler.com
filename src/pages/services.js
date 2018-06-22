@@ -20,55 +20,81 @@ import LetsBuiltIt from '../components/LetsBuildIt'
 const Me = () => {
   return (
     <div className={styles.meContainer}>
-      <img src={me}></img>
+      <img src={me} />
     </div>
   )
 }
 
 export default class Services extends React.Component {
-  render () {
+  render() {
     return (
       <section className={`${styles.overrideContainer} scene_element--fadein`}>
         <h1>Services</h1>
-        <LetsBuiltIt/>
+        <LetsBuiltIt />
         <div className={styles.imagesContainer}>
-          <img style={{ width: '50%'}} src={shopify}/>
-          <img style={{ width: '50%'}} src={wordpress}/>
+          <img style={{ width: '50%' }} src={shopify} />
+          <img style={{ width: '50%' }} src={wordpress} />
         </div>
         <div className={styles.imagesContainer}>
-          <img style={{ width: '33%'}} src={react}/>
-          <img style={{ width: '33%'}} src={node}/>
-          <img style={{ width: '33%'}} src={php}/>
+          <img style={{ width: '33%' }} src={react} />
+          <img style={{ width: '33%' }} src={node} />
+          <img style={{ width: '33%' }} src={php} />
         </div>
-        
-        <BlockQuote text={`I've been a web developer / designer for over 5 years and 
+
+        <BlockQuote
+          text={`I've been a web developer / designer for over 5 years and 
 have experience working with numerous technologies. I
-specialize in Ecommerce development and you can count on me to help you meet your goals as it pertains to: `}/>
+specialize in Ecommerce development and you can count on me to help you meet your goals as it pertains to: `}
+        />
 
         <h2>Shopify Development</h2>
-        <p>Shopify is the best choice for anyone who wants to start selling their products online. 
-        Shopify already has a proven track record of addressing the common challenges faced by entrepreneurs and business owners. I <Link to="/shopify">help business owners</Link> with their themes, private apps and customization.</p>
+        <p>
+          Shopify is the best choice for anyone who wants to start selling their
+          products online. Shopify already has a proven track record of
+          addressing the common challenges faced by entrepreneurs and business
+          owners. I <Link to="/shopify">help business owners</Link> with their
+          themes, private apps and customization.
+        </p>
 
         <h2>WordPress Development</h2>
-        <p>WordPress is the world's most widely used CMS and it's great for a large number
-of web projects. I can <Link to="/wordpress">help set up a beautiful custom WordPress theme</Link> for 
-you to reach a wider audience with your business online.</p>
+        <p>
+          WordPress is the world's most widely used CMS and it's great for a
+          large number of web projects. I can{' '}
+          <Link to="/wordpress">
+            help set up a beautiful custom WordPress theme
+          </Link>{' '}
+          for you to reach a wider audience with your business online.
+        </p>
 
         <h2>NodeJS / JavaScript Development / App & Mobile App Development</h2>
-        <p>JavaScript is my language of choice. I've built web apps, written countless scripts, and made hybrid
-mobile apps in my professional, personal and freelance work utilizing technologies like ReactJS, jQuery, AngularJS, NodeJS, 
-Express, Sequelize, Redis, ElasticSearch, AWS and more.</p>
+        <p>
+          JavaScript is my language of choice. I've built web apps, written
+          countless scripts, and made hybrid mobile apps in my professional,
+          personal and freelance work utilizing technologies like ReactJS,
+          jQuery, AngularJS, NodeJS, Express, Sequelize, Redis, ElasticSearch,
+          AWS and more.
+        </p>
 
         <h2>Web Design</h2>
-        <p>Need a really nice portfolio website? Need something up and running quickly? 
-I love designing and coding beautiful responsive websites. If you've got wireframes, I can take it from
-there - I can also help with coming up with a design that resonates with you and
-your audience base.</p>
-        <i>PS: Check out these <a href={'http://brutalistwebsites.com/'}>brutalist websites</a>. These are "a reaction by a younger generation to the lightness, optimism, and frivolity of today's web design". This emerging trend is... interesting.</i>
-
+        <p>
+          Need a really nice portfolio website? Need something up and running
+          quickly? I love designing and coding beautiful responsive websites. If
+          you've got wireframes, I can take it from there - I can also help with
+          coming up with a design that resonates with you and your audience
+          base.
+        </p>
+        <i>
+          PS: Check out these{' '}
+          <a href={'http://brutalistwebsites.com/'}>brutalist websites</a>.
+          These are "a reaction by a younger generation to the lightness,
+          optimism, and frivolity of today's web design". This emerging trend
+          is... interesting.
+        </i>
 
         <h2>Something else in mind?</h2>
-        <p>Let's <Link to="/contact">talk</Link>.</p>
+        <p>
+          Let's <Link to="/contact">talk</Link>.
+        </p>
       </section>
     )
   }

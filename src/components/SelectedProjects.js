@@ -9,13 +9,13 @@ import blog from '../img/projects/blog.png'
 const Tags = ({ tags }) => {
   return (
     <div>
-      {
-        tags.map((tag, index) => {
-          return (
-            <div className={styles.tag} key={index}>{tag}</div>
-          )
-        })
-      }
+      {tags.map((tag, index) => {
+        return (
+          <div className={styles.tag} key={index}>
+            {tag}
+          </div>
+        )
+      })}
     </div>
   )
 }
@@ -24,21 +24,21 @@ const Project = ({ side, image, tags, title, text }) => {
   return (
     <div className={styles.selectedProjectContainer}>
       <div className={styles.imageContainer}>
-        <img src={image}/>
+        <img src={image} />
       </div>
       <div className={styles.textContainer}>
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.text}>{text}</p>
-        <Tags tags={tags}/>
+        <Tags tags={tags} />
       </div>
     </div>
   )
 }
 
-const SelectedProjects = (props) => {
+const SelectedProjects = props => {
   return (
     <section>
-      <h4>Recent Projects</h4> 
+      <h4>Recent Projects</h4>
       <Project
         side={'left'}
         image={univjobs}
@@ -49,7 +49,15 @@ entry-level jobs. It is an advanced
 React + Redux application supported 
 by many NodeJS microservices on
 AWS.`}
-        tags={['React', 'Redux', 'Node', 'Webpack', 'Elasticache', 'RDS', 'Stripe Payments']}
+        tags={[
+          'React',
+          'Redux',
+          'Node',
+          'Webpack',
+          'Elasticache',
+          'RDS',
+          'Stripe Payments',
+        ]}
       />
 
       <Project
@@ -72,4 +80,4 @@ AWS.`}
   )
 }
 
-export default SelectedProjects;
+export default SelectedProjects

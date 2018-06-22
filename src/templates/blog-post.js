@@ -4,17 +4,18 @@ import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import Content, { HTMLContent } from '../components/Content'
-import ReactDisqusComments from 'react-disqus-comments';
-import SEO from '../components/SEO';
+import ReactDisqusComments from 'react-disqus-comments'
+import SEO from '../components/SEO'
+import MailChimpSignup from '../components/MailChimpSignup'
 
 import helpers from '../helpers'
 
 import styles from '../styles/Blog.module.css'
 
-function getUniquePageIdentifier () {
+function getUniquePageIdentifier() {
   return typeof window !== 'undefined' && window.location.href
-      ? typeof window !== 'undefined' && window.location.href
-      : 'https://khalilstemmler.com'
+    ? typeof window !== 'undefined' && window.location.href
+    : 'https://khalilstemmler.com'
 }
 
 export const BlogPostTemplate = ({
@@ -26,7 +27,7 @@ export const BlogPostTemplate = ({
   helmet,
   date,
   image,
-  category
+  category,
 }) => {
   const PostContent = contentComponent || Content
 
@@ -35,15 +36,23 @@ export const BlogPostTemplate = ({
       {helmet || ''}
       <div>
         <div>
-          <div style= {{ margin: '0 auto'}} className="column is-10">
+          <div style={{ margin: '0 auto' }} className="column is-10">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
-            
-            <h4 className={styles.date}>in <Link className={styles.category} to={`/blog/categories/${kebabCase(category)}/`}>{category}</Link></h4>
+
+            <h4 className={styles.date}>
+              in{' '}
+              <Link
+                className={styles.category}
+                to={`/blog/categories/${kebabCase(category)}/`}
+              >
+                {category}
+              </Link>
+            </h4>
 
             <div>
-              <img src={image}/>
+              <img src={image} />
             </div>
 
             <p>{description}</p>
@@ -60,12 +69,13 @@ export const BlogPostTemplate = ({
                 </ul>
               </div>
             ) : null}
+            <MailChimpSignup />
             <ReactDisqusComments
               shortname="khalilstemmler-com"
-              identifier={ getUniquePageIdentifier() }
+              identifier={getUniquePageIdentifier()}
               title={title}
-              url={ getUniquePageIdentifier() }
-              />
+              url={getUniquePageIdentifier()}
+            />
           </div>
         </div>
       </div>
@@ -82,7 +92,7 @@ BlogPostTemplate.propTypes = {
 }
 
 const BlogPost = ({ data }) => {
-  let { markdownRemark: post } = data;
+  let { markdownRemark: post } = data
 
   post = Object.assign({}, post, post.fields, post.frontmatter)
 
@@ -91,12 +101,7 @@ const BlogPost = ({ data }) => {
       content={post.html}
       contentComponent={HTMLContent}
       description={post.description}
-      helmet={
-        <SEO 
-          isBlogPost={true}
-          postData={post}
-          postImage={post.image}
-        />}
+      helmet={<SEO isBlogPost={true} postData={post} postImage={post.image} />}
       tags={post.tags}
       title={post.title}
       date={post.date}

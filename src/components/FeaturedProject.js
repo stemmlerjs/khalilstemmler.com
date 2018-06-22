@@ -4,15 +4,17 @@ import styles from './styles/FeaturedProject.module.css'
 
 import univjobs from '../img/projects/univjobs.png'
 
-const FeaturedProject = (props) => {
+const FeaturedProject = props => {
   return (
     <div className={styles.outer}>
       <h4>Featured Project</h4>
 
       <div className={styles.container}>
         <div>
-          <img src={univjobs}/>
-          <a href={"https://univjobs.ca"}><div className={styles.mask}></div></a>
+          <img src={univjobs} />
+          <a href={'https://univjobs.ca'}>
+            <div className={styles.mask} />
+          </a>
         </div>
       </div>
 

@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 
 let stylesStr
 if (process.env.NODE_ENV === `production`) {
@@ -30,11 +30,20 @@ module.exports = class HTML extends React.Component {
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
           {this.props.headComponents}
-          <script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
-<script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.6436" type="text/javascript"></script>
+          <script
+            src="https://cdn.jotfor.ms/static/prototype.forms.js"
+            type="text/javascript"
+          />
+          <script
+            src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.6436"
+            type="text/javascript"
+          />
           {css}
         </head>
-        <body style={{ borderTop: 'solid 2px #ee009e' }} {...this.props.bodyAttributes}>
+        <body
+          style={{ borderTop: 'solid 2px #ee009e' }}
+          {...this.props.bodyAttributes}
+        >
           {this.props.preBodyComponents}
           <div
             key={`body`}

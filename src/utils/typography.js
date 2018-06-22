@@ -1,7 +1,7 @@
-import Typography from "typography";
+import Typography from 'typography'
 
-const typography = new Typography({ 
-  baseFontSize: "18px" ,
+const typography = new Typography({
+  baseFontSize: '18px',
   baseLineHeight: '1.78',
   headerFontFamily: ['Roboto', 'sans-serif'],
   headerWeight: '700',
@@ -10,22 +10,22 @@ const typography = new Typography({
   bodyBoldWeight: '700',
   overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
     p: {
-      fontSize: '1.4em'
+      fontSize: '1.4em',
     },
     h4: {
-          lineHeight: '1.4em',
-    margin: '0',
-    color: '#c9c9c9',
-    fontSize: '1.1em !important'
+      lineHeight: '1.4em',
+      margin: '0',
+      color: '#c9c9c9',
+      fontSize: '1.1em !important',
     },
     pre: {
       marginTop: '3em !important',
       marginBottom: '3em !important',
-      borderRadius: '0 !important'
+      borderRadius: '0 !important',
     },
     ol: {
-      fontSize: '1.3em'
-    }
+      fontSize: '1.3em',
+    },
     // blockquote: {
     //   ...adjustFontSizeTo('19px'),
     //   color: gray(41),
@@ -37,9 +37,9 @@ const typography = new Typography({
     // 'blockquote > :last-child': {
     //   marginBottom: 0,
     // },
-  })
-});
+  }),
+})
 
 typography.injectStyles()
 
-export default typography;
+export default typography

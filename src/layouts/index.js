@@ -6,22 +6,22 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 import './all.sass'
-import $ from 'jquery'; 
+import $ from 'jquery'
 
 import styles from '../styles/Index.module.css'
 
+import './animations.css'
+import './prism.css'
+import './dist/ngprogress.css'
 
-import "./animations.css"
-import "./prism.css"
+import { scrollToY } from '../utils/utils'
 
-import { scrollToY }  from '../utils/utils'
-
-class TemplateWrapper extends React.Component{
-  constructor () {
-    super();
+class TemplateWrapper extends React.Component {
+  constructor() {
+    super()
   }
 
-  animate () {
+  animate() {
     // if (typeof document !== undefined)
     //   document.querySelector('#root')
     //     .animate({
@@ -33,22 +33,20 @@ class TemplateWrapper extends React.Component{
     //   });
   }
 
-  componentDidMount () {
-    window.addEventListener("scroll", this.handleScroll);
-    this.animate();
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll)
+    this.animate()
 
     if (typeof window !== undefined) {
-      require ("./dist/smooth.js")
+      require('./dist/smooth.js')
     }
-    
   }
 
   componentWillReceiveProps(nextProps) {
     if (this.props.location.pathname !== nextProps.location.pathname) {
-      this.animate();
+      this.animate()
     }
   }
-  
 
   /**
    * handleScroll
@@ -63,39 +61,46 @@ class TemplateWrapper extends React.Component{
    */
 
   handleScroll(event) {
-    let distanceFromTop = 150;
-    let element = document.getElementById("to-top-button");
+    let distanceFromTop = 150
+    let element = document.getElementById('to-top-button')
     if (element) {
       if (
         document.body.scrollTop > distanceFromTop ||
         document.documentElement.scrollTop > distanceFromTop
       ) {
-        element.style.opacity = "1";
+        element.style.opacity = '1'
       } else {
-        element.style.opacity = "0";
+        element.style.opacity = '0'
       }
     }
   }
 
   handleScrollToTop() {
-    scrollToY(0, 1500, "easeInOutQuint");
+    scrollToY(0, 1500, 'easeInOutQuint')
   }
 
-
-  render () {
+  render() {
     return (
       <div id="root">
-        <Helmet 
-          title="Khalil Stemmler - Software Developer / Designer" 
-
+        <Helmet
+          title="Khalil Stemmler - Software Developer / Designer"
           meta={[
             // Server side rendering meta data
-            { property: "og:title" ,  content: "Khalil Stemmler - Software Developer / Designer" },
-            { property: "og:description" , content: "Khalil Stemmler - Software Developer / Designer" },
-            { property: "og:type" , content: "site" },
-            { property: "og:url" , content: "khalilstemmler.com" },
-            { name: 'theme-color', content: '#ee009e'},
-            { name: "apple-mobile-web-app-status-bar-style", content:"black-translucent" },
+            {
+              property: 'og:title',
+              content: 'Khalil Stemmler - Software Developer / Designer',
+            },
+            {
+              property: 'og:description',
+              content: 'Khalil Stemmler - Software Developer / Designer',
+            },
+            { property: 'og:type', content: 'site' },
+            { property: 'og:url', content: 'khalilstemmler.com' },
+            { name: 'theme-color', content: '#ee009e' },
+            {
+              name: 'apple-mobile-web-app-status-bar-style',
+              content: 'black-translucent',
+            },
 
             // { property: "og:image" , content: "<%= image %>" },
             // { property: "og:image:type" , content: "image/png" },
@@ -106,40 +111,56 @@ class TemplateWrapper extends React.Component{
             // { name: "google-site-verification", content: "hnc0xMxaywTkrqjaD9-r57vX4SF8YTRpQtaiORbyuzk" },
 
             // SEO Keywords
-            { name:"keywords", content:"shopify developer, shopify developer oakville, shopify developer brantford, javascript developer, node shopify developer" }, 
-            { name:"author", content:"Khalil Stemmler" },
-            { name: 'description', content: 'Khalil Stemmler is a Software Developer / Designer specializing in JavaScript and Ecommerce on Shopify'}
+            {
+              name: 'keywords',
+              content:
+                'shopify developer, shopify developer oakville, shopify developer brantford, javascript developer, node shopify developer',
+            },
+            { name: 'author', content: 'Khalil Stemmler' },
+            {
+              name: 'description',
+              content:
+                'Khalil Stemmler is a Software Developer / Designer specializing in JavaScript and Ecommerce on Shopify',
+            },
           ]}
-
           /**
            * Load stylesheets and fonts here.
            */
 
           link={[
-            { href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', rel: 'stylesheet', type: 'text/css'}
+            {
+              href:
+                'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css',
+              rel: 'stylesheet',
+              type: 'text/css',
+            },
           ]}
-
         />
-        <Navbar style={{  maxWidth: '1260px', margin: '0 auto'}}/>
-        <div onClick={this.handleScrollToTop} className={styles.toTopButton} id="to-top-button">
-          <i className={"fa fa-angle-up"}></i>
+        <Navbar style={{ maxWidth: '1260px', margin: '0 auto' }} />
+        <div
+          onClick={this.handleScrollToTop}
+          className={styles.toTopButton}
+          id="to-top-button"
+        >
+          <i className={'fa fa-angle-up'} />
         </div>
 
-        {
-          /**
-           * #main
-           * 
-           * We're using SmoothState.js https://css-tricks.com/add-page-transitions-css-smoothstate-js/
-           * The initial load has a smooth render and every other page
-           * needs a specific thing on it.
-           */
-        }
+        {/**
+         * #main
+         *
+         * We're using SmoothState.js https://css-tricks.com/add-page-transitions-css-smoothstate-js/
+         * The initial load has a smooth render and every other page
+         * needs a specific thing on it.
+         */}
 
-        <div id="main" 
-          style={{  maxWidth: '1260px', margin: '0 auto', minHeight: '58%'}} 
-          className={`${styles.container} scene_element_initial--fadein `}>
-          {this.props.children()}</div>
-        <Footer/>
+        <div
+          id="main"
+          style={{ maxWidth: '1260px', margin: '0 auto', minHeight: '58%' }}
+          className={`${styles.container} scene_element_initial--fadein `}
+        >
+          {this.props.children()}
+        </div>
+        <Footer />
       </div>
     )
   }

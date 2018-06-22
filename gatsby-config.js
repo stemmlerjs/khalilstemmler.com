@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Khalil Stemmler - Web & Shopify Developer / Designer",
+    title: 'Khalil Stemmler - Web & Shopify Developer / Designer',
   },
   plugins: [
     // {
@@ -17,14 +17,30 @@ module.exports = {
     //     // exclude: ["/preview/**", "/do-not-track/me/too/"],
     //   },
     // },
+     {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `tomato`,
+        // Disable the loading spinner.
+        showSpinner: false,
+      },
+    },
     {
-      resolve: `gatsby-plugin-sitemap`
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint:
+          'https://khalilstemmler.us17.list-manage.com/subscribe/post?u=6816d2889bed041b6e83840af&amp;id=44ae72b287',
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
     },
     `gatsby-plugin-compression`,
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: "./src/favicon.png",
+        logo: './src/favicon.png',
         injectHTML: true,
         icons: {
           android: true,
@@ -35,9 +51,9 @@ module.exports = {
           firefox: true,
           twitter: false,
           yandex: false,
-          windows: false
-        }
-      }
+          windows: false,
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-typography`,
@@ -77,7 +93,7 @@ module.exports = {
               // you may use this to prevent Prism from re-processing syntax.
               // This is an uncommon use-case though;
               // If you're unsure, it's best to use the default value.
-              classPrefix: "language-",
+              classPrefix: 'language-',
               // This is used to allow setting a language for inline code
               // (i.e. single backticks) by creating a separator.
               // This separator is a string and will do no white-space

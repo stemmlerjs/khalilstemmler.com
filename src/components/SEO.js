@@ -1,8 +1,8 @@
-import path from 'path';
-import React from 'react';
-import Helmet from 'react-helmet';
-import PropTypes from 'prop-types';
-import * as config from '../config';
+import path from 'path'
+import React from 'react'
+import Helmet from 'react-helmet'
+import PropTypes from 'prop-types'
+import * as config from '../config'
 
 const getSchemaOrgJSONLD = ({
   isBlogPost,
@@ -20,7 +20,7 @@ const getSchemaOrgJSONLD = ({
       name: title,
       alternateName: config.title,
     },
-  ];
+  ]
 
   return isBlogPost
     ? [
@@ -69,21 +69,19 @@ const getSchemaOrgJSONLD = ({
           datePublished,
         },
       ]
-    : schemaOrgJSONLD;
-};
+    : schemaOrgJSONLD
+}
 
 const SEO = ({ postData, postImage, isBlogPost }) => {
-  const postMeta = postData || {};
+  const postMeta = postData || {}
 
-  const title = postMeta.title || config.title;
+  const title = postMeta.title || config.title
   const description =
-    postMeta.description || postData.excerpt || config.description;
-  const image = `${config.url}${postImage}` || config.image;
-  const slug = postMeta.slug;
-  const url = postMeta.slug
-    ? `${config.url}${postMeta.slug}`
-    : config.url;
-  const datePublished = isBlogPost ? postMeta.date : false;
+    postMeta.description || postData.excerpt || config.description
+  const image = `${config.url}${postImage}` || config.image
+  const slug = postMeta.slug
+  const url = postMeta.slug ? `${config.url}${postMeta.slug}` : config.url
+  const datePublished = isBlogPost ? postMeta.date : false
 
   const schemaOrgJSONLD = getSchemaOrgJSONLD({
     isBlogPost,
@@ -92,8 +90,8 @@ const SEO = ({ postData, postImage, isBlogPost }) => {
     image,
     description,
     datePublished,
-  });
-  
+  })
+
   return (
     <Helmet>
       {/* General tags */}
@@ -119,8 +117,8 @@ const SEO = ({ postData, postImage, isBlogPost }) => {
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
     </Helmet>
-  );
-};
+  )
+}
 
 SEO.propTypes = {
   isBlogPost: PropTypes.bool,
@@ -129,11 +127,11 @@ SEO.propTypes = {
     excerpt: PropTypes.any,
   }).isRequired,
   postImage: PropTypes.string,
-};
+}
 
 SEO.defaultProps = {
   isBlogPost: false,
   postImage: null,
-};
+}
 
-export default SEO;
+export default SEO

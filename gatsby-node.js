@@ -48,7 +48,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
     // Tag pages:
     let tags = []
-    let categories = [];
+    let categories = []
 
     // Iterate through each post, putting all found tags into `tags`
     posts.forEach(edge => {
@@ -60,8 +60,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         categories.push(edge.node.frontmatter.category)
       }
     })
-
-
 
     // Eliminate duplicate tags
     tags = _.uniq(tags)

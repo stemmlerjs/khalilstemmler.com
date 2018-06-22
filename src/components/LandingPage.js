@@ -1,5 +1,3 @@
-
-
 import React from 'react'
 import me from '../img/me.jpg'
 
@@ -9,62 +7,83 @@ import styles from './styles/LandingPage.module.css'
 import cowboy from '../img/cowboy.png'
 
 class LandingPage extends React.Component {
-  constructor () {
-    super();
+  constructor() {
+    super()
 
     this.state = {
-      abilities: ['build your app', 'create your website', 'design your Shopify store', 'sell stuff online', 'fight aliens', 'design your WordPress theme'],
-      counter: 0
+      abilities: [
+        'build your app',
+        'create your website',
+        'design your Shopify store',
+        'sell stuff online',
+        'fight aliens',
+        'design your WordPress theme',
+      ],
+      counter: 0,
     }
 
     this.interval = setInterval(() => {
       this.setState({
         ...this.state,
-        counter: (this.state.counter + 1) % this.state.abilities.length
+        counter: (this.state.counter + 1) % this.state.abilities.length,
       })
-    }, 2000);
+    }, 2000)
   }
 
   // 🤠
 
-  componentDidMount () {
+  componentDidMount() {
     console.log(this.interval)
   }
 
-  componentWillUnmount () {
+  componentWillUnmount() {
     clearInterval(this.interval)
   }
 
-  scrollToAbout () {
-    var element_to_scroll_to = document.getElementById('about');
-    element_to_scroll_to.scrollIntoView({ behavior: 'smooth' });
+  scrollToAbout() {
+    var element_to_scroll_to = document.getElementById('about')
+    element_to_scroll_to.scrollIntoView({ behavior: 'smooth' })
   }
 
-  render () {
+  render() {
     return (
       <div className={styles.container}>
-          <div className={styles.imageContainer}>
-            <img src={me}/>
-          </div>
-          <div>
-            <h1 className={styles.landingTitle}>
-              Howdy <img className={styles.cowboy} style={{ display: 'inline-block'}} src={cowboy}/>. I'm a software developer in Toronto. I can help you <span className={styles.ability}>
+        <div className={styles.imageContainer}>
+          <img src={me} />
+        </div>
+        <div>
+          <h1 className={styles.landingTitle}>
+            Howdy{' '}
+            <img
+              className={styles.cowboy}
+              style={{ display: 'inline-block' }}
+              src={cowboy}
+            />. I'm a software developer in Toronto. I can help you{' '}
+            <span className={styles.ability}>
               {this.state.abilities[this.state.counter]}
-              </span>.
-            </h1>
-            <p>I design, build & maintain cool stuff on the web. <br/>Mostly with modern web technology like #React, #Redux, and #Node. <br/>I like to code, be creative, and solve problems.</p>
+            </span>.
+          </h1>
+          <p>
+            I design, build & maintain cool stuff on the web. <br />Mostly with
+            modern web technology like #React, #Redux, and #Node. <br />I like
+            to code, be creative, and solve problems.
+          </p>
 
-            <div className={styles.buttonContainer}>
-
-                <button onClick={() => this.scrollToAbout()} className={styles.whatIDo}>What I do</button>
-              <Link to="/contact">
-                <button className={styles.contact}>Contact</button>
-              </Link>
-            </div>
+          <div className={styles.buttonContainer}>
+            <button
+              onClick={() => this.scrollToAbout()}
+              className={styles.whatIDo}
+            >
+              What I do
+            </button>
+            <Link to="/contact">
+              <button className={styles.contact}>Contact</button>
+            </Link>
           </div>
+        </div>
       </div>
     )
   }
 }
 
-export default LandingPage;
+export default LandingPage

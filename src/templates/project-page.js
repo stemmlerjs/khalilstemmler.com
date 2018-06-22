@@ -17,8 +17,7 @@ export const ProjectTemplate = ({
 
   return (
     <section className="section">
-    {
-      /**
+      {/**
        * {helmet || ''}
       <div className="container content">
         <div className="columns">
@@ -43,9 +42,7 @@ export const ProjectTemplate = ({
           </div>
         </div>
       </div>
-       */
-    }
-      
+       */}
     </section>
   )
 }

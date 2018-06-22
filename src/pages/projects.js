@@ -3,85 +3,83 @@ import PropTypes from 'prop-types'
 
 import styles from '../styles/Projects.module.css'
 
-const Tags = (props) => {
+const Tags = props => {
   return (
     <div>
-      {
-        props.tags.map((tag, index) => {
-          return (
-            <div className={styles.tag} key={index}>{tag}</div>
-          )
-        })
-      }
+      {props.tags.map((tag, index) => {
+        return (
+          <div className={styles.tag} key={index}>
+            {tag}
+          </div>
+        )
+      })}
     </div>
   )
 }
 
-const FeaturedProjects = (props) => {
+const FeaturedProjects = props => {
   return (
     <section>
-      {
-        props.projects.map((project, index) => {
-          return <div className={styles.featuredProjectContainer} key={index}>
-            <a href={project.link}><img src={project.picture}/></a>
+      {props.projects.map((project, index) => {
+        return (
+          <div className={styles.featuredProjectContainer} key={index}>
+            <a href={project.link}>
+              <img src={project.picture} />
+            </a>
             <div>
               <h2>{project.title}</h2>
               <p>{project.body}</p>
-              <Tags tags={project.tags}/>
+              <Tags tags={project.tags} />
             </div>
-          </div> 
-        })
-      }
+          </div>
+        )
+      })}
     </section>
   )
 }
 
-const OtherProjects = (props) => {
+const OtherProjects = props => {
   return (
     <section>
-      {
-        props.projects.map((project, index) => {
-          return <div key={index}>
+      {props.projects.map((project, index) => {
+        return (
+          <div key={index}>
             <div>
               <h2>{project.title}</h2>
               <p>{project.body}</p>
             </div>
-          </div> 
-        })
-      }
+          </div>
+        )
+      })}
     </section>
   )
 }
 
-export const ProjectsPageTemplate = ({projects}) => {
+export const ProjectsPageTemplate = ({ projects }) => {
   return (
     <div>
       <h1>Featured Projects</h1>
-      <FeaturedProjects
-        projects={projects.filter(p => p.featured)}
-      />
+      <FeaturedProjects projects={projects.filter(p => p.featured)} />
 
       <h1>Other Projects</h1>
-      <OtherProjects
-        projects={projects.filter(p => !p.featured)}
-      />
+      <OtherProjects projects={projects.filter(p => !p.featured)} />
 
-      <h2><i>More portfolio projects on the way!</i></h2>
+      <h2>
+        <i>More portfolio projects on the way!</i>
+      </h2>
     </div>
   )
 }
 
 ProjectsPageTemplate.propTypes = {
-  projects: PropTypes.array
+  projects: PropTypes.array,
 }
 
 const ProjectsPage = ({ data }) => {
-  const edges = data.allMarkdownRemark.edges;
+  const edges = data.allMarkdownRemark.edges
 
   return (
-    <ProjectsPageTemplate
-      projects={edges.map(edge => edge.node.frontmatter)}
-    />
+    <ProjectsPageTemplate projects={edges.map(edge => edge.node.frontmatter)} />
   )
 }
 
@@ -97,7 +95,7 @@ export default ProjectsPage
 
 export const projectPageQuery = graphql`
   query ProjectsPageQuery {
-  allMarkdownRemark(
+    allMarkdownRemark(
       filter: { frontmatter: { templateKey: { eq: "project-page" } } }
     ) {
       edges {

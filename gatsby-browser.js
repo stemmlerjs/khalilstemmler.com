@@ -6,10 +6,8 @@ let id = 'NOPE'
 if (document.location.hostname.indexOf(domain) !== -1) {
   id = 'UA-75700925-1'
   console.log('[Site]: Analytics started in prod.')
-}
-
-else {
-  console.log("[Site]: Analytics not started.")
+} else {
+  console.log('[Site]: Analytics not started.')
 }
 
 ReactGA.initialize(id)

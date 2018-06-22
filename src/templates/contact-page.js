@@ -4,14 +4,19 @@ import Content, { HTMLContent } from '../components/Content'
 
 import ContactForm from '../components/ContactForm'
 
-export const ContactPageTemplate = ({ title, content, contentComponent, displayPicture }) => {
+export const ContactPageTemplate = ({
+  title,
+  content,
+  contentComponent,
+  displayPicture,
+}) => {
   const PageContent = contentComponent || Content
 
   return (
     <section className={'scene_element--fadein '}>
       <h1>{title}</h1>
       <PageContent className="content" content={content} />
-      <ContactForm/>
+      <ContactForm />
     </section>
   )
 }

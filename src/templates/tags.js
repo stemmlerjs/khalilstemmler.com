@@ -11,14 +11,13 @@ import styles from '../styles/Blog.module.css'
 
 class TagRoute extends React.Component {
   render() {
-    let posts = this.props.data.posts;
-    let categories = this.props.data.categories;
-    let tags = this.props.data.tags;
+    let posts = this.props.data.posts
+    let categories = this.props.data.categories
+    let tags = this.props.data.tags
 
-    posts = helpers.blog.getPostsFromQuery(posts);
-    categories = helpers.blog.getCategoriesFromQuery(categories);
-    tags = helpers.blog.getTagsFromQuery(tags);
-    
+    posts = helpers.blog.getPostsFromQuery(posts)
+    categories = helpers.blog.getCategoriesFromQuery(categories)
+    tags = helpers.blog.getTagsFromQuery(tags)
 
     const tag = this.props.pathContext.tag
     const title = this.props.data.site.siteMetadata.title
@@ -32,10 +31,7 @@ class TagRoute extends React.Component {
           categories={categories}
           currentTag={tag}
         />
-        <BlogResults
-          posts={posts}
-        />
-
+        <BlogResults posts={posts} />
       </section>
     )
   }
@@ -52,7 +48,7 @@ export const tagPageQuery = graphql`
     }
 
     categories: allMarkdownRemark(
-      filter: { frontmatter: { templateKey: { eq: "blog-post" }}}
+      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
       limit: 1000
     ) {
       edges {
@@ -63,9 +59,9 @@ export const tagPageQuery = graphql`
         }
       }
     }
-    
+
     tags: allMarkdownRemark(
-      filter: { frontmatter: { templateKey: { eq: "blog-post" }}}
+      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
       limit: 1000
     ) {
       edges {
@@ -80,30 +76,28 @@ export const tagPageQuery = graphql`
     posts: allMarkdownRemark(
       limit: 1000
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { 
-        tags: { 
-          in: [$tag] 
-        } 
-        templateKey: { eq: "blog-post" } 
-        published: { eq: true }
-      } 
-    }) 
-
-    {
-    totalCount
+      filter: {
+        frontmatter: {
+          tags: { in: [$tag] }
+          templateKey: { eq: "blog-post" }
+          published: { eq: true }
+        }
+      }
+    ) {
+      totalCount
       edges {
         node {
           fields {
             slug
           }
           frontmatter {
-              title
-              date 
-              description
-              tags 
-              category
-              image
-            }
+            title
+            date
+            description
+            tags
+            category
+            image
+          }
         }
       }
     }

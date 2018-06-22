@@ -11,14 +11,13 @@ import styles from '../styles/Blog.module.css'
 
 class CategoryRoute extends React.Component {
   render() {
-    let posts = this.props.data.posts;
-    let categories = this.props.data.categories;
-    let tags = this.props.data.tags;
+    let posts = this.props.data.posts
+    let categories = this.props.data.categories
+    let tags = this.props.data.tags
 
-    posts = helpers.blog.getPostsFromQuery(posts);
-    categories = helpers.blog.getCategoriesFromQuery(categories);
-    tags = helpers.blog.getTagsFromQuery(tags);
-    
+    posts = helpers.blog.getPostsFromQuery(posts)
+    categories = helpers.blog.getCategoriesFromQuery(categories)
+    tags = helpers.blog.getTagsFromQuery(tags)
 
     const category = this.props.pathContext.category
     const title = this.props.data.site.siteMetadata.title
@@ -32,10 +31,7 @@ class CategoryRoute extends React.Component {
           categories={categories}
           currentCategory={category}
         />
-        <BlogResults
-          posts={posts}
-        />
-
+        <BlogResults posts={posts} />
       </section>
     )
   }
@@ -53,7 +49,7 @@ export const categoryPageQuery = graphql`
 
     categories: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { templateKey: { eq: "blog-post" }}}
+      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
       limit: 1000
     ) {
       edges {
@@ -64,9 +60,9 @@ export const categoryPageQuery = graphql`
         }
       }
     }
-    
+
     tags: allMarkdownRemark(
-      filter: { frontmatter: { templateKey: { eq: "blog-post" }}}
+      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
       limit: 1000
     ) {
       edges {
@@ -80,30 +76,28 @@ export const categoryPageQuery = graphql`
 
     posts: allMarkdownRemark(
       limit: 1000
-      filter: { frontmatter: { 
-        category: { 
-          eq: $category
-        } 
-        templateKey: { eq: "blog-post" } 
-        published: { eq: true }
-      } 
-    }) 
-
-    {
-    totalCount
+      filter: {
+        frontmatter: {
+          category: { eq: $category }
+          templateKey: { eq: "blog-post" }
+          published: { eq: true }
+        }
+      }
+    ) {
+      totalCount
       edges {
         node {
           fields {
             slug
           }
           frontmatter {
-              title
-              date 
-              description
-              tags 
-              category
-              image
-            }
+            title
+            date
+            description
+            tags
+            category
+            image
+          }
         }
       }
     }

@@ -14,24 +14,18 @@ import helpers from '../helpers'
 export default class Blog extends React.Component {
   render() {
     const { data } = this.props
-    let { categories, posts, tags } = data;
+    let { categories, posts, tags } = data
 
-    posts = helpers.blog.getPostsFromQuery(posts);
-    categories = helpers.blog.getCategoriesFromQuery(categories);
-    tags = helpers.blog.getTagsFromQuery(tags);
+    posts = helpers.blog.getPostsFromQuery(posts)
+    categories = helpers.blog.getCategoriesFromQuery(categories)
+    tags = helpers.blog.getTagsFromQuery(tags)
 
     console.log(posts)
 
     return (
       <section className={styles.container}>
-        <Sidebar
-          posts={posts}
-          tags={tags}
-          categories={categories}
-        />
-        <BlogResults
-          posts={posts}
-        />
+        <Sidebar posts={posts} tags={tags} categories={categories} />
+        <BlogResults posts={posts} />
       </section>
     )
   }
@@ -42,16 +36,15 @@ Blog.propTypes = {
     allMarkdownRemark: PropTypes.shape({
       categories: PropTypes.array,
       posts: PropTypes.array,
-      tags: PropTypes.array
+      tags: PropTypes.array,
     }),
   }),
 }
 
-
 export const pageQuery = graphql`
   query Blog {
     categories: allMarkdownRemark(
-      filter: { frontmatter: { templateKey: { eq: "blog-post" }}}
+      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
       limit: 1000
     ) {
       edges {
@@ -62,9 +55,9 @@ export const pageQuery = graphql`
         }
       }
     }
-    
+
     tags: allMarkdownRemark(
-      filter: { frontmatter: { templateKey: { eq: "blog-post" }}}
+      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
       limit: 1000
     ) {
       edges {
@@ -75,31 +68,32 @@ export const pageQuery = graphql`
         }
       }
     }
-    
+
     posts: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-        filter: { frontmatter: { 
-          templateKey: { eq: "blog-post" } 
+      filter: {
+        frontmatter: {
+          templateKey: { eq: "blog-post" }
           published: { eq: true }
         }
       }
-        limit: 1000
-      ) {
-        edges {
-          node {
-            fields {
-              slug
-            }
-            frontmatter {
-              title
-              date 
-              description
-              tags 
-              category
-              image
-            }
+      limit: 1000
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            date
+            description
+            tags
+            category
+            image
           }
         }
       }
+    }
   }
 `

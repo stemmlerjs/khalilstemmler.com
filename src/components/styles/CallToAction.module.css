@@ -1,17 +1,17 @@
 .container {
-    /* max-width: 80%; */
-    /* margin: 0 auto; */
-    margin-top: 2em;
+  /* max-width: 80%; */
+  /* margin: 0 auto; */
+  margin-top: 2em;
 }
 
 .container p {
-        font-size: 1.6em;
+  font-size: 1.6em;
 }
 
 .mail {
-    color: #00b0e8;
-    text-decoration: underline;
-    font-size: 1.6em;
+  color: #00b0e8;
+  text-decoration: underline;
+  font-size: 1.6em;
 }
 
 .mail:hover {
@@ -20,8 +20,7 @@
 }
 
 @media (max-width: 400px) {
-    .mail {
-            font-size: 20px;
-
-    }
+  .mail {
+    font-size: 20px;
+  }
 }

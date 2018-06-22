@@ -2,14 +2,22 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
 
-export const AboutPageTemplate = ({ title, content, contentComponent, displayPicture }) => {
+export const AboutPageTemplate = ({
+  title,
+  content,
+  contentComponent,
+  displayPicture,
+}) => {
   const PageContent = contentComponent || Content
 
   return (
     <section className={'scene_element--fadein '}>
       <h1>{title}</h1>
-      <div style={{ textAlign: 'center'}}>
-        <img style={{ borderRadius: '100%', height: '10em'}} src={displayPicture}/>
+      <div style={{ textAlign: 'center' }}>
+        <img
+          style={{ borderRadius: '100%', height: '10em' }}
+          src={displayPicture}
+        />
       </div>
       <PageContent className="content" content={content} />
     </section>
@@ -24,7 +32,7 @@ AboutPageTemplate.propTypes = {
 
 const AboutPage = ({ data }) => {
   const { markdownRemark: post } = data
-  
+
   return (
     <AboutPageTemplate
       contentComponent={HTMLContent}

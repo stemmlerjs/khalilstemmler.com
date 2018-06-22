@@ -1,25 +1,25 @@
 .blockQuote {
-    padding-left: 3em;
-    display: flex;
-    padding-top: 2.5em;
-    padding-bottom: 2.5em;
+  padding-left: 3em;
+  display: flex;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
 }
 
-.blockQuote > div {
-    border-left: solid 3px #b9b9b9;
-    padding-left: 2em;
-    font-weight: 400;
+.blockQuote>div {
+  border-left: solid 3px #b9b9b9;
+  padding-left: 2em;
+  font-weight: 400;
 }
 
-.blockQuote > div > p {
-    font-size: 1.5em;
-    color: #797979;
-    margin-bottom: 0.6em;
+.blockQuote>div>p {
+  font-size: 1.5em;
+  color: #797979;
+  margin-bottom: 0.6em;
 }
 
 @media (max-width: 600px) {
-    .blockQuote {
-        padding-left: 1em;
-        font-size: 0.7em;
-    }
+  .blockQuote {
+    padding-left: 1em;
+    font-size: 0.7em;
+  }
 }

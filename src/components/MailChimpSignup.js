@@ -4,6 +4,7 @@ import addToMailchimp from "gatsby-plugin-mailchimp";
 import styles from "./styles/MailChimpSignup.module.css";
 
 import meGlitched from "../img/me-glitched.jpg";
+import nprogress from "nprogress";
 
 // https://gumroad.com/resource-center/building-your-email-list
 // https://www.blogtyrant.com/make-ebook/
@@ -11,8 +12,6 @@ import meGlitched from "../img/me-glitched.jpg";
 // https://news.ycombinator.com/item?id=16283959
 
 let isEbookReady = false;
-
-import nprogress from "nprogress";
 
 const SubscribeComponent = () => {
   return (
@@ -27,9 +26,9 @@ const SubscribeComponent = () => {
         Join a community of ninja JS-ers who are learning how to code, building
         their portfolios, and deploying to prod!
         {isEbookReady
-          ? ` You'll get my best JavaScript content each week. You'll also get a copy of my free ebook,
+          ? ` You'll get my best JavaScript content every week. You'll also get a copy of my free ebook,
     "JS in Prod: 5 Tools You Really Should Be Using, Yesterday".`
-          : ` You'll get my best JavaScript content each week (tips, tricks, tutorials).`}
+          : ` You'll get my best JavaScript content every week (tips, tricks, and tutorials).`}
       </div>
       <div className={styles.label} />
       <input

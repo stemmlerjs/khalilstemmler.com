@@ -68,7 +68,7 @@ export default class MailChimpComponent extends React.Component {
     };
   }
 
-  _handleSubmit = async email => {
+  _handleSubmit = async (email) => {
     nprogress.start();
     try {
       const result = await addToMailchimp(email);

@@ -67,20 +67,23 @@ export default class MailChimpComponent extends React.Component {
     };
   }
 
-  _handleSubmit = async (email) => {
+  _handleSubmit = (email) => {
     nprogress.start();
-    try {
-      const result = await addToMailchimp(email);
-      // Send them somewhere or show them something.
-      nprogress.done();
-      this.setState({
-        ...this.state,
-        didSubscribe: true
+
+    return addToMailchimp(email)
+      .then((result) => {
+        // Send them somewhere or show them something.
+        nprogress.done();
+        this.setState({
+          ...this.state,
+          didSubscribe: true
+        })
       })
-    } catch (err) {
-      // Present an error message to them.
-      nprogress.done();
-    }
+      .catch ((err) => {
+        // Present an error message to them.
+        nprogress.done();
+        alert("Looks like an error occurred. Couldn't add ya to the email list :( Let me know please @ khalilstemmler@gmail.com.")
+      })
   };
 
   render() {

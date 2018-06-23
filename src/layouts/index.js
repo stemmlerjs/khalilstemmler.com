@@ -86,21 +86,12 @@ class TemplateWrapper extends React.Component {
           title="Khalil Stemmler - Software Developer / Designer"
           meta={[
             // Server side rendering meta data
-            {
-              property: 'og:title',
-              content: 'Khalil Stemmler - Software Developer / Designer',
-            },
-            {
-              property: 'og:description',
-              content: 'Khalil Stemmler - Software Developer / Designer',
-            },
+            { property: 'og:title', content: 'Khalil Stemmler - Software Developer / Designer & Musician' },
+            { property: 'og:description', content: 'Khalil Stemmler - Software Developer / Designer & Musician' },
             { property: 'og:type', content: 'site' },
             { property: 'og:url', content: 'khalilstemmler.com' },
             { name: 'theme-color', content: '#ee009e' },
-            {
-              name: 'apple-mobile-web-app-status-bar-style',
-              content: 'black-translucent',
-            },
+            { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' },
             {
               name: 'keywords',
               content:

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Khalil Stemmler - Web & Shopify Developer / Designer',
+    title: 'Khalil Stemmler - JavaScript Developer / Designer',
   },
   plugins: [
     // {

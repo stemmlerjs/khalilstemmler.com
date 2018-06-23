@@ -101,26 +101,17 @@ class TemplateWrapper extends React.Component {
               name: 'apple-mobile-web-app-status-bar-style',
               content: 'black-translucent',
             },
-
-            // { property: "og:image" , content: "<%= image %>" },
-            // { property: "og:image:type" , content: "image/png" },
-            // { property: "og:image:width" , content: "200" },
-            // { property: "og:image:height" , content: "200" },
-
-            // Google Tracking
-            // { name: "google-site-verification", content: "hnc0xMxaywTkrqjaD9-r57vX4SF8YTRpQtaiORbyuzk" },
-
-            // SEO Keywords
             {
               name: 'keywords',
               content:
-                'shopify developer, shopify developer oakville, shopify developer brantford, javascript developer, node shopify developer',
+                'javascript developer, javascript developer toronto, musician, entrepreneur, software developer'
             },
             { name: 'author', content: 'Khalil Stemmler' },
             {
               name: 'description',
               content:
-                'Khalil Stemmler is a Software Developer / Designer specializing in JavaScript and Ecommerce on Shopify',
+                `Khalil Stemmler is a Software Developer / Designer & Musician in Toronto specializing in full-stack JavaScript development with React, Redux and Node.js.
+                He creates writes about JavaScript, music, design, and anything that involves all three.`,
             },
           ]}
           /**

@@ -21,7 +21,7 @@ if(~followers.indexOf(target)) {
 }
 ```
 
-Notice the **tilde **on the first line? Let's find out what that's all about.
+Notice the **tilde** on the first line? Let's find out what that's all about.
 
 I [discovered that](https://stackoverflow.com/questions/12337360/javascript-tilde-twos-complement) when we use the ~ operator, it does -(A + 1) where A is the value to the right of the tilde. For example, we'd get -2 if we did this (since -(1 + 1) = -2):
 
@@ -32,7 +32,7 @@ I [discovered that](https://stackoverflow.com/questions/12337360/javascript-tild
 
 Maybe you're like me and you're not really seeing the usefulness of using tilde yet. 
 
-It turns out that it's _actually useful_ for determining the truthiness of a **numeric **value. It [flips all the bits in its operand](https://stackoverflow.com/questions/12299665/what-does-a-tilde-do-when-it-precedes-an-expression).
+It turns out that it's _actually useful_ for determining the truthiness of a **numeric** value. It [flips all the bits in its operand](https://stackoverflow.com/questions/12299665/what-does-a-tilde-do-when-it-precedes-an-expression).
 
 For a moment, let's just realize the mad crazy language that we're working with and recall that JavaScript does this:
 
@@ -42,7 +42,7 @@ For a moment, let's just realize the mad crazy language that we're working with 
 -1 ? true : false; // => true 😲
 ```
 
-Ah! Isn't that funny? -1 has a truthiness of **true **and the only integer that has a truthiness of **false **is 0. So really, we can use tilde as a shorthand.
+Ah! Isn't that funny? -1 has a truthiness of **true** and the only integer that has a truthiness of **false** is 0. So really, we can use tilde as a shorthand.
  Check this out:
 
 ```
@@ -54,12 +54,18 @@ if(!fruits.indexOf('apples') != -1) {
  else {
   // We ain't got no apples
 }
+
 // We can do this 
-to see if an array contains a particular value (btw, there's a better way to do this with ES6 now.if (!!~fruits.indexOf('apples') {
+// to see if an array contains a particular value 
+// (btw, there's a better way to do this with ES6 now.
+
+if (!!~fruits.indexOf('apples')) {
   // Yay apples
+  console.log("Found apples!") // <= this will print
 }
  else {
   // Still no apples
+  console.log("No apples apparently")
 }
 ```
 

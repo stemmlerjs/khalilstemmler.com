@@ -3,11 +3,14 @@ templateKey: blog-post
 title: Fixing Sequelize Models with Migrations
 date: '2018-07-17T15:30:22-04:00'
 description: >-
-  Sequelize is a great ORM for NodeJS applications that are built on relational backends. Inevitably, you'll need to update your models as the database
-  requirements change.. or if you did
-  something silly. Here's a real life approach to using Sequelize to doing database migrations.
+  Sequelize is a great ORM for NodeJS applications that are built on relational
+  backends. Inevitably, you'll need to update your models as the database
+  requirements change.. or if you did something silly. Here's a real life
+  approach to using Sequelize to doing database migrations.
 tags:
-  - NodeJS, JavaScript, Sequelize
+  - NodeJS
+  - JavaScript
+  - Sequelize
 category: Software Development
 image: /img/map.png
 published: true

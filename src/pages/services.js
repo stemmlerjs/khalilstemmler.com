@@ -44,7 +44,7 @@ export default class Services extends React.Component {
         <BlockQuote
           text={`I've been a web developer / designer for over 5 years and 
 have experience working with numerous technologies. I
-specialize in Ecommerce development and you can count on me to help you meet your goals as it pertains to: `}
+specialize in modern web application development with NodeJS and React. You can count on me to help you meet your goals as it pertains to: `}
         />
 
         <h2>NodeJS / JavaScript Development / App & Mobile App Development</h2>

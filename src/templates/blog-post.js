@@ -34,7 +34,7 @@ export const BlogPostTemplate = ({
   return (
     <section>
       {helmet || ''}
-      <div className={styles.container}>
+      <div className={styles.blogPostContainer}>
         <div>
           <div style={{ margin: '0 auto' }} className="column is-10">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">

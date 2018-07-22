@@ -34,7 +34,7 @@ export const BlogPostTemplate = ({
   return (
     <section>
       {helmet || ''}
-      <div>
+      <div className={styles.container}>
         <div>
           <div style={{ margin: '0 auto' }} className="column is-10">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
@@ -55,7 +55,9 @@ export const BlogPostTemplate = ({
               <img src={image} />
             </div>
 
-            <p>{description}</p>
+            <p className={styles.description}>{description}</p>
+
+            
             <PostContent className={'blog-post-content'} content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>

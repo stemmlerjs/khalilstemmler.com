@@ -30,7 +30,7 @@ export default class Services extends React.Component {
     return (
       <section className={`${styles.overrideContainer} scene_element--fadein`}>
         <h1>Services</h1>
-        <LetsBuiltIt />
+        {/*<LetsBuiltIt />*/}
         <div className={styles.imagesContainer}>
           <img style={{ width: '50%' }} src={shopify} />
           <img style={{ width: '50%' }} src={wordpress} />
@@ -46,6 +46,18 @@ export default class Services extends React.Component {
 have experience working with numerous technologies. I
 specialize in Ecommerce development and you can count on me to help you meet your goals as it pertains to: `}
         />
+
+        <h2>NodeJS / JavaScript Development / App & Mobile App Development</h2>
+        <p>
+          JavaScript is my programming language of choice. I've built web apps, written
+          countless scripts, and made hybrid mobile apps in my professional,
+          personal and freelance work utilizing technologies like ReactJS,
+          jQuery, AngularJS, NodeJS, Express, Sequelize, Redis, ElasticSearch,
+          AWS and more.
+          <br/><br/>
+          I can help you migrate your application to the MERN
+          or MEAN stack.
+        </p>
 
         <h2>Shopify Development</h2>
         <p>
@@ -64,15 +76,6 @@ specialize in Ecommerce development and you can count on me to help you meet you
             help set up a beautiful custom WordPress theme
           </Link>{' '}
           for you to reach a wider audience with your business online.
-        </p>
-
-        <h2>NodeJS / JavaScript Development / App & Mobile App Development</h2>
-        <p>
-          JavaScript is my language of choice. I've built web apps, written
-          countless scripts, and made hybrid mobile apps in my professional,
-          personal and freelance work utilizing technologies like ReactJS,
-          jQuery, AngularJS, NodeJS, Express, Sequelize, Redis, ElasticSearch,
-          AWS and more.
         </p>
 
         <h2>Web Design</h2>

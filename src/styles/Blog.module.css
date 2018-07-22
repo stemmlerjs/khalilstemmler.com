@@ -1,6 +1,11 @@
 .container {
-        display: flex;
-    flex-direction: row;
+        /* display: flex;
+    flex-direction: row; */
+}
+
+.container p img {
+        margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .date {
@@ -15,4 +20,18 @@
 
 .category:hover {
     text-decoration: underline;
+}
+
+.description {
+    font-size: 22px;
+    margin-bottom: 2em;
+    border-bottom: solid 1px #dedede;
+    padding-bottom: 2em;
+}
+
+.container ol {
+        margin-bottom: 2em;
+    padding-left: 2em;
+    margin-top: 2em;
+    font-size: 18px;
 }

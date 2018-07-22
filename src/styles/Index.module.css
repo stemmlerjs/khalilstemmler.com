@@ -1,43 +1,41 @@
 .container {
-    padding-left: 7em;
-    padding-right: 7em;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding-bottom: 6em;
+  padding-left: 7em;
+  padding-right: 7em;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 6em;
 }
 
-.container > p > a {
-    color: #ee009e;
-    text-decoration: underline;
+.container>p>a {
+  color: #ee009e;
+  text-decoration: underline;
 }
 
 .container h1 {
-font-size: 2.4em;
-    font-weight: normal;
-    color: #313131;
-    margin-bottom: 36px;
+  font-size: 2.4em;
+  font-weight: 400;
+  color: #313131;
+  margin-bottom: 36px;
 }
 
-
 .container h2 {
-    font-size: 1.4em;
-    font-weight: 700;
-    color: #313131;
-    margin-bottom: .9em;
-    margin-top: 2.6em;
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #313131;
+  margin-bottom: .9em;
+  margin-top: 2.6em;
 }
 
 .container h2:nth-of-type(1) {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
-
 .container ul {
-    list-style: unset;
-    margin-left: 3em;
-    font-size: 18px;
-    margin-top: 2em;
-    margin-bottom: 2em;
+  list-style: unset;
+  margin-left: 3em;
+  font-size: 18px;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 /* ME  */
@@ -45,68 +43,79 @@ font-size: 2.4em;
 .meContainer {}
 
 .meContainer img {
-    height: 120px;
-    border-radius: 100%;
-    position: absolute;
-    left: calc(24%/2 - 6em);
-    transition: opacity 0.2s ease-in;
-    opacity: 1;
+  height: 120px;
+  border-radius: 100%;
+  position: absolute;
+  left: calc(24%/2 - 6em);
+  transition: opacity 0.2s ease-in;
+  opacity: 1;
 }
 
 .landingTitle {}
 
-
 .toTopButton {
-    opacity: 0;
-    color: white;
-    padding: 2px;
-    position: fixed;
-    top: 30px;
-    right: 15px;
-    z-index: 20;
-    border: none;
-    outline: none;
-        background: #00b0e8;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 6px;
-    font-size: 18px;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
-    transition: all .3s cubic-bezier(.25,.8,.25,1);
-    box-shadow: 0 4px 6px 0 rgba(0,0,0,.2);
+  opacity: 0;
+  color: white;
+  padding: 2px;
+  position: fixed;
+  top: 30px;
+  right: 15px;
+  z-index: 20;
+  border: none;
+  outline: none;
+  background: #00b0e8;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 18px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+  transition: all .3s cubic-bezier(.25, .8, .25, 1);
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, .2);
 }
 
 .toTopButton i {
-        font-size: 2em;
+  font-size: 2em;
 }
 
 @media (max-width: 1470px) {
-    .meContainer img {
-        opacity: 0;
-    }
+  .meContainer img {
+    opacity: 0;
+  }
 }
 
+@media (min-width: 600px) {
+  .landingTitle { height: 250px;}
+}
+@media (min-width: 900px) {
+  .landingTitle { height: 220px;}
+}
+
+@media (min-width: 1100px) {
+  .landingTitle { height: 163px;}
+}
+
+
 @media (max-width: 600px) {
-    .container {
+  .container {
     padding-left: 1.5em;
     padding-right: 1.5em;
-    }
-
-    .container h1 {
-        text-align: center;
-    }
-
-    .landingTitle {
-        font-size: 1.5em!important;
-    }
-
-    ul {
-        margin-left: 2em !important;
-    }
+        
+  }
+  .container h1 {
+    text-align: center;
+  }
+  .landingTitle {
+    font-size: 1.5em !important;
+    height: 113px;
+  }
+  ul {
+    margin-left: 2em !important;
+  }
+  
 }

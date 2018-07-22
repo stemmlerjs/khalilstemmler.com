@@ -145,7 +145,7 @@ const FooterHeader = () => {
       <h3>Khalil Stemmler</h3>
       <a href="mailto:khalilstemmler@gmail.com">khalilstemmler@gmail.com</a>
       <p>
-        I'm a Canadian software developer. Have a question or want to{' '}
+        I'm a full-stack developer. Have a question or want to{' '}
         <Link to="/contact">work together?</Link>
       </p>
     </div>

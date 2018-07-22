@@ -44,7 +44,9 @@ Blog.propTypes = {
 export const pageQuery = graphql`
   query Blog {
     categories: allMarkdownRemark(
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+      filter: { frontmatter: { 
+        templateKey: { eq: "blog-post" },
+        published: { eq: true }  } }
       limit: 1000
     ) {
       edges {
@@ -57,7 +59,10 @@ export const pageQuery = graphql`
     }
 
     tags: allMarkdownRemark(
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+      filter: { frontmatter: { 
+        templateKey: { eq: "blog-post" }, 
+        published: { eq: true } 
+      } }
       limit: 1000
     ) {
       edges {

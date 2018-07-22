@@ -31,8 +31,8 @@ const Skills = props => {
           </p>
           <h3 className={styles.elementHeader}>Project Management</h3>
           <p>
-            I believe it's important to break a large project into discrete
-            pieces and schedule based on those.
+            I always start by breaking a large project into discrete
+            pieces and schedule based on those. 
           </p>
         </div>
       </div>

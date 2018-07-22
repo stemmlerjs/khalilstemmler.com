@@ -16,7 +16,7 @@
 }
 
 .container p {
-  font-size: 1.6em;
+    font-size: 20px;
       color: #898989;
 }
 
@@ -62,6 +62,7 @@ background: #EE009E;
     transition: 0.2s ease-in-out;
     position: relative;
     top: 0;
+    font-weight: bold;
 }
 
 .whatIDo:hover {
@@ -80,6 +81,7 @@ background: #EE009E;
     transition: 0.2s ease-in-out;
     top: 0;
     position: relative;
+    font-weight: bold;
 }
 
 .contact:hover {
@@ -109,8 +111,22 @@ background: #EE009E;
   }
 }
 
+
+
+@media (min-width: 600px) {
+  .landingTitle { height: 250px;}
+}
+@media (min-width: 900px) {
+  .landingTitle { height: 220px;}
+}
+
+@media (min-width: 1100px) {
+  .landingTitle { height: 163px;}
+}
+
 @media (max-width: 600px) {
   .landingTitle {
     font-size: 1.5em!important;
+    height: 113px;
   }
 }

@@ -8,7 +8,7 @@ const pages = {
   development: {
     sections: [
       {
-        title: 'Frontend',
+        title: 'Front',
         elements: [
           {
             name: 'JavaScript',
@@ -29,7 +29,7 @@ const pages = {
         ],
       },
       {
-        title: 'Backend stuff',
+        title: 'Back',
         elements: [
           {
             name: 'Backend',
@@ -247,7 +247,7 @@ class DigitalResume extends React.Component {
           <div className={styles.heroTextContainer}>
             <h3>For the love of building</h3>
             <div>
-              Making things on the web is my passion. Here's my virtual resume.
+              Building good products is my passion. Here's my virtual resume.
             </div>
           </div>
         </div>

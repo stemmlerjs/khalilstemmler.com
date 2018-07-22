@@ -16,14 +16,14 @@
 }
 
 .heroTextContainer>h3 {
-  font-size: 2.4em;
+  font-size: 22px;
   font-weight: 400;
   color: #313131;
   margin-bottom: 36px;
 }
 
 .heroTextContainer>div {
-  font-size: 1.6em;
+  font-size: 18px;
   color: #898989;
 }
 
@@ -156,6 +156,10 @@
   .elementName {
     display: inline-block;
     margin-bottom: 1em;
+  }
+  .heroTextContainer {
+    margin-left: 10px;
+    padding-left: 27px;
   }
 }
 

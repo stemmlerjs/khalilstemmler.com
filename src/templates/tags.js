@@ -48,7 +48,7 @@ export const tagPageQuery = graphql`
     }
 
     categories: allMarkdownRemark(
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+      filter: { frontmatter: { templateKey: { eq: "blog-post" }, published: { eq: true }   } }
       limit: 1000
     ) {
       edges {
@@ -61,7 +61,7 @@ export const tagPageQuery = graphql`
     }
 
     tags: allMarkdownRemark(
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+      filter: { frontmatter: { templateKey: { eq: "blog-post" }, published: { eq: true }   } }
       limit: 1000
     ) {
       edges {

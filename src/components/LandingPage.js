@@ -17,7 +17,8 @@ class LandingPage extends React.Component {
         'design your Shopify store',
         'sell stuff online',
         'fight aliens',
-        'design your WordPress theme',
+        'learn web development',
+        'develop your WordPress theme',
       ],
       counter: 0,
     }
@@ -58,15 +59,13 @@ class LandingPage extends React.Component {
               className={styles.cowboy}
               style={{ display: 'inline-block' }}
               src={cowboy}
-            />. I'm a software developer in Toronto. I can help you{' '}
+            />. I'm a full-stack developer in Toronto. I can help you{' '}
             <span className={styles.ability}>
               {this.state.abilities[this.state.counter]}
             </span>.
           </h1>
           <p>
-            I design, build & maintain cool stuff on the web. <br />Mostly with
-            modern web technology like #React, #Redux, and #Node. <br />I like
-            to code, be creative, and solve problems.
+            I create robust web applications and software, mostly using modern JavaScript tools like NodeJS and React.
           </p>
 
           <div className={styles.buttonContainer}>

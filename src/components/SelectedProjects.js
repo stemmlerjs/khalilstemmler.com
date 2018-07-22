@@ -46,9 +46,8 @@ const SelectedProjects = props => {
         text={`Univjobs is a platform that fills the gap
 for hiring students and recent grads for
 entry-level jobs. It is an advanced 
-React + Redux application supported 
-by many NodeJS microservices on
-AWS.`}
+React / Redux application that serves client requests from a robust and
+scalable NodeJS microservice architecture on AWS.`}
         tags={[
           'React',
           'Redux',
@@ -57,6 +56,9 @@ AWS.`}
           'Elasticache',
           'RDS',
           'Stripe Payments',
+          'Terraform',
+          'Ansible',
+          'Gitlab CI'
         ]}
       />
 

@@ -10,7 +10,7 @@ const typography = new Typography({
   bodyBoldWeight: '700',
   overrideStyles: ({ adjustFontSizeTo, rhythm }, options, styles) => ({
     p: {
-      fontSize: '1.4em',
+      fontSize: '18px',
     },
     h4: {
       lineHeight: '1.4em',

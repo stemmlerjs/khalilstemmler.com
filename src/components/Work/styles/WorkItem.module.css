@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+      transition: 0.2s ease-in-out;
+}
+
+.imageContainer {
+  max-width: 250px;
+  min-width: 250px;
+}
+
+.textContainer {
+  margin-left: 25px;
+}
+
+.textContainer>div:nth-child(1) {
+  font-weight: bold;
+  font-size: 23px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+
+  .imageContainer {
+        margin: 0 auto;
+        width: 100%;
+  }
+}

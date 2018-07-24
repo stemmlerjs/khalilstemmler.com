@@ -17,6 +17,7 @@ const typography = new Typography({
       margin: '0',
       color: '#c9c9c9',
       fontSize: '1.1em !important',
+      marginBottom: '20px'
     },
     pre: {
       marginTop: '3em !important',
@@ -25,18 +26,7 @@ const typography = new Typography({
     },
     ol: {
       fontSize: '1.3em',
-    },
-    // blockquote: {
-    //   ...adjustFontSizeTo('19px'),
-    //   color: gray(41),
-    //   fontStyle: 'italic',
-    //   paddingLeft: rhythm(13/16),
-    //   marginLeft: rhythm(-1),
-    //   borderLeft: `${rhythm(3/16)} solid ${gray(10)}`,
-    // },
-    // 'blockquote > :last-child': {
-    //   marginBottom: 0,
-    // },
+    }
   }),
 })
 

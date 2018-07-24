@@ -33,6 +33,7 @@ const Overlay = props => {
       <OverlayLink path={"/about"} displayName="About" toggleBurgerMenu={props.toggleBurgerMenu}/>
       <OverlayLink path={"/blog"} displayName="Blog" toggleBurgerMenu={props.toggleBurgerMenu}/>
       <OverlayLink path={"/contact"} displayName="Contact" toggleBurgerMenu={props.toggleBurgerMenu}/>
+      <OverlayLink path={"/work"} displayName="Work" toggleBurgerMenu={props.toggleBurgerMenu}/>
       <Link onClick={props.toggleBurgerMenu} to="/contact" >
         <button className={styles.getStartedButtonOverlay}>
           Get started

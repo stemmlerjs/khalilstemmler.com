@@ -1,14 +1,15 @@
 ---
 templateKey: work-page
-title: Personal Media Server
+title: Personal Music Player
 date: 2017-09-16 22:33:14
-description: Portfolio website for Hamilton based Designer.
-demo_url: null
-repo_url: null
+description: Online music player to listen to your own music.
+demoUrl: null
+repoUrl: null
 public: false
-image: /img/fran-world-small.png
+image: /img/music-player-small.png
 ---
 
+<!--
 ![ks12hx-01](/images/proj/music-player-large.JPG "This is one dope sampler.")
 
 {% raw %}
@@ -24,3 +25,7 @@ Before I started using Spotify, I wanted a way to listen to my music from whiche
 [Update]: I plan on re-designing and re-creating this in the near future.
 
 [Check out the code on GitHub](https://github.com/stemmlerjs/mymusicserver)
+  
+-->
+
+Details not up yet. It will be soon, though.

@@ -1,3 +1,10 @@
+
+export function redirectTo (url) {
+  if (typeof window != 'undefined') {
+    window.location.href = url
+  }
+}
+
 export function scrollToY(scrollTargetY, speed, easing) {
   // scrollTargetY: the target scrollY property of the window
   // speed: time in pixels per second

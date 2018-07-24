@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'gatsby-link'
 
 import styles from './styles/SelectedProjects.module.css'
 
@@ -78,6 +79,8 @@ scalable NodeJS microservice architecture on AWS.`}
         my thoughts in JavaScript, design and Shopify.`}
         tags={['React', 'Gatsby', 'Graphql', 'CSS Modules']}
       />
+
+      <Link to={'/work'} className={styles.seeMore}>See more work</Link>
     </section>
   )
 }

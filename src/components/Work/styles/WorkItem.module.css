@@ -3,11 +3,12 @@
   flex-direction: row;
   cursor: pointer;
       transition: 0.2s ease-in-out;
+  margin-bottom: 1em;
 }
 
 .imageContainer {
-  max-width: 250px;
-  min-width: 250px;
+    min-width: 100px;
+    max-width: 20%;
 }
 
 .textContainer {
@@ -19,14 +20,8 @@
   font-size: 23px;
 }
 
-@media (max-width: 700px) {
-  .container {
-    flex-direction: column;
-    margin-bottom: 60px;
+ @media (max-width: 500px) {
+  .textContainer>div:nth-child(1)  {
+    font-size: 5vw;
   }
-
-  .imageContainer {
-        margin: 0 auto;
-        width: 100%;
-  }
-}
+} 

@@ -5,7 +5,7 @@ import _ from 'underscore'
 import Sidebar from '../components/Blog/Sidebar'
 import styles from '../styles/Work.module.css'
 import helpers from '../helpers'
-import WorkItem from '../components/Work/WorkItem'
+import { WorkItem } from '../components/Work'
 
 
 export default class Work extends React.Component {
@@ -13,7 +13,8 @@ export default class Work extends React.Component {
     const data = this.props.data.work;
     const { edges } = data;
     const work = edges.map((edge) => Object.assign({}, edge.node.fields, edge.node.frontmatter));
-
+    console.log('<Work/>', work)
+    
     return (
       <section className={'scene_element--fadein '}>
         <h1>Work</h1>
@@ -24,6 +25,7 @@ export default class Work extends React.Component {
                 title={workItem.title}
                 description={workItem.description}
                 image={workItem.image}
+                slug={workItem.slug}
               />
             })
           }
@@ -36,9 +38,6 @@ export default class Work extends React.Component {
 Work.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      // categories: PropTypes.array,
-      // posts: PropTypes.array,
-      // tags: PropTypes.array,
     }),
   }),
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import NavbarItem from './components/NavbarItem'
 import Overlay from './components/Overlay'
+import MobileBurgerMenu from './components/MobileBurgerMenu'
 import Link from 'gatsby-link'
 import github from '../../img/github-icon.svg'
 import logo from '../../img/logo.png'
@@ -16,40 +17,15 @@ const GetStartedButton = () => {
   )
 }
 
-const MobileBurgerMenu = props => {
-  return (
-    <div
-      className={navbarStyles.burgerMenuNavItem}
-      href="javascript:void(0);"
-      onClick={props.toggleBurgerMenu}
-    >
-      <div>
-        <div
-          className={
-            props.menuOpen
-              ? `${navbarStyles.change1} ${navbarStyles.bar1}`
-              : navbarStyles.bar1
-          }
-        />
-        <div
-          className={
-            props.menuOpen
-              ? `${navbarStyles.change2} ${navbarStyles.bar2}`
-              : navbarStyles.bar2
-          }
-        />
-
-        <div
-          className={
-            props.menuOpen
-              ? `${navbarStyles.change3} ${navbarStyles.bar3}`
-              : navbarStyles.bar3
-          }
-        />
-      </div>
-    </div>
-  )
-}
+/**
+ * @class Navbar
+ * @desc This is the navbar that is shown across the screen
+ * on all sizes. When it's resized to a certain point, the mobile
+ * nav is shown.
+ * 
+ * Allows the user to open the Overlay component.
+ * @see Overlay.js
+ */
 
 class Navbar extends React.Component {
   constructor() {
@@ -63,7 +39,8 @@ class Navbar extends React.Component {
   /**
    * openBurgerMenu
    *
-   * Opens the burger menu.
+   * @desc Opens the burger menu.
+   * @return void
    */
 
   toggleBurgerMenu = () => {
@@ -90,6 +67,7 @@ class Navbar extends React.Component {
           <NavbarItem name="about" path="/about" displayName="About"/>
           <NavbarItem name="blog" path="/blog" displayName="Blog"/>
           <NavbarItem name="contact" path="/contact" displayName="Contact" />
+          <NavbarItem name="work" path="/work" displayName="Work" />
           <GetStartedButton />
         </div>
         {/**

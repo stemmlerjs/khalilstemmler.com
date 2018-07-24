@@ -1,0 +1,14 @@
+.content {
+  font-size: 18px;
+}
+
+.demoAndRepoContainer {
+    display: flex;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.demoAndRepoContainer>div {
+  margin-right: 0.5em;
+  text-decoration: underline;
+}

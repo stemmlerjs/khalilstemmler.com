@@ -1,14 +1,15 @@
 ---
 templateKey: work-page
 title: KS12HX-01
-date: 2017-09-16 22:33:14
-description: Portfolio website for Hamilton based Designer.
-demo_url: null
-repo_url: null
+date: 2013-09-16 22:33:14
+description: A music sequencer (digital instrument).
+demoUrl: null
+repoUrl: null
 public: false
-image: /img/fran-world-small.png
+image: /img/ks12hx-small.png
 ---
 
+<!--
 ![ks12hx-01](/images/proj/ks12hx.png "This is one dope sampler.")
 
 {% raw %}
@@ -26,3 +27,8 @@ I created this music sequencer back when I first started getting into web develo
 
 [Check out the code on GitHub](https://github.com/stemmlerjs/mini-sampler)
 [Demo](http://stemmlerjs.github.io/mini-sampler/)
+
+
+-->
+
+Details not up yet. It will be soon, though.

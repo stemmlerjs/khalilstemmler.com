@@ -49,7 +49,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     // Tag pages:
     let tags = []
     let categories = []
-    let work = []
 
     // Iterate through each post, putting all found tags into `tags`
     posts.forEach(edge => {

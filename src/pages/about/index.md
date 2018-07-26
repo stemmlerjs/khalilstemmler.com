@@ -32,3 +32,9 @@ If you're a recruiter, I've heard that this list makes your job easier! 😊
 - Webpack - 3 years
 - SQL - 4 years
 - AWS (Amazon Web Services) - 3.5 years
+
+## Resume
+
+You can download my latest resume below.
+
+<a href="/files/khalil-stemmler-resume-2018.pdf" download>Click to download</a>

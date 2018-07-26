@@ -13,7 +13,7 @@ This is an simple email sending microservice that can be used in any app that ne
 
 ![SES](/img/ses-details.png)
 
-This project is an improvement over the initial version that I wrote for Univjobs. Here's what makes this version special:
+This project is an improvement over the initial version that I wrote for [Univjobs](/work/univjobs). Here's what makes this version special:
 
 - Slack webhook update on exceptions
 - Starts with unique port and announces itself to a service registry

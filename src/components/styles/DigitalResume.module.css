@@ -90,7 +90,7 @@
 }
 
 .pageContainer {
-  font-family: 'Roboto Mono';
+  font-family: 'Roboto', 'Roboto Mono', 'Arial', sans-serif;
   min-height: 29em;
 }
 

@@ -9,24 +9,12 @@ image: /img/lynch-small.png
 date: '2017-10-19T20:24:21-04:00'
 ---
 
-<!--
-{% raw %}
-<div class="post-tags">
-      <span class="tagname">PHP</span>
-      <span class="tagname">Slim Framework</span>
-      <span class="tagname">React</span>
-      <span class="tagname">Redux</span>
-</div>
-{% endraw %}
+Lynch Fluid Controls Inc designs and manufactors hydraulic motion control manifolds and integrated hydraulic systems.
 
-[Lynch Fluids Control Inc](http://www.lynch.ca/). is a hydraulic components company responsible for designing, manufacturing, integrating & distributing to the mobile & industrial markets. 
+I had the opportunity to help Lynch save money by creating a robust Business Intelligence application using React, Redux, and PHP using the Slim Framework.
 
-Lynch contracted a software project through my school to build a Cost Analysis Tool so that operators could determine the profitability of items manufactured in real-time. 
+Working with a team of 3, I architected a software solution that would integrate with their SAP database to automatically track and evaluate the profitability of standard products on a real time basis. 
 
-I constructed a front-end application with React / Redux, taught my team modern web development practices, and designed and oversaw the development an API in PHP using Slim Framework utilizing live data from their distributed machining databases.
+The application also provided all services online and generated reports/notifications to support management and planning teams.
 
-While I can't share the source code for this project, I'd be happy to talk with you in more detail about the problem we solved.  
-  
--->
-
-Details not up yet. It will be soon, though.
+Unfortunately, I can't share any code or screenshots for this application because I signed a **non-disclosure agreement**. If you're curious, I'd be happy to talk more about the problem I helped solve.

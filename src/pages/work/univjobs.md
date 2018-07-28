@@ -30,6 +30,13 @@ It was built in response to the frustration that our peers in STEM and non-STEM 
 - Supertest for testing API routes
 - GitLab CI pipeline (staging, production)
 
+## Microservices
+- Pacer (job recommendations service)
+- Minty (admin server)
+- Message-Notifier (handles sending notifications for users using IM)
+- Mailchimp (synchronizes emails between production database and mailchimp)
+- Mailer (sending mail with Amazon SES)
+
 ### Design process
 
 When we started designing Univjobs, we decided to follow the steps outlined by [Black Design](http://www.black.design/), since they had learned the hard way and built a good system by doing this with many Y Combinator startups.

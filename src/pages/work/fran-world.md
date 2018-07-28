@@ -13,6 +13,8 @@ This is a portfolio website that I created for the wonderful designer, Francesca
 
 ![Fran World](/img/frans.png)
 
-She had already created the high fidelity wireframes for desktop and mobile. It was created using jQuery and HTML so that she could make edits to it later.
+She had already created the high fidelity wireframes for desktop and mobile, I just coded it up for her. 
+
+Because she's a designer and knows how to code, it was created using jQuery and HTML so that she could make edits to it later.
 
 ![Fran world gif](/img/fran-gif.gif)

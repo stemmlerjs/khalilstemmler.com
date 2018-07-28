@@ -4,34 +4,15 @@ date: 2017-09-16 22:33:14
 templateKey: work-page
 description: Hacking Asterisk PBX's AMI to send me text notifications on missed calls.
 demoUrl: null
-repoUrl: null
-public: false
+repoUrl: https://github.com/stemmlerjs/Asterisk-Twilio
+public: true
 image: /img/asterisk-small.jpg
 ---
 
-<!--
-![ks12hx-01](/images/asterisk/13.png "Calls comin in and stuff")
+## What's Asterisk?
 
-{% raw %}
-<div class="post-tags">
-      <span class="tagname">Twilio</span>
-      <span class="tagname">NodeJS</span>
-      <span class="tagname">Asterisk</span>
-      <span class="tagname">Bootstrap</span>
-</div>
-{% endraw %}
+"Asterisk is an open source framework for building communications applications. 
+Asterisk turns an ordinary computer into a communications server. Asterisk powers IP PBX systems, VoIP gateways, conference servers and other custom solutions. It is used by small businesses, large businesses, call centers, carriers and government agencies, worldwide." - via [asterisk.org](https://www.asterisk.org/get-started)
 
-This was a really fun experiment that allowed me to learn more about Asterisk and Twilio simultaneously.
-
-The goal was to figure out how to extend the Asterisk PBX Linux software to add text notifications when I miss a call on my VoIP phone.
-
-Using NodeJS, I wrote a script that hooked into the Asterisk Management Interface and watches for state changes that signify a missed call happened. To notify me, I used Asterisk to send an SMS text to my cell phone.
-
-I actually wrote a blog post about this [over here](/2016/09/21/asterisk/) if you're interested.
-
-[Check out the code on GitHub](https://github.com/stemmlerjs/Asterisk-Twilio)
-
--->
-
-Details not up yet. It will be soon, though.
-
+## Okay, and...?
+It's awesome! Naturally, the most fun projects are real-time projects, so I did a deep dive. Here's a [blog post](/blog/hacking-asterisk-ami) about it.

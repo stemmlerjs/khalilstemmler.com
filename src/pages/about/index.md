@@ -8,7 +8,7 @@ I'm Khalil, a full-stack javascript developer available for hire.
 
 I fell in love with coding and tech ever since my first programming class in Grade 9. 
 
-Since then, I've earned my Bachelors in Computer Science, my Diploma in Internet Networking and worked at companies of varying size such as IBM, Pinnaca Softcorp, and JOMAR in Software roles learning and building things with dozens of web frameworks and languages.
+Since then, I've earned my Bachelors in Computer Science, my Diploma in Internet Networking and worked at companies of varying size such as IBM, Pinnaca Softcorp, and JOMAR in Software roles learning and building things, mostly with JavaScript and NodeJS.
 
 My freelance journey began while I was in school in school in order to pay the bills while I was studying Computer Science. It was a _fun_ time of balancing school between building apps, websites and tools for clients. 
 

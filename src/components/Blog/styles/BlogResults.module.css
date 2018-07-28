@@ -1,57 +1,57 @@
 .container {
-        width: 70%;
-    padding-left: 3em;
+  width: 70%;
+  padding-left: 3em;
 }
 
 .date {
-    color: #c9c9c9;
-    font-size: 1.4em;
+  color: #c9c9c9;
+  font-size: 1.4em;
 }
 
 .title {
-    text-decoration: none;
-    color: #3b3a3a;
-    cursor: pointer;
-    font-size: 2em;
-    font-weight: 500;
-    margin-top: .6em;
-    margin-bottom: .6em;
+  text-decoration: none;
+  color: #3b3a3a;
+  cursor: pointer;
+  font-size: 2em;
+  font-weight: 500;
+  margin-top: .6em;
+  margin-bottom: .6em;
 }
 
 .title:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .description {
-        font-size: 1.4em;
+  font-size: 1.4em;
 }
 
 .tagsAndCategoriesContainer {
-        margin-top: .6em;
-    margin-bottom: .6em;
-    font-size: 1.1em;
-    color: #c9c9c9;
-    font-size: 1.4em;
-    font-style: italic;
+  margin-top: .6em;
+  margin-bottom: .6em;
+  font-size: 1.1em;
+  color: #c9c9c9;
+  font-size: 1.4em;
+  font-style: italic;
 }
 
 .tagsAndCategoriesContainer a {
-        color: #c9c9c9;
+  color: #c9c9c9;
+  cursor: pointer;
 }
 
 .tagsAndCategoriesContainer a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .featureImage {
-    margin-top: 4em;
-    margin-bottom: 6em;
+  margin-top: 4em;
+  margin-bottom: 6em;
 }
 
-
 @media (max-width: 750px) {
-    .container {
-        width: 100%;
-        padding-left:0;
-    }   
+  .container {
+    width: 100%;
+    padding-left: 0;
+  }
 }

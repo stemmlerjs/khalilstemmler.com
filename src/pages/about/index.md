@@ -38,3 +38,9 @@ If you're a recruiter, I've heard that this list makes your job easier! 😊
 You can download my latest resume below.
 
 <a href="/files/khalil-stemmler-resume-2018.pdf" download>Click to download</a>
+
+## Code Samples
+
+You can take a peek at some of my code samples here:
+
+<a href="https://github.com/stemmlerjs/code-samples">Code samples</a>

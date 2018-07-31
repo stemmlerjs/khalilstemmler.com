@@ -249,9 +249,15 @@ class DigitalResume extends React.Component {
             <div>
               Building good products is my passion. Here's my virtual resume.
             </div>
+            <div>Also, here's my {` `}
+              <a download href="/files/khalil-stemmler-resume-2018.pdf">
+                actual resume
+              </a> and here are some <a target="__blank" href="https://github.com/stemmlerjs/code-samples">code samples</a>.
+            </div>
           </div>
         </div>
 
+        <div>
         <SelectionNav
           currentPage={this.state.page}
           handleChangePage={this.handleChangePage}
@@ -266,6 +272,7 @@ class DigitalResume extends React.Component {
                 : this.state.page == 'EDUCATION' ? pages.education : ''
           }
         />
+        </div>
       </div>
     )
   }

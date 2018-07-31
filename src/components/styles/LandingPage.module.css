@@ -1,42 +1,40 @@
-
 .container {
-    margin-top: 15%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 15%;
-
+  margin-top: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15%;
 }
 
 .landingTitle {
-        font-size: 2.4em;
-    font-weight: 400;
-    color: #313131;
-    margin-bottom: 36px;
+  font-size: 2.4em;
+  font-weight: 400;
+  color: #313131;
+  margin-bottom: 36px;
 }
 
 .container p {
-    font-size: 20px;
-      color: #898989;
+  font-size: 20px;
+  color: #898989;
 }
 
 .imageContainer {
-      margin-right: 4em;
+  margin-right: 4em;
 }
 
-.imageContainer > img {
-      border-radius: 100%;
-    max-width: 135px;
+.imageContainer>img {
+  border-radius: 100%;
+  max-width: 135px;
 }
 
 .ability {
-      font-weight: bold;
-    color: #ee009e;
+  font-weight: bold;
+  color: #ee009e;
 }
 
 .mail {
-    color: #00b0e8;
-    text-decoration: underline;
+  color: #00b0e8;
+  text-decoration: underline;
 }
 
 .mail:hover {
@@ -45,88 +43,94 @@
 }
 
 .buttonContainer {
-      text-align: center;
-    margin-top: 3em;
+  text-align: center;
+  margin-top: 3em;
 }
 
 .whatIDo {
-background: #EE009E;
-    border: solid 2px #EE009E;
-    padding: 11px;
-    color: white;
-    width: 140px;
-    box-shadow: 0 20px 40px 0 rgba(0,0,0,.12);
-    outline: none;
-    margin-right: 12px;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-    position: relative;
-    top: 0;
-    font-weight: bold;
+  background: #EE009E;
+  border: solid 2px #EE009E;
+  padding: 11px;
+  color: white;
+  width: 140px;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, .12);
+  outline: none;
+  margin-right: 12px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  position: relative;
+  top: 0;
+  font-weight: bold;
+  display: inline-block;
 }
 
 .whatIDo:hover {
-    top: -5px;
+  top: -5px;
+  color: white;
 }
 
 .contact {
-    background: white;
-    border: solid 2px #EE009E;
-    padding: 11px;
-    color: #EE009E;
-    width: 140px;
-    box-shadow: 0 20px 40px 0 rgba(0,0,0,.12);
-    outline: none;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-    top: 0;
-    position: relative;
-    font-weight: bold;
+  background: white;
+  border: solid 2px #EE009E;
+  padding: 11px;
+  color: #EE009E;
+  width: 140px;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, .12);
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  top: 0;
+  position: relative;
+  font-weight: bold;
 }
 
 .contact:hover {
-    top: -5px;
+  top: -5px;
 }
 
 .cowboy {
-        display: inline-block;
-    width: 1.5em;
-    margin: 0;
-    position: relative;
-    top: 9px;
+  display: inline-block;
+  width: 1.5em;
+  margin: 0;
+  position: relative;
+  top: 9px;
 }
 
 @media (max-width: 780px) {
   .container {
-        margin-top: 18%;
+    margin-top: 18%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     flex-direction: column;
   }
-
   .imageContainer {
-        text-align: center;
-            margin-right: 0;
+    text-align: center;
+    margin-right: 0;
   }
 }
 
-
-
 @media (min-width: 600px) {
-  .landingTitle { height: 250px;}
+  .landingTitle {
+    height: 250px;
+  }
 }
+
 @media (min-width: 900px) {
-  .landingTitle { height: 220px;}
+  .landingTitle {
+    height: 220px;
+  }
 }
 
 @media (min-width: 1100px) {
-  .landingTitle { height: 163px;}
+  .landingTitle {
+    height: 163px;
+  }
 }
 
 @media (max-width: 600px) {
   .landingTitle {
-    font-size: 1.5em!important;
+    font-size: 1.5em !important;
     height: 113px;
   }
 }

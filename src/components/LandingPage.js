@@ -69,12 +69,12 @@ class LandingPage extends React.Component {
           </p>
 
           <div className={styles.buttonContainer}>
-            <button
-              onClick={() => this.scrollToAbout()}
+            <Link
+              to="/work"
               className={styles.whatIDo}
             >
               What I do
-            </button>
+            </Link>
             <Link to="/contact">
               <button className={styles.contact}>Contact</button>
             </Link>

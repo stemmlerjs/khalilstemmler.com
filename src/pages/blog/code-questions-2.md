@@ -1,50 +1,69 @@
 ---
 templateKey: blog-post
-title: Cleaner Code with Async / Await Tutorial 
-date: '2018-07-30T00:05:26-04:00'
+title: "Code Challenges #2: 0's surrounded by 1's"
+date: '2018-08-10T00:05:27-04:00'
 description: >-
-  Asynchronous programming in JavaScript used to be difficult to write clean code
-  with. Today we have options. You can write asynchronous code with callbacks
-  (and face the scary rightward slant of callback hell), use Promises, or use
-  async / await. I'll show you why I mostly use a combination of async / await and
-  Promises to write cleaner asynchronous code. 
+  This week in Code Challenges, I was asked to write an algorithm to find the longest sequence of 0's surrounded by 1's.
 tags:
   - JavaScript
-  - ES6
-category: Web Development
-image: /img/clean-code.png
-published: false
+category: Code Challenges
+image: /img/cc-0s.png
+published: true
 ---
+# Given a non-negative number, find the longest sequence of 0s surrounded by 1s in the binary representation of that number
 
-For this question, we're supposed to get the longest sequence of 0's surrounded by 1's in a number.
+So for example, given `5 (base 10) == '101' (binary, base 2)`, the longest sequence of 0's surrounded by 1's is 0. Here are some more examples.
+
+```javascript
+100           => 0 // because the 0s are not boxed in by 1s.
+1000001001    => 5 // because the max sequence between the two found here is 5
+001           => 0 // again, because the 0s are not boxed by 1s.
+1             => 0
+0             => 0
+```
+
+Here's what I got as my solution for this problem.
 
 ```javascript
 function solution(N) {
-    // write your code in JavaScript (Node.js 8.9.4)
+   // convert the number to binary representation
    let text = N.toString(2);
-   console.log(text);
    let index = 0;
    let max = 0;
    
+   // Iterate over the elements
    while (index < text.length - 1) {
-       console.log(text.charAt(index));
-       if (text.charAt(index) == "1") {
-           if (text.substring(index + 1).indexOf("1") !== -1) {
-               let distance = text.substring(index + 1).indexOf("1");
-               console.log("distance", distance, max);
-               max = Math.max(max, distance);
-               index = index + distance + 1;
-           }
-           else {
-            index++; 
-          }
-       }
-       else {
-           index++;
-       }
-   }
-   return max;
+    // If the current element is a 1
+    if (text.charAt(index) == "1") {
+      // Then look down the line and see if there's a 1 down there somewhere.
+      if (text.substring(index + 1).indexOf("1") !== -1) {
+        // If there is, then calculate the new max as the distance from this
+        // current index to that 1 down the line.
+        let distance = text.substring(index + 1).indexOf("1");
+        max = Math.max(max, distance);
+        // Then, since we know that there's only going to be 0s in between 
+        // our current index and the 1 that we found, let's just jump to
+        // that next 1 and continue from there.
+        index = index + distance + 1;
+      }
+
+      // Otherwise, just increment to the next element
+      else {
+        index++; 
+      }
+    }
+    else {
+      index++;
+    }
+  }
+  return max;
 }
 
-compute("1000100001");
+solution(5);
 ```
+
+So really, it can be conceptualized that we'll only take action if the current element we're looking at is a 1. And if it is, then we'll see if there's another one somewhere yonder and get the new max if there is.
+
+This solution solves the problem in O(log N) time by (in good scenarios) cutting down the search space in large chunks each time like a divide and conquer algorithm.
+
+Can you suggest any improvements to this algorithm? Share your solution in the comments below!

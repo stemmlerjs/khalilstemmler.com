@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: 'Code Challenges: parseInt() deep dive'
-date: '2018-07-30T00:05:26-04:00'
+date: '2018-08-10T00:05:26-04:00'
 description: >-
   This week in Code Challenges, I was asked to do a deep dive into the parseInt() function in JavaScript.
 tags:

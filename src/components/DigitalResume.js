@@ -12,15 +12,15 @@ const pages = {
         elements: [
           {
             name: 'JavaScript',
-            text: `ES6 • React • Redux • Gatsby • Mocha/Chai • Electron • Webpack • Gulp • Lint • jQuery • AngularJS`,
+            text: `ES6 • React • Redux • Angular • Gatsby • Mocha/Chai • Electron • Webpack • Gulp • Lint • jQuery • AngularJS`,
           },
           {
             name: 'HTML + CSS',
-            text: `styled-components • CSS Modules • Bootstrap • Sass • Pug • Jade • Responsive Websites • Handlebars • CSS Grid (Pure CSS)`,
+            text: `Sass/Scss • CSS Modules • Bootstrap • Pug • Jade • Responsive Websites • Flexbox`,
           },
           {
             name: 'Integrations',
-            text: `Stripe Payments • Mixpanel • Shopify Polaris • Web Audio API`,
+            text: `Stripe Payments • Mixpanel • Web Audio API`,
           },
           {
             name: 'Design',
@@ -36,11 +36,11 @@ const pages = {
             text: `Node.js • MySQL/MariaDB • Elasticsearch • Redis • Python • Ruby • Sinatra`,
           },
           {
-            name: 'Services',
+            name: 'Ops',
             text: `Vagrant • Ansible • AWS • Jenkins • Gitlab CI • PM2`,
           },
           {
-            name: 'Toolset',
+            name: 'Tools',
             text: `Git • Visual Studio Code • Sublime Text • Slack • Asana • Gitlab Kanban`,
           },
         ],
@@ -53,10 +53,12 @@ const pages = {
         title: 'Now',
         elements: [
           {
-            name: 'Freelance Web Dev',
-            header: 'Freelance',
-            text: `⇢ Freelance work with a focus on full-stack web development using modern
-front-end technologies. Working for clients in Canada.`,
+            name: 'Consultant',
+            header: 'Aquent Dev6, Mississauga ON',
+            text: [
+              `⇢ Implemented a Navigation Assistance feature for Marine Magnetics (Angular, Sass)`,
+              `⇢ Created Vue.js training material`
+            ]
           },
           {
             name: 'Lead Developer',
@@ -69,6 +71,17 @@ front-end technologies. Working for clients in Canada.`,
             ],
           },
         ],
+      },
+      {
+        title: '2017',
+        elements: [
+          {
+            name: 'Freelance Web Dev',
+            header: 'Freelance',
+            text: `⇢ Freelance work with a focus on full-stack web development using modern
+front-end technologies. Working for clients in Canada.`,
+          },
+        ]
       },
       {
         title: '2016',
@@ -245,13 +258,13 @@ class DigitalResume extends React.Component {
             <img src={emojiis} />
           </div>
           <div className={styles.heroTextContainer}>
-            <h3>For the love of building</h3>
+            <h3>Well-designed and delightful software products</h3>
             <div>
-              Building good products is my passion. Here's my virtual resume.
+              Well-designed software and delightful interfaces make me happy.
             </div>
-            <div>Also, here's my {` `}
+            <div>Here's my {` `}
               <a download href="/files/khalil-stemmler-resume-2018.pdf">
-                actual resume
+                actual resume,
               </a> and here are some <a target="__blank" href="https://github.com/stemmlerjs/code-samples">code samples</a>.
             </div>
           </div>

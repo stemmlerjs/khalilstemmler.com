@@ -14,11 +14,12 @@ class LandingPage extends React.Component {
       abilities: [
         'build your app',
         'create your website',
-        'design your Shopify store',
+        'streamline and automate your workflows',
+        // 'design your Shopify store',
         'sell stuff online',
         'fight aliens',
         'learn web development',
-        'develop your WordPress theme',
+        // 'develop your WordPress theme',
       ],
       counter: 0,
     }
@@ -59,13 +60,14 @@ class LandingPage extends React.Component {
               className={styles.cowboy}
               style={{ display: 'inline-block' }}
               src={cowboy}
-            />. I'm a full-stack developer in Toronto. I can help you{' '}
+            />. I'm a full-stack developer in Oakville. I can help you{' '}
             <span className={styles.ability}>
               {this.state.abilities[this.state.counter]}
             </span>.
           </h1>
           <p>
-            I create robust web applications and software, mostly using modern JavaScript tools like NodeJS and React.
+            I create robust web applications and software, mostly using 
+            modern JavaScript technologies like React, Node.js and Angular.
           </p>
 
           <div className={styles.buttonContainer}>

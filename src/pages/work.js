@@ -13,11 +13,13 @@ export default class Work extends React.Component {
     const data = this.props.data.work;
     const { edges } = data;
     const work = edges.map((edge) => Object.assign({}, edge.node.fields, edge.node.frontmatter));
-    console.log('<Work/>', work)
     
     return (
-      <section className={'scene_element--fadein '}>
-        <h1>Work</h1>
+      <section className={'scene_element--fadein'}>
+        <h1>Dev Work</h1>
+        <p>This is a collection of some of the most interesting projects I've created or been a part of.</p>
+        {/* <p>If you're looking for my <b>music</b>, you can find that over <Link to="/music">here!</Link></p> */}
+        <br></br>
         <div className={styles.container}>
           {
             work.map((workItem) => {

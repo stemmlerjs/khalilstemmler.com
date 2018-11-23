@@ -25,6 +25,7 @@ You can [reach out](/contact) to me if you'd like to chat — if you're in the G
 If you're a recruiter, I've heard that this list makes your job easier! 😊
 
 - React - 3 years
+- Angular - 1 year
 - Node.js - 4 years
 - JavaScript - 5 years
 - HTML, CSS, SASS/SCSS - 6 years

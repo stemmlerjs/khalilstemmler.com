@@ -55,6 +55,7 @@ scalable NodeJS microservice architecture on AWS.`}
           'Node',
           'Webpack',
           'Elasticache',
+          'Elastic Beanstalk',
           'RDS',
           'Stripe Payments',
           'Terraform',

@@ -123,20 +123,16 @@
 }
 
 .elementName {
-  /* border: 1px solid grey; */
   background: #fff;
   border: 2px solid #ee009e;
-  padding: 11px;
+  padding: 3px;
   color: #ee009e;
   min-width: 140px;
   outline: none;
-  /* cursor: pointer; */
-  /* transition: .2s ease-in-out; */
-  /* top: 0; */
-  /* position: relative; */
   text-align: center;
-  font-weight: bold;
+  font-weight: 700;
   font-family: Roboto;
+  border-radius: 4px;
 }
 
 .header {

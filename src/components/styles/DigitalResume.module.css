@@ -90,7 +90,7 @@
 }
 
 .pageContainer {
-  font-family: 'Roboto', 'Roboto Mono', 'Arial', sans-serif;
+  font-family: Roboto;
   min-height: 29em;
 }
 
@@ -136,7 +136,7 @@
   /* position: relative; */
   text-align: center;
   font-weight: bold;
-  font-family: 'Roboto Mono';
+  font-family: Roboto;
 }
 
 .header {

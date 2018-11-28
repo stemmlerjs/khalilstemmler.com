@@ -145,24 +145,193 @@ async function getProfile (authToken, studentId) {
 We can catch it the same way using `try/catch` blocks like we would in synchronous languages. This is much
 more readable.
 
-## Looping with Async
+## Looping with Async (Bye bye IIFEs and ES5 Closures)
 
-Looping is something that was always very difficult to do with async code. But now, it's a breeze. To loop
-in order, we can use the modern for..of loop.
+Looping over async stuff while keeping the current value of the Iterable in scope was always something kind of tricky before ES6. It required the understanding of [JavaScript closures](http://javascriptissexy.com/understand-javascript-closures-with-ease/). 
+
+In ES5, we were able to create closures to solve this problem.
+
+For example, if we were trying to update every Student's favourite food on their student profile to say
+that they like bananas, we could try something like this in this ES5 example.
 
 ```javascript
-
-for(let id of ids) {
+var promises = [];
+for (var i = 0; i < students.length; i++) {
+  var student = student[i];
   console.log(
-    `Updating student profile with id=${id} to say that they like bananas => ${properId}
+    `Updating student=${student.name} to say that they like bananas.
   `);
-  await queryInterface.sequelize.query(
-    `UPDATE student SET favourite_food = ${'bananas'} where student_id = ${id};`
-  )
+
+  promises.push(function() {
+    // If they don't already like bananas
+    if (student.favouriteFood !== "Bananas") {
+      // They'll like 'em now.
+      student.favouriteFood = "Bananas";
+    } else {
+      console.log('This student is cool, he already likes bananas :)');
+    }
+    return database.save(student);
+  })
 }
+
+Promise.all(promises)
+  .then((result) => {
+    // Done!
+  })
+  .catch((err) => {
+    // Handle error
+  })
+```
+
+But this **wouldn't work**. 
+
+The problem is that the ```student``` we've brought in as a local variable for each iteration of the loop is not going
+to be the same as the ```student``` that we save to our promises array in the anonymous function. 
+
+This is largely due to the fact that ```var``` is not block scoped. 
+
+If we ran this, we'd observe that the last student, at ```students.length - 1``` is updated ```students.length``` times.
+
+Ok, how do we fix this in ES5? We encapsulate the part of this block that we'd like to keep as a block (that doesn't change) as a closure.
+
+
+```javascript
+var promises = [];
+for (var i = 0; i < students.length; i++) {
+  var student = student[i];
+  console.log(
+    `Updating student=${student.name} to say that they like bananas.
+  `);
+
+  (function (student) {
+    promises.push(function() {
+      // If they don't already like bananas
+      if (student.favouriteFood !== "Bananas") {
+        // They'll like 'em now.
+        student.favouriteFood = "Bananas";
+      } else {
+        console.log('This student is cool, he already likes bananas :)');
+      }
+      return database.save(student);
+    })
+  })(student);
+}
+
+Promise.all(promises)
+  .then((result) => {
+    // Done!
+  })
+  .catch((err) => {
+    // Handle error
+  })
+```
+
+Now, not to throw out too much terminology, but closures are [IIFEs](https://medium.com/@vvkchandra/essential-javascript-mastering-immediately-invoked-function-expressions-67791338ddc6) which will... evaluate immediately. 
+
+If we did it this way, we'd be binding the current value of ```student``` to a scope where the reference to student cannot change on each iteration of the loop. 
+
+Okay, great. But that sucks to have to do. How execute async code in ES6 and bind the current local variables to the block's scope?
+
+Like this...
+
+```javascript
+var promises = [];
+for (var i = 0; i < students.length; i++) {
+  const student = student[i]; // we could also use let instead of const
+  console.log(
+    `Updating student=${student.name} to say that they like bananas.
+  `);
+
+  promises.push(function() {
+    // If they don't already like bananas
+    if (student.favouriteFood !== "Bananas") {
+      // They'll like 'em now.
+      student.favouriteFood = "Bananas";
+    } else {
+      console.log('This student is cool, he already likes bananas :)');
+    }
+    return database.save(student);
+  })
+}
+
+Promise.all(promises)
+  .then((result) => {
+    // Done!
+  })
+  .catch((err) => {
+    // Handle error
+  })
+```
+
+```const``` and ```let``` are block scoped unlike var. Check em out.
+
+And then using some of the other great things we've learned in this article, we can clean this function up
+even more.
+
+```javascript
+async function updateStudents () {
+  for (let student of students) {
+    console.log(
+      `Updating student=${student.name} to say that they like bananas.
+    `);
+    if (student.favouriteFood !== "Bananas") {
+      // They'll like 'em now.
+      student.favouriteFood = "Bananas";
+    } else {
+      console.log('This student is cool, he already likes bananas :)');
+    }
+    await database.save(student);
+  }
+}
+
+updateStudents()
+  .then(() => {
+    // Go your merry way
+  })
+  .catch((err) => {
+    // There was a boo boo
+  })
 ```
 
 Now that's readable as hell.
+
+Try this out in your browser. See if you can guess what's supposed to happen.
+
+```javascript
+const students = ['josh', 'khalil'];
+
+async function asyncTest () {
+  for (let student of students) {
+    await new Promise((resolve, reject) => {
+      setTimeout(() => {
+        console.log(student);
+        resolve();
+      }, 3000);
+    })
+  }
+  console.log('For loop completed')
+}
+
+asyncTest()
+  .then(() => {
+    console.log('Done!')
+  })
+  .catch((err) => {
+    console.log('An error', err)
+  })
+```
+
+It's supposed to print out:
+
+```javascript
+Promise {<pending>}
+// wait 3 seconds
+josh
+// wait 3 seconds
+khalil
+For loop completed
+Done!
+```
 
 I hope this article was helpful in explaining how async functions make your code a lot cleaner! If you have any questions or can suggest any edits, please feel free to leave a message in the comments.
 

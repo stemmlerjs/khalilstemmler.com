@@ -69,7 +69,7 @@ const getSchemaOrgJSONLD = ({
 }) => {
   const schemaOrgJSONLD = [
     {
-      '@context': 'https://khalilstemmler.com',
+      '@context': 'http://schema.org',
       '@type': 'WebSite',
       url,
       name: title,

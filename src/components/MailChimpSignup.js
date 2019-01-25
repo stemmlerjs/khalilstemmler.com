@@ -1,37 +1,27 @@
 import React from "react";
 import addToMailchimp from "gatsby-plugin-mailchimp";
-
 import styles from "./styles/MailChimpSignup.module.css";
-
 import meGlitched from "../img/me-glitched.jpg";
 import nprogress from "nprogress";
 
-// https://gumroad.com/resource-center/building-your-email-list
-// https://www.blogtyrant.com/make-ebook/
-// https://www.blogtyrant.com/how-to-write-the-perfect-blog-post/
-// https://news.ycombinator.com/item?id=16283959
-
-let isEbookReady = false;
-
 const SubscribeComponent = () => {
   return (
-    <div>
+    <div className="mailchimp-subscribe-component">
       <div className={styles.imageContainer}>
         <img src={meGlitched} />
       </div>
       <div className={styles.title}>
-        Master modern JavaScript, with or without semicolons!
+        About me, the author
       </div>
       <div className={styles.text}>
-        Join a community of ninja JS-ers who are learning how to code, building
-        their portfolios, and deploying to prod!
-        {isEbookReady
-          ? ` You'll get my best JavaScript content every week. You'll also get a copy of my free ebook,
-    "JS in Prod: 5 Tools You Really Should Be Using, Yesterday".`
-          : ` You'll get my best JavaScript content every week (tips, tricks, and tutorials).`}
+        I'm a developer/musician most interested in JavaScript, software development, music and art (and the divine intersection of all of those things).
       </div>
       <div className={styles.label} />
-      <input
+      <span className={styles.text}>I'm also on </span>
+      <a className="fancy-link" href="https://instagram.com/stemmlerjs">Instagram,</a>&nbsp;&nbsp;
+      <a className="fancy-link" href="https://twitter.com/stemmlerjs">Twitter,</a>&nbsp;&nbsp;<br/>
+      <a className="fancy-link" href="https://www.linkedin.com/in/khalilstemmler/">LinkedIn</a>
+      {/* <input
         placeholder="Your email address"
         required
         type="email"
@@ -39,9 +29,9 @@ const SubscribeComponent = () => {
       />
       <input
         className={styles.submit}
-        value={isEbookReady ? "Get the ebook" : "Get tips"}
+        value={isEbookReady ? "Get the ebook" : "Get new blog post notifications"}
         type="submit"
-      />
+      /> */}
     </div>
   );
 };

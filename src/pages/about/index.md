@@ -4,7 +4,7 @@ title: About
 display_picture: /img/me.jpg
 ---
 
-I'm Khalil, a full-stack javascript developer available for hire.
+I'm Khalil- a JavaScript consultant by day, side-project hacker by night, and a musician by *whenever I can find time*.
 
 I fell in love with coding and tech ever since my first programming class in Grade 9. 
 
@@ -13,6 +13,8 @@ Since then, I've earned my Bachelors in Computer Science, my Diploma in Internet
 My freelance journey began while I was in school in school in order to pay the bills while I was studying Computer Science. It was a _fun_ time of balancing school between building apps, websites and tools for clients. 
 
 Towards the end, I built [Univjobs](https://univjobs.ca), an online job marketplace for Canadian post-secondary students and recent graduates, during my final years of study.
+
+Today, I work as a Consultant at Aquent | Dev6 and wear [many different hats](/blog/building-univjobs) at Univjobs.
 
 I write and speak about JavaScript, web design, development and music.
 
@@ -40,8 +42,10 @@ You can download my latest resume below.
 
 <a href="/files/khalil-stemmler-resume-2018.pdf" download>Click to download</a>
 
-## Code Samples
+*Last updated September 2018*
+
+<!-- ## Code Samples
 
 You can take a peek at some of my code samples here:
 
-<a href="https://github.com/stemmlerjs/code-samples">Code samples</a>
+<a href="https://github.com/stemmlerjs/code-samples">Code samples</a> -->
